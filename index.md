@@ -1,6 +1,6 @@
 # Maps are claims, not pictures
 
-*wardley-maps.sgit.ai · site v0.1.0 · CC BY 4.0 · part of the [sgit.ai](https://sgit.ai) network*
+*wardley-maps.sgit.ai · site v0.1.1 · CC BY 4.0 · part of the [sgit.ai](https://sgit.ai) network*
 
 A Wardley map asserts where every component sits on the evolution axis. That makes it
 **arguable** — and almost nobody publishes theirs anywhere it can be argued with. This site

@@ -223,3 +223,10 @@ __marimo__/
 node_modules/
 package-lock.json
 screenshots/*.png
+
+# This repo's build tooling lives in admin/build/, which the Python "build/" rule above
+# silently swallows — including validate.js, the release gate CI runs. Caught by CI on the
+# first push, which is the pipeline working, but only once. Un-ignore it explicitly.
+!admin/build/
+!admin/build/**
+admin/build/__pycache__/

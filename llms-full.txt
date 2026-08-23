@@ -1,5 +1,5 @@
 # wardley-maps.sgit.ai — full text
-# Site version: v0.1.0 · generated 2026-08-23 · CC BY 4.0
+# Site version: v0.1.1 · generated 2026-08-23 · CC BY 4.0
 #
 # Every markdown document and every map source on this site, concatenated. The HTML pages
 # are not included: they are presentation over this material plus the JSON endpoints at
