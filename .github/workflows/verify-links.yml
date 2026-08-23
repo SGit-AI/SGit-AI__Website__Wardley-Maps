@@ -1,0 +1,89 @@
+# The link-verification job — the one thing this site has that no sibling does.
+#
+# Every Monday, and on demand, fetch every external URL the site publishes and write
+# the result to data/link-check.json with the run date on it. /resources/verification.html
+# renders that file, so the site's claim to have verified a link is a dated artefact
+# rather than a sentence somebody typed once.
+#
+# The reason it earns its keep is in briefs/04__job-b__industry-resources.md §1: the
+# ecosystem's own canonical indexes list five dead things as live. A curation site that
+# does not check its own links has no standing to say so.
+#
+# It commits the refreshed report to dev and then dispatches deploy-pages, because a
+# push made with GITHUB_TOKEN deliberately does not trigger another workflow. The commit
+# carries no version bump, so tag-release is not involved: the dispatched run is a
+# deploy-only run, exactly like a manual one.
+name: verify-links
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays, 06:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: verify-links
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Fetch every external URL the site publishes
+        run: node bin/verify-links.js
+
+      - name: Summarise the run in the job summary
+        run: |
+          set -euo pipefail
+          node -e '
+            const r = require("./data/link-check.json");
+            const rows = r.results.filter(x => x.state !== "ok");
+            let out = `## Link verification — ${r.run_at}\n\n`;
+            out += Object.entries(r.tally).map(([k,v]) => `**${v}** ${k}`).join(" · ") + `\n\n`;
+            if (rows.length) {
+              out += `| State | Status | URL | Linked from |\n|---|---|---|---|\n`;
+              for (const x of rows) out += `| ${x.state} | ${x.status ?? x.error ?? x.reason ?? ""} | ${x.url} | ${x.linked_from.slice(0,3).join(", ")} |\n`;
+            } else { out += `Everything that could be checked returned 2xx.\n`; }
+            require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, out);
+          '
+
+      - name: Commit the report if it changed
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name  'GitHub Actions'
+          git config user.email 'actions@github.com'
+          # run_at changes on every run; only commit when a verdict actually moved.
+          if git diff --quiet -- data/link-check.json; then
+            echo "no change"; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if [ "$(git diff --numstat -- data/link-check.json | awk '{print $1+$2}')" -le 2 ]; then
+            echo "only the timestamp moved — not committing"
+            git checkout -- data/link-check.json
+            echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git add data/link-check.json
+          git commit -m "link-check: refresh verification report ($(date -u +%Y-%m-%d))"
+          git push origin HEAD:dev
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish the refreshed report
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # A GITHUB_TOKEN push does not trigger workflows, so ask for the deploy
+          # explicitly. workflow_dispatch skips tag-release and deploys the tree as-is.
+          curl -fsS -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/deploy-pages.yml/dispatches" \
+            -d '{"ref":"dev"}' \
+          || echo "::warning::could not dispatch deploy-pages — the report will ship with the next release"

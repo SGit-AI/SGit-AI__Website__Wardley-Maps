@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Release history — wardley-maps.sgit.ai</title>
+<meta name="description" content="Every release of this site, with what changed. The version is owned by admin/build/version.txt, must appear in the release commit&#x27;s subject, and CI verifies the two agree before it tags anything.">
+<link rel="canonical" href="https://wardley-maps.sgit.ai/admin/versions.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="wardley-maps.sgit.ai">
+<meta property="og:url" content="https://wardley-maps.sgit.ai/admin/versions.html">
+<meta property="og:title" content="Release history — wardley-maps.sgit.ai">
+<meta property="og:description" content="Every release of this site, with what changed. The version is owned by admin/build/version.txt, must appear in the release commit&#x27;s subject, and CI verifies the two agree before it tags anything.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../assets/favicon.svg" color="#0f766e">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<nav class="site"><div class="row">
+  <a class="brand" href="../index.html">wardley-maps<span>.sgit.ai</span></a>
+  <a class="parent" href="https://sgit.ai" title="sgit.ai — the parent project: the vault layer, the shipped CLI, and the Strategy Maps vault this site's map inventory draws on">↗ part of <b>sgit.ai</b></a>
+  <span class="stage-pill">research site</span>
+  <a class="ver" href="../admin/versions.html" title="Site release history">v0.1.0</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-items">
+    <div class="ni ni-has">
+      <a class="nl" href="../start/index.html">Learn<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../start/index.html">Start here</a>
+      <a class="sl" href="../maps/index.html">The map gallery</a>
+      <a class="sl" href="../glossary/index.html">Glossary</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../method/index.html">Method<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../method/index.html">The four claims</a>
+      <a class="sl" href="../method/de-commoditisation.html">De-commoditisation</a>
+      <a class="sl" href="../method/custom-axes.html">The custom-axis verdict</a>
+      <a class="sl" href="../method/broken-middle.html">The broken middle</a>
+      <a class="sl" href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../doctrine/index.html">Doctrine<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../doctrine/index.html">The 40-record assessment</a>
+      <a class="sl" href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../resources/index.html">Resources<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../resources/index.html">All 34, verified</a>
+      <a class="sl" href="../resources/dead/index.html">Dead or dying</a>
+      <a class="sl" href="../resources/verification.html">Link verification</a>
+      <a class="sl" href="../dinis/index.html">Dinis Cruz on mapping, 2018–2025</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../agents/index.html">For agents<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../agents/index.html">The machine surface</a>
+      <a class="sl" href="../shipped/index.html">What ships, and what doesn't</a>
+      <a class="sl" href="../network/index.html">The network</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl here" href="../admin/comms.html">Site<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../admin/comms.html">Comms: tasks &amp; requests</a>
+      <a class="sl here" href="../admin/versions.html">Release history</a>
+      <a class="sl" href="../admin/index.html">Admin &amp; engineering</a>
+      <a class="sl" href="../documents/index.html">The documents</a>
+      <a class="sl" href="../about/licensing.html">Licensing</a>
+      <a class="sl" href="../about/participant.html">Where we lose</a>
+      </div>
+    </div>
+  </div>
+  <a class="gh" href="https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps">★ GitHub</a>
+  <script src="../assets/nav.js" defer></script>
+</div></nav>
+
+<main class="doc">
+<p class="crumb"><a href="../index.html">wardley-maps.sgit.ai</a> / <a href="../admin/index.html">Admin</a> / Release history</p>
+<h1>Release history</h1>
+<p class="lead">Every push to <code>dev</code> is a release. The version lives in
+<a href="build/version.txt"><code>admin/build/version.txt</code></a>, is bumped exactly once per
+release, and must also appear in the release commit's subject as
+<code>site vX.Y.Z: …</code>. CI verifies the two agree, that the bump is the next minor, and
+that this table has a row for it — then tags the release commit. If any of that disagrees,
+nothing is tagged and nothing is published.</p>
+
+<div class="tablewrap"><table class="vers">
+  <thead><tr><th>Version</th><th>Date</th><th>What changed</th></tr></thead>
+  <tbody>
+<!-- releases -->
+    <tr><td class="vnum">v0.1.0</td><td>2026-08-23</td><td>First release. The CI pipeline (validate → tag → deploy) and the weekly link-verification job; the doctrine assessment moved from pki.sgit.ai with its evidence links rewritten; 34 resource pages and 11 obituaries, 26 carrying dated screenshots; the PST pattern write-up; four maps shipped as source next to render; the four method claims; the chronology; /shipped/, /agents/, the glossary and the concepts endpoint.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="scheme">The scheme</h2>
+<p><code>v{release}.{major}.{minor}</code>. Every push to <code>dev</code> is a minor bump;
+a major bump to <code>.0</code> is deliberate and means the site's shape changed rather than its
+contents. CI enforces that the new tag is one of those two and refuses anything else, which is
+what stops a version being reused or skipped.</p>
+
+<h2 id="how">Cutting a release</h2>
+<pre class="shell">bin/bump.py "what changed"          <span class="g"># version.txt + a row in this table</span>
+python3 admin/build/chrome.py       <span class="g"># nav, footer, and the version badge everywhere</span>
+node admin/build/validate.js        <span class="g"># the gate CI will run</span>
+git commit -am "site vX.Y.Z: what changed" &amp;&amp; git push origin dev</pre>
+<p class="small dim">The generators — <code>gen_resources.py</code>, <code>gen_dinis.py</code>,
+<code>gen_concepts.py</code>, <code>gen_documents.py</code> — run before <code>chrome.py</code>
+if their source data changed. <a href="index.html">The full engineering page →</a></p>
+
+<div class="pagenav">
+  <a href="comms.html">← Comms</a>
+  <a href="index.html">Admin &amp; engineering →</a>
+</div>
+</main>
+
+<footer class="site"><div class="cols">
+  <div>
+    <div class="brandline">wardley-maps<span>.sgit.ai</span></div>
+    <p>Wardley Mapping as a research site: the technique, an original doctrine assessment, 34 industry resources verified rather than listed, and the mapping thinking behind the <a href="https://sgit.ai" style="display:inline;padding:0"><b>sgit.ai</b></a> network. This site's own content is CC BY 4.0; the ecosystem it quotes is CC BY-SA — <a href="../about/licensing.html" style="display:inline;padding:0">the difference matters</a>.</p>
+    <p class="netline"><a href="https://sgit.ai"><b>↗ sgit.ai</b></a> — the parent project and the Strategy Maps vault · <a href="https://graphs.sgit.ai/v1/maps/index.html">↗ graphs.sgit.ai</a> — maps as graphs · <a href="https://pki.sgit.ai">↗ pki.sgit.ai</a> — where the doctrine assessment was built · <a href="https://sgit.ai/network/index.html">↗ the network</a></p>
+    <p class="partnote">⚠ Participant disclosure: published by the sgit project, which uses the mapping practice this site documents and is assessed by the doctrine page it hosts. <a href="../about/participant.html" style="display:inline;padding:0">Read the disclosure</a>.</p>
+    <p class="partnote">Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog, <a href="https://blog.gardeviance.org/" style="display:inline;padding:0">blog.gardeviance.org</a>, is CC BY-SA <b>3.0</b> — a different licence, quoted under a separate notice. Nothing here is an adaptation of either.</p>
+    <p class="verline">site <a href="../admin/versions.html">v0.1.0</a> · <a href="../admin/index.html">engineering</a> · <a href="../about/licensing.html">CC BY 4.0</a></p>
+  </div>
+  <div>
+    <h4>Start</h4>
+    <a href="../start/index.html">&#8594; Start here</a>
+    <a href="../maps/index.html">The map gallery</a>
+    <a href="../glossary/index.html">Glossary</a>
+    <a href="../shipped/index.html">What ships, and what doesn't</a>
+  </div>
+  <div>
+    <h4>The four claims</h4>
+    <a href="../method/de-commoditisation.html">De-commoditisation</a>
+    <a href="../method/custom-axes.html">The custom-axis verdict</a>
+    <a href="../method/broken-middle.html">The broken middle</a>
+    <a href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+    <a href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+  </div>
+  <div>
+    <h4>The record</h4>
+    <a href="../doctrine/index.html">The doctrine assessment</a>
+    <a href="../resources/index.html">34 resources, verified</a>
+    <a href="../resources/dead/index.html">Dead or dying</a>
+    <a href="../dinis/index.html">Dinis Cruz, 2018–2025</a>
+    <a href="../documents/index.html">The documents</a>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <a href="../admin/comms.html">Comms: tasks &amp; requests</a>
+    <a href="../admin/versions.html">Release history</a>
+    <a href="../about/licensing.html">Licensing</a>
+    <a href="../llms.txt">llms.txt</a>
+    <a href="../llms-full.txt">llms-full.txt</a>
+  </div>
+</div></footer>
+</body>
+</html>

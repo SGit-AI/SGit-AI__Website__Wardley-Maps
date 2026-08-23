@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node — capture.js and verify-links.js have no dependencies checked in. capture.js needs
+# playwright installed locally to run; it is never committed, and the deploy step rsyncs the
+# whole tree, so a stray node_modules would be published.
+node_modules/
+package-lock.json
+screenshots/*.png

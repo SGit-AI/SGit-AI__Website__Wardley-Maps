@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="wardley-maps.sgit.ai">
+  <!-- A map at 16px: the two axes, and three components stepping up-and-right from
+       genesis to commodity. Anything more detailed is a smudge in a browser tab. -->
+  <rect width="32" height="32" rx="7" fill="#faf9f5"/>
+  <path d="M7 25V7M7 25h18" stroke="#1c1d21" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M11 21 17 15 24 11" stroke="#0f766e" stroke-width="1.6" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="11" cy="21" r="2.6" fill="#0f766e"/>
+  <circle cx="17" cy="15" r="2.6" fill="#0f766e"/>
+  <circle cx="24" cy="11" r="2.6" fill="#a16207"/>
+</svg>

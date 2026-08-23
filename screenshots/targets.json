@@ -1,0 +1,373 @@
+[
+  {
+    "id": "01-book-on-being-lost",
+    "name": "Wardley Maps \u2014 Ch.1 On Being Lost",
+    "url": "https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Simon Wardley, CC BY-SA 4.0",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "02-book-index",
+    "name": "Wardley Maps \u2014 the Medium publication",
+    "url": "https://medium.com/wardleymaps",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Simon Wardley, CC BY-SA 4.0",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "03-learnwardleymapping",
+    "name": "Learn Wardley Mapping",
+    "url": "https://learnwardleymapping.com/",
+    "licence": "CC BY-SA 4.0 (free reference only)",
+    "attribution": "Ben Mosior / Hired Thought, CC BY-SA 4.0",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "04-doctrine-grid",
+    "name": "LWM doctrine grid",
+    "url": "https://learnwardleymapping.com/doctrine/",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Mosior / Hired Thought; doctrine after Wardley; grid after Fogleman",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "05-onlinewardleymaps",
+    "name": "OnlineWardleyMaps editor",
+    "url": "https://onlinewardleymaps.com/",
+    "licence": "MIT (code)",
+    "attribution": "OnlineWardleyMaps, MIT. Technique: Simon Wardley, CC BY-SA 4.0",
+    "wait": 7000,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "06-owm-dsl-reference",
+    "name": "OWM DSL reference",
+    "url": "https://docs.onlinewardleymaps.com/docs/dsl-reference/",
+    "licence": "MIT",
+    "attribution": "OnlineWardleyMaps docs, MIT",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "07-mermaid-wardley",
+    "name": "Mermaid wardley-beta syntax",
+    "url": "https://mermaid.js.org/syntax/wardley.html",
+    "licence": "MIT",
+    "attribution": "Mermaid, MIT",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "08-awesome-list",
+    "name": "awesome-wardley-maps",
+    "url": "https://list.wardleymaps.com/",
+    "licence": "CC0 1.0",
+    "attribution": "No attribution required (CC0); credit John Grant as a courtesy",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "09-wardleymaps-101",
+    "name": "Wardley Mapping 101 (Chris Daniel)",
+    "url": "https://www.wardleymaps.com/guides/wardley-mapping-101",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Krzysztof Daniel, wardleymaps.com, CC BY-SA 4.0",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "10-gardeviance",
+    "name": "Bits or pieces? \u2014 Simon Wardley's blog",
+    "url": "https://blog.gardeviance.org/",
+    "licence": "CC BY-SA 3.0 \u2014 NOT 4.0",
+    "attribution": "Simon Wardley, CC BY-SA 3.0. Do not merge with the 4.0 notice.",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "11-swardleymaps",
+    "name": "swardleymaps.com",
+    "url": "https://www.swardleymaps.com/",
+    "licence": "not stated",
+    "attribution": "Simon Wardley \u2014 link only, licence not stated",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "12-wikipedia",
+    "name": "Wikipedia: Wardley map",
+    "url": "https://en.wikipedia.org/wiki/Wardley_map",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Wikipedia contributors, CC BY-SA 4.0, link back to the article",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "13-map-repository",
+    "name": "swardley/WARDLEY-MAP-REPOSITORY",
+    "url": "https://github.com/swardley/WARDLEY-MAP-REPOSITORY",
+    "licence": "AMBIGUOUS \u2014 README says CC BY-SA, GitHub field says GPL-3.0",
+    "attribution": "FLAGGED: link only, do not mirror until resolved",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "14-mermaid-mirror",
+    "name": "wardley-maps-mermaid (rendered mirror)",
+    "url": "https://github.com/tractorjuice/wardley-maps-mermaid/",
+    "licence": "see repo",
+    "attribution": "Craddock mirror; content CC BY-SA 4.0, code GPL-3.0",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "15-arckit",
+    "name": "ArcKit \u2014 mapping for AI coding assistants",
+    "url": "https://github.com/tractorjuice/arc-kit",
+    "licence": "MIT (vendored maps CC BY-SA 4.0)",
+    "attribution": "ArcKit, MIT; bundled maps Simon Wardley CC BY-SA 4.0",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "16-wardleytogo",
+    "name": "wardleyToGo",
+    "url": "https://github.com/owulveryck/wardleyToGo",
+    "licence": "MIT",
+    "attribution": "Olivier Wulveryck, MIT",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "17-cli-owm",
+    "name": "cli-owm",
+    "url": "https://github.com/monkeypants/cli-owm",
+    "licence": "MIT",
+    "attribution": "cli-owm, MIT",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "18-mapping-canvas",
+    "name": "Wardley Mapping Canvas",
+    "url": "https://github.com/HiredThought/wardley-mapping-canvas",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Ben Mosior / Hired Thought, CC BY-SA 4.0",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "19-mapcamp",
+    "name": "Map Camp (current site)",
+    "url": "https://www.mapcamp.co.uk/",
+    "licence": "not stated",
+    "attribution": "Map Camp \u2014 link only. NOTE: map-camp.com is the STALE domain; never link it.",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "20-infoq-crossing-river",
+    "name": "Crossing the River by Feeling the Stones",
+    "url": "https://www.infoq.com/presentations/stuational-awareness/",
+    "licence": "ARR (InfoQ ToU)",
+    "attribution": "InfoQ \u2014 page screenshot for identification only; no re-hosting, no clipping",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "21-mattedgar-critique",
+    "name": "What do Wardley maps really map? A settler writes",
+    "url": "https://blog.mattedgar.com/2017/08/13/what-do-wardley-maps-really-map-a-settler-writes/",
+    "licence": "no statement \u2014 assume ARR",
+    "attribution": "FLAGGED: Matt Edgar. Screenshot for commentary only; quote briefly, link out.",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "22-buerkli-critique",
+    "name": "Where the map ends",
+    "url": "https://dannybuerkli.medium.com/where-the-map-ends-understanding-wardley-maps-limitations-6c41b8feae68",
+    "licence": "Medium default \u2014 ARR",
+    "attribution": "Danny Buerkli \u2014 commentary only",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "23-xebia-threat-modeling",
+    "name": "Wardley Mapping for Threat Modeling",
+    "url": "https://xebia.com/blog/using-wardley-mapping-for-optimizing-your-threat-modeling-strategy/",
+    "licence": "corporate blog \u2014 ARR",
+    "attribution": "Xebia \u2014 describe the method, link for the diagrams. Do NOT reproduce its maps.",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "24-oss-wardley-project",
+    "name": "Open Security Summit \u2014 Wardley Maps project",
+    "url": "https://open-security-summit.org/projects/wardley-maps/",
+    "licence": "not stated",
+    "attribution": "FLAGGED: Open Security Summit \u2014 link only",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "25-oss-why-changed-my-thinking",
+    "name": "Why Wardley Maps changed how I think (Dinis, solo)",
+    "url": "https://open-security-summit.org/sessions/2022/mini-summits/jul/wardley-maps/why-wardley-maps-changed-how-i-think/",
+    "licence": "not stated",
+    "attribution": "Open Security Summit \u2014 Dinis's own session; own-work claim still needs the site's own licence note",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "26-gcati",
+    "name": "GCATI Foundation in Wardley Mapping",
+    "url": "https://gcati.org/certification/wardley-mapping/foundation",
+    "licence": "not stated \u2014 ARR",
+    "attribution": "GCATI \u2014 page screenshot only, do not reproduce the syllabus",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "27-pki-doctrine",
+    "name": "OWN \u2014 pki.sgit.ai doctrine assessment",
+    "url": "https://pki.sgit.ai/packs/registry-mvp/doctrine.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0",
+    "fullPage": true,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "28-sgit-strategy-maps",
+    "name": "OWN \u2014 sgit.ai strategy maps (vault-served)",
+    "url": "https://sgit.ai/demos/strategy-maps.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0. Client-side decryption \u2014 allow extra wait.",
+    "wait": 9000,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "29-graphs-maps",
+    "name": "OWN \u2014 graphs.sgit.ai maps-as-graphs",
+    "url": "https://graphs.sgit.ai/v1/maps/index.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0",
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  },
+  {
+    "id": "30-pki-wardley-maps",
+    "name": "OWN \u2014 pki.sgit.ai six Wardley maps",
+    "url": "https://pki.sgit.ai/packs/registry-mvp/wardley-maps.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0. Mermaid renders client-side \u2014 allow extra wait.",
+    "fullPage": true,
+    "wait": 8000,
+    "dismiss": [
+      "button:has-text('Accept')",
+      "button:has-text('Agree')",
+      "#onetrust-accept-btn-handler"
+    ]
+  }
+]

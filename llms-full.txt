@@ -1,0 +1,1423 @@
+# wardley-maps.sgit.ai — full text
+# Site version: v0.1.0 · generated 2026-08-23 · CC BY 4.0
+#
+# Every markdown document and every map source on this site, concatenated. The HTML pages
+# are not included: they are presentation over this material plus the JSON endpoints at
+# /doctrine/doctrine.json, /agents/concepts.json, /data/link-check.json and
+# /screenshots/captured.json.
+#
+# Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. Everything below is
+# this site's own work and is CC BY 4.0; where it quotes the ecosystem it quotes rather than
+# adapts. See https://wardley-maps.sgit.ai/about/licensing.html
+
+
+==============================================================================
+=== /briefs/00__BRIEF.md
+==============================================================================
+# 00 — The Brief: `wardley-maps.sgit.ai`
+
+**Version** v0.33.62 · 23 August 2026
+**From** Dinis Cruz, via the SG/Send Librarian
+**To** the agent commissioned to build `wardley-maps.sgit.ai`
+**Licence** CC BY 4.0 — but read `07__boundaries-and-licensing.md` before you copy anything, because this site sits inside a **CC BY-SA** ecosystem and that is the single biggest trap in the whole build
+
+---
+
+## 1. The commission
+
+Three jobs, in the words they were given:
+
+1. Consolidate **"what I have created on Wardley maps on the `__Send` site and the multiple `*.sgit.ai` sites"** — including *"one of them in addition to having a page and vault with maps, we even mapped the doctrines"*.
+2. **Job A** — *"do a research on other materials (videos, infographics, docs) that I have published around wardley maps"*.
+3. **Job B** — *"find the best industry resources about it, and per resource create a page with the details, screenshots and links to those resources"*.
+
+All three are done. Jobs A and B are `03__` and `04__`. The consolidation is `01__`, `02__` and `05__`.
+
+---
+
+## 2. Two corrections to the premise, up front
+
+**The doctrine mapping is not in a vault.** It is static HTML on `pki.sgit.ai`, at `/packs/registry-mvp/doctrine.html`, with its raw data at `/packs/registry-mvp/doctrine/doctrine.json` — **41 records: 15 strong, 11 partial, 6 weak, 9 no-basis**, across Wardley's 4 phases and 6 categories. `pki.sgit.ai/admin/index.html` states the site is *"not served from an sgit vault"*. The site that has a **page plus a vault** of maps is `sgit.ai` (the *Strategy Maps* vault, `ookq4mn4`, 33 files, 830 KB), and that vault has **no doctrine content at all**. So the thing remembered as one property is actually two, and the doctrine work is currently buried at appendix depth inside a PKI pack. **That single asset is the strongest reason to build this site**, and moving it is task one.
+
+**There is no public bridge between the security-era Wardley work and the agentic-era Wardley work.** Job A found 26 published items running 2018→2025. Job A also found that the 2025–2026 agentic framing — the Explorer/Villager/Town Planner agent teams, de-commoditisation, the skill lifecycle — **has never been published anywhere**. The only public link between the two eras is one clause in one co-authored MCP article from June 2025. Do not write the site as though that bridge already exists in public. Building it *is* the site.
+
+---
+
+## 3. The thesis
+
+> **Maps are claims, not pictures — and almost nobody publishes theirs where they can be argued with.**
+
+The corpus already says this out loud: *"A Wardley map is a **claim**, not a picture: it asserts where each component sits on the evolution axis and is therefore arguable"* (14 Aug 2026). Everything the site does follows from taking that seriously — maps in git, coordinates in text, evidence attached to placements, and a doctrine assessment that names the artefact behind every rating.
+
+There is a second, sharper thesis available, and the research supports it hard:
+
+> **The Wardley ecosystem's link layer has rotted, and its own canonical indexes are now wrong.**
+
+As of August 2026: **MapKeep is dead** (ceased 30 May 2026 — the only tool with real-time collaboration), **MapScript is dead**, **every doctrine assessment tool is dead**, the **Map Camp Slack invite 404s**, and the **Leading Edge Forum course 404s**. All five are still listed as live by `awesome-wardley-maps`, by Wikipedia, and in two cases by Simon Wardley's own resources page. Two Map Camp domains contradict each other about whether the conference still exists. A site that simply **verifies every link and publishes the verification date** is immediately more useful than the community's own index. That is a low bar and a real service.
+
+---
+
+## 4. What is original here — the five pages only this site can write
+
+Ranked. These are the reason to build it rather than curate someone else's list.
+
+| # | Page | The claim | Source |
+|---|---|---|---|
+| **1** | **Explorer / Villager / Town Planner as three literal agent teams** | Wardley's PST renamed and turned into three separate directory trees, three `CLAUDE.md` session contracts, and three evolution-stage mandates for AI agents. Nobody else has done this. See `02__`. | `.claude/CLAUDE.md`; founding brief 14 Feb 2026 |
+| **2** | **De-commoditisation** | *"a thing can be commoditised at one phase of evolution while still being meaningfully custom-built at the next phase… I am going to call this pattern **de-commoditisation**"* — explicitly framed as a gap in doctrine | 17 May 2026, 2,947 w |
+| **3** | **The custom-axis verdict** | *"the evolution scale doesn't necessarily need to be Genesis, custom-built, product and commodity; you can go from air gap to file to API to event-driven"* — and then the rule that settles it: ***"relabel the axis when the thing genuinely evolves; use a maturity model when the thing merely improves."*** With sources cited. The sharpest methodological contribution in the corpus. | 28 Jul 2026, 2,956 w |
+| **4** | **The broken middle / you cannot map a gap** | *"**you cannot map a gap, because a gap has no evolution**"* and the resulting shape: *"the ends are solved. the middle is people."* An original map *shape*, not just an original map. | 28 Jul 2026 |
+| **5** | **Maps are graphs with position** | *"**a Wardley Map is not a separate artifact from the graph. It is a graph with positional metadata.**… The graph is primary; the map is a projection… Map queries are graph queries with positional filters"* | 7 Feb 2026, 4,537 w |
+
+Two more that carry a paragraph each, not a page: **the commodity illusion** (*"a lot of things that feel like a commodity or a product to the user are actually very weak and very immature behind the scenes"*) and **the agent as a user**.
+
+And the most quotable line in the whole corpus, which belongs on the front page or nowhere:
+
+> **"Anybody who spends a lot of money on tokens has an engineering problem. They are using explorer-type code and solutions in a commodity environment."** — 4 June 2026
+
+---
+
+## 5. The honesty constraint
+
+Every sibling site publishes a `/shipped/` page separating what exists from what is designed. This site inherits it, and here it has real work to do, because the corpus over-promises in a specific and documentable way:
+
+- **Zero of the 13 Mermaid map sources in the repo currently render.** Every one has the wrong code fence — bare ` ``` ` or ` ```wardley-beta ` instead of ` ```mermaid ` — and one `note` line is missing its required quotes. The **8 PNGs from 24 May are the only working visuals in the entire corpus.**
+- **The living evolution map was abandoned on 26 February 2026** — six months stale, against the corpus's own warning that *"a map that was accurate three months ago and hasn't been updated is worse than no map."*
+- **No doctrine assessment and no gameplay analysis was ever produced inside `__Send`**, despite both being specified as standing Cartographer responsibilities. (The one real doctrine assessment that exists is the pki.sgit.ai one — a different project.)
+- **31 of 33 `ROLE.md` files never mention Wardley.** The Explorer Cartographer's own 2,057-word role definition — the role the founding brief called *"central to this entire structure"* — mentions Wardley **zero times**.
+- **"Maps are graphs with position" has no implementation.** It is architecture; the reality doc lists it as PROPOSED.
+- **No `.owm` files, no map JSON, no map SVG** existed in the corpus before this pack.
+
+Say all of that plainly. The gap between the specification and the artefacts is itself an honest and interesting Wardley story — a map of the mapping practice would put most of it at Genesis.
+
+---
+
+## 6. What this pack ships that is new
+
+Not just analysis — four working artefacts:
+
+| Artefact | What it is |
+|---|---|
+| **`maps/` — 4 maps** | Original `wardley-beta` sources **and rendered SVGs**, produced in this session with Mermaid CLI 11.14.0 + the Playwright Chromium. M1 the tool ecosystem, M2 the two absences, M3 maps for agents, M4 the site's own value chain. These are the first rendered SVG Wardley maps in the estate. |
+| **The coordinate proof** | The `[visibility, evolution]` rule was **verified empirically, not repeated**: `[0.90, 0.10]` renders top-left, `[0.10, 0.90]` bottom-right. Method and numbers in `05__`. |
+| **The parse-rule finding** | The corpus knew hyphens broke names. This session established the **full rule and the fix**: `-`, `.` and `/` all break unquoted names; quoting fixes all three; **but the quotes must be used in the link lines too**. See `05__` §3. |
+| **`screenshots/`** | `capture.js` + a 30-target `targets.json` carrying per-target **licence and attribution strings**. See §7 for why it is a script and not PNGs. |
+
+---
+
+## 7. Why the screenshots are a script, not a folder of PNGs
+
+Job B asked for screenshots per resource. This pack ships the capture **kit** rather than the images, and the reason is worth stating plainly rather than hiding: the sandbox this pack was assembled in has an egress proxy that allows only package registries. Every third-party host returned `ERR_TUNNEL_CONNECTION_FAILED` — including `sgit.ai` itself. Nothing was captured, and I did not route around the block.
+
+So `screenshots/capture.js` does the job wherever the network is open — `npm i playwright && node capture.js`. It writes `captured.json` recording the HTTP status, page title, final URL after redirects, and a UTC timestamp **for every attempt including the failures**. Publish that file next to the images. Given §3 — an ecosystem whose own indexes point at dead tools — a screenshot with a provable capture date is worth considerably more than a screenshot without one.
+
+---
+
+## 8. The numbers
+
+| | |
+|---|---|
+| **Corpus** | 194 files in `__Send` mention Wardley · **33 concepts** catalogued · earliest 5 Feb 2026, latest 14 Aug 2026 |
+| **Existing maps** | 8 rendered PNGs · 13 Mermaid sources (**0 render as-is**) · 9 ASCII maps · 8 position tables · **0 SVG, 0 `.owm`, 0 map JSON** |
+| **Doctrine** | **41 records** on pki.sgit.ai — 15 strong, 11 partial, 6 weak, 9 no-basis |
+| **Job A** | **26 published items**, 2018–2025 · 13 YouTube recordings, all live · **2 blog posts** (the complete Wardley label on his blog) · silent in 2021, 2023, and effectively 2025–26 |
+| **Job B** | **34 industry resources** profiled · **11 dead or dying** · 4 licence regimes, **6 flagged as ambiguous** |
+| **Network** | 4 Wardley pages + 1 vault across `sgit.ai`, `pki`, `graphs` · 4 sibling sites mention Wardley **zero times** |
+| **This pack** | 9 documents · 4 original maps (source + SVG) · 30 screenshot targets · manifest of **73 rows** — 23 Tier-0, 37 Tier-1, 7 Tier-2, 6 do-not-publish; **98,008 words** of Tier-0+1 local source, every path verified at v0.33.62 |
+
+---
+
+## 9. Build order
+
+1. **Move the doctrine assessment.** `/doctrine/` — the 41 records, the JSON endpoint, the phase filter, the evidence-per-rating discipline. Leave a stub on pki.sgit.ai. This is the site's anchor asset and it already exists.
+2. **Fix the 13 broken map fences and render them.** Ship the SVGs. Use the pipeline in `05__` §4 — it is proven, and this pack's four maps are the proof.
+3. **`/resources/` — Job B.** 34 pages from `04__` and `sources__industry-resources.json`. Run `capture.js` first so every page opens with a dated screenshot. Lead with the **verified-in-August-2026** angle.
+4. **`/dinis/` — Job A.** The chronology from `03__`, embedding the 13 YouTube recordings. Then **archive the fragile ones** — the SlideShare deck is the only artefact of the Map Camp talk and it is behind a Cloudflare wall.
+5. **`/patterns/pst/` — the Explorer/Villager/Town Planner write-up.** The site's most original page. `02__` is the raw material; it has never been written up as a pattern anywhere.
+6. **`/method/`** — de-commoditisation, the custom-axis verdict, the broken middle, maps-as-graphs. Four opinionated pages.
+7. **`/agents/`** — the machine surface: the coordinate contract, the parse rules, the definitions endpoint, and the epistemic guardrail from `04__` (an agent placing components on the evolution axis is generating consensus-shaped output; it must surface placements as contestable claims, never findings).
+8. **`/shipped/`** — §5, in full, without softening.
+
+Publish the open questions and the tensions unresolved, per the house pattern. `08__` supplies both.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/00__README.md
+==============================================================================
+# wardley-maps.sgit.ai — brief pack
+
+**For:** the agent commissioned to build `wardley-maps.sgit.ai`
+**From:** Dinis Cruz, via the SG/Send Librarian
+**Version:** v0.33.62 · 23 August 2026
+**Licence:** CC BY 4.0 — **read `LICENSE.md` before copying anything.** This site sits inside a CC BY-SA ecosystem and that collision is the biggest trap in the build.
+
+---
+
+## What this is
+
+A research site for Wardley Mapping, consolidating **194 files of unpublished mapping thinking** in the `__Send` corpus with **26 published items** spanning 2018–2025 and **34 industry resources** verified in August 2026.
+
+Three jobs were commissioned and all three are here:
+
+1. **Consolidate** what exists across `__Send` and the `*.sgit.ai` network — `01__`, `02__`, `05__`, `06__`
+2. **Job A** — research Dinis's own published Wardley material — `03__`
+3. **Job B** — the best industry resources, a page each, with details, screenshots and links — `04__`
+
+---
+
+## Read in this order
+
+| File | Words | What it does |
+|---|---:|---|
+| **`00__BRIEF.md`** | 2.0k | **Start here.** The commission, two corrections to the premise, the thesis, the five original pages, the honesty constraint, the numbers, the build order |
+| **`02__pioneers-settlers-town-planners.md`** | 1.6k | **The page only this site can write** — Wardley's PST as three literal AI agent teams. Never written up anywhere |
+| `04__job-b__industry-resources.md` | 1.8k | Job B: the per-resource page template, the ranked top ten, the licence minefield, three start-here paths |
+| `03__job-a__dinis-published-material.md` | 1.5k | Job A: 26 items, the seven-year through-line, and what to archive before it disappears |
+| `05__maps-and-rendering.md` | 1.5k | The maps that exist, the coordinate contract **proven by rendering**, the parse rules, the working pipeline |
+| `01__concepts-index.md` | 2.8k | 33 concepts with canonical paths and dates, classified standard / extension / **original**, plus a six-altitude teaching order |
+| `06__site-architecture.md` | 1.1k | Page-by-page IA, the house pattern to copy, what moves vs what gets referenced |
+| `07__boundaries-and-licensing.md` | 1.3k | The CC BY / CC BY-SA collision, the do-not-publish list, screenshot ethics, house style |
+| `08__gaps-and-open-questions.md` | 1.4k | 7 write-fresh items, 8 commissioned-but-never-made artefacts, 8 open questions, 7 honest tensions |
+| `09__source-manifest.csv` | 73 rows | Every source, tiered 0–3, with proposed page and publishability. **Every path verified at v0.33.62** |
+| `sources__dinis-wardley-published.json` | 26 items | Job A data — dates with precision flags, video URLs, verification flags |
+| `sources__industry-resources.json` | 34 + 11 | Job B data — licence and **pre-written attribution string** per resource, plus 11 dead-or-dying entries |
+| `maps/` | 4 maps | Original `wardley-beta` sources **and rendered SVGs**. The estate's first rendered SVG maps |
+| `screenshots/` | script | `capture.js` + 30 targets carrying licence and attribution strings |
+| `LICENSE.md` | — | CC BY 4.0, and the four regimes it does not cover |
+
+---
+
+## The four things that will bite you
+
+**1. This site is CC BY inside a CC BY-SA ecosystem.** Quoting Simon Wardley's material is fine. *Adapting* it forces that page to be CC BY-SA 4.0. Keep everything as marked quotation and link-out. And note his blog is **3.0**, not 4.0 — different licence, different notice.
+
+**2. Nothing renders.** All 13 Mermaid map sources in the repo fail, for two mundane reasons (wrong code fence, one unquoted `note`). The 8 PNGs from 24 May are the only working visuals in the corpus. Fixing this is a day-one task and turns 13 dead code blocks into 13 maps.
+
+**3. The doctrine mapping is not in a vault** — it is static HTML at `pki.sgit.ai/packs/registry-mvp/doctrine.html`, 41 records, and it is the site's anchor asset. The vault with maps is a *different* property (`sgit.ai`, Strategy Maps) and has no doctrine content. Moving the doctrine page is build-order step 1.
+
+**4. There is no public bridge between the security-era and agentic-era work.** Job A found 26 published items ending in 2025 and 194 unpublished files starting in 2026, connected by **one clause in one co-authored article**. Do not write the site as though the connection already exists in public. Building it is the commission.
+
+---
+
+## About the screenshots
+
+Job B asked for screenshots. This pack ships the capture **kit**, not the images, and the reason is stated rather than hidden: the sandbox this pack was built in has an egress proxy that allows only package registries. Every third-party host returned `ERR_TUNNEL_CONNECTION_FAILED` — including `sgit.ai` itself. **Nothing was captured and nothing was routed around.**
+
+`screenshots/capture.js` does the job wherever the network is open:
+
+```bash
+cd screenshots
+npm i playwright && npx playwright install chromium
+node capture.js              # all 30 targets
+node capture.js 04 07 13     # a subset, by id prefix
+```
+
+It writes `captured.json` recording HTTP status, page title, final URL after redirects, and a UTC timestamp for **every attempt including failures**. Publish that file. In an ecosystem whose own canonical indexes point at five dead tools, a screenshot with a provable capture date is the whole point.
+
+---
+
+## About the maps
+
+Four original maps in `maps/`, source and rendered SVG, produced with Mermaid CLI 11.14.0 and the Playwright Chromium. They are drawn about the site's own subject matter so they can go straight onto pages: the tool ecosystem, the two absences (MapKeep and the doctrine tools), maps for agents, and the site as a value chain.
+
+**They are claims, not decorations.** Publish the `.mmd` next to the `.svg` so a reader can fork the argument in a pull request — which is `pki.sgit.ai`'s own standard: *"the maps live in the source and are reviewable in a diff."*
+
+Two findings came out of making them, both in `05__`: the `[visibility, evolution]` coordinate order **verified by rendering rather than repeated**, and the complete `wardley-beta` name-parsing rule — `-`, `.` and `/` all break unquoted names, quoting fixes all three, **and the quotes must be used in the link lines too**.
+
+---
+
+## House pattern
+
+Copy `pki.sgit.ai` — it is the only site in the network with all six house markers, and it already hosts the doctrine work. `/llms.txt` as the whole agent surface; `/documents/` with raw markdown as source of truth; `/admin/comms.html` numbering asks (N1…) and tasks (T1…); `/admin/versions.html`; `/about/participant.html`; `/shipped/` separating what exists from what is designed. Add the `/llms-full.txt` pki lacks, and add one thing no sibling has: **a link-verification job that publishes its run date**.
+
+Publish the build order unresolved, with the open questions and honest tensions visible. `08__` supplies both.
+
+---
+
+This file is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/01__concepts-index.md
+==============================================================================
+# 01 — Concepts Index
+
+Every distinct Wardley-related idea in the corpus, with its canonical source, its date, and — the column that matters most — whether it is **standard doctrine [S]**, an **extension [E]**, or an **original contribution [O]**.
+
+That classification is the site's editorial spine. Standard doctrine should be *linked, not restated* — Simon Wardley's book says it better and says it first, and restating CC BY-SA material creates a licence problem (see `07__`). Extensions and original contributions are what this site is for.
+
+**Counts:** 33 entries — **14 [O]**, **13 [E]**, **6 [S]**.
+
+Paths are relative to the `SGraph-AI__App__Send` repo root. Word counts are the containing file's, measured with `wc -w`, not the concept's.
+
+---
+
+## The concepts
+
+| ID | Concept | Dinis's own words (quoted) | Canonical file | Date | Words (file) | Maturity | Class |
+|---|---|---|---|---|---|---|---|
+| **W1** | Explorer / Villager / Town Planner — Wardley's PST renamed and made into three literal agent teams | "Simon Wardley identifies three team archetypes mapped to the evolution axis… Explorers / Villagers / Town Planners" and later, explicitly: *"(Explorer, Villager, and Town Planner map to Wardley's Pioneers, Settlers, and Town Planners.)"* | `team/humans/dinis_cruz/briefs/02/14/v0.3.2__briefs__wardley-maps-in-sgraph-project.md` | 14 Feb 2026 | 1,578 | mature | **[O]** — the naming, and the application to AI agents, is his |
+| **W2** | The "theft" / handover | "The key dynamic is what Wardley calls the **'theft'** — the villagers take (pinch) what the explorers have built and turn it into a product." | same as W1 | 14 Feb 2026 | 1,578 | mature | [S] |
+| **W3** | The SG/Send evolution map (13 components positioned) | "The components in the top group (encryption, upload/download, S3 backend, tokens) are ready for the Villager team to productise. The components in the bottom group are still being explored." | same as W1 | 14 Feb 2026 | 1,578 | mature | [S] applied |
+| **W4** | Cartographer as the role that makes mapping operational | "The Cartographer is the role that makes the Wardley Maps framework operational rather than theoretical. Without the Cartographer actively maintaining and updating the evolution map, the Explorer/Villager distinction becomes opinion rather than evidence." | same as W1 | 14 Feb 2026 | 1,578 | mature | **[O]** |
+| **W5** | A map is a graph with positional metadata | "**a Wardley Map is not a separate artifact from the graph. It is a graph with positional metadata.**… The graph is primary; the map is a projection… Map queries are graph queries with positional filters" | `team/roles/cartographer/REFERENCE__from-issues-fs.md` | 7 Feb 2026 | 4,537 | mature | **[O]** — the strongest architectural idea in the corpus |
+| **W6** | Configurable / alternative evolution axes (openness, automation, documentation, test coverage, graph connectivity) | "by treating the evolution axis as a configurable dimension rather than a fixed one, and by storing axis metadata in the graph alongside everything else" | `team/roles/cartographer/REFERENCE__from-issues-fs.md` | 7 Feb 2026 | 4,537 | developing | **[E]** |
+| **W6b** | Same idea restated as visibility / risk overlays | "in Wardley maps the evolution does not always need to be genesis, custom-built, product, commodity. You can have other axes: visibility from not-visible to fully-visible, or risk from not-understood to fully-accepted." | `team/humans/dinis_cruz/briefs/06/19/strategy-phase-and-shipping/v0.33.28__strategy-brief__sg-send-wardley-maps-productizing-commoditizing-permissions-explorer-phase.md` | 19 Jun 2026 | 2,236 | developing | [E] |
+| **W7** | **The custom-axis verdict, and the evolution-vs-maturity line** | "the evolution scale doesn't necessarily need to be Genesis, custom-built, product and commodity; you can go from air gap to file to API to event-driven."… "The practical rule: **relabel the axis when the thing genuinely evolves; use a maturity model when the thing merely improves.**" | `team/humans/dinis_cruz/briefs/07/28/mvp-and-field-demo/v0.33.53__strategy-brief__sg-send-wardley-map-of-the-airgapped-register-custom-evolution-axes-broken-middle-shape.md` | 28 Jul 2026 | 2,956 | mature | **[O]** — the sharpest methodological contribution in the corpus, with sources cited |
+| **W8** | **De-commoditisation / the attrition shield** | "**a thing can be commoditised at one phase of evolution while still being meaningfully custom-built at the next phase**… I am going to call this pattern **de-commoditisation**"; "The Wardley Map shows the commodity. The shield is what the map does not show. Both matter." | `team/humans/dinis_cruz/briefs/05/17/v0.27.55__article__de-commoditising-the-commodity (1).md` | 17 May 2026 | 2,947 | mature | **[O]** — explicitly framed as a gap in doctrine |
+| **W9** | Commoditise-to-enable (ILC applied) | "once you commoditise something, you enable other businesses to be built on top"; "when something is commoditised, a higher order of activities appears, and that is where the market opportunities are" | `team/humans/dinis_cruz/briefs/05/24/sg-send-thread/v0.27.60__strategy-brief__sg-send-wardley-maps-setup-and-mermaid-capability.md` | 24 May 2026 | 2,711 | mature | [S] |
+| **W10** | **The commodity illusion** | "what is interesting when you map like this is that you see a lot of things that feel like a commodity or a product to the user are actually very weak and very immature behind the scenes." | `team/humans/dinis_cruz/briefs/06/23/wardley-maps/v0.33.33__strategy-brief__sg-send-wardley-maps-brief-user-needs-first-before-after-agent-as-user-maturity.md` | 23 Jun 2026 | 1,834 | mature | **[E]** — a named reading of maps, not standard vocabulary |
+| **W11** | **The agent as a user** | "the agent is also a user… Execution is mature; safe authorization via an LLM is custom-built and immature; the LLM is commodity, but the uninjected, on-task safe decision is not" | same as W10; drawn in `…/v0.33.33__strategy-brief__sg-send-wardley-maps-first-pass-eight-maps-user-needs-before-after.md` | 23 Jun 2026 | 1,834 / 2,398 | developing | **[O]** |
+| **W12** | **The air gap as manual labour; the ends-evolved-middle-manual shape** | "**you cannot map a gap, because a gap has no evolution**"; "this will be a very interesting shape where you can have the top working quite efficiently, and then the middle bit those lines all the way to the left because they're manual… the ends are solved. the middle is people." | `team/humans/dinis_cruz/briefs/07/28/mvp-and-field-demo/v0.33.53__strategy-brief__sg-send-wardley-map-of-the-airgapped-register-custom-evolution-axes-broken-middle-shape.md` | 28 Jul 2026 | 2,956 | mature | **[O]** |
+| **W13** | Wardley-maps-as-Mermaid-code, and the `[visibility, evolution]` coordinate rule | "**Mermaid uses the OnlineWardleyMaps format `[visibility, evolution]`, which is the opposite of typical (x, y) notation.**… Getting this backwards puts every component in the wrong place, so it is the thing to check first." | `team/humans/dinis_cruz/briefs/05/24/sg-send-thread/v0.27.60__strategy-brief__sg-send-wardley-maps-setup-and-mermaid-capability.md` | 24 May 2026 | 2,711 | mature | **[E]** — tooling knowledge, verified by rendering |
+| **W13b** | The node-naming parse-error caveat (empirical) | "**component and anchor names that contain a hyphen, an ampersand, or a slash cause a parse error when those names are referenced in links or `evolve` statements.**… The robust fix is to keep component and anchor names to letters and spaces" | same as W13 | 24 May 2026 | 2,711 | mature | **[O]** — original empirical finding |
+| **W14** | **The lifecycle of a skill: Explorer → Product → Town Planner → absorbed** | "the lifecycle of a skill is to start as massive LLM, held together with string and gum, very expensive, lots of tokens, all the way to a product, all the way to code, and it almost becomes a commodity, eventually disappearing, because maybe it is absorbed by something else." | `team/humans/dinis_cruz/briefs/06/04/v0.32.3__strategy-brief__sg-send-skill-lifecycle-explorer-to-town-planner-english-to-code.md` | 4 Jun 2026 | 2,799 | mature | **[O]** |
+| **W15** | **High token spend is an engineering problem** | "**Anybody who spends a lot of money on tokens has an engineering problem. They are using explorer-type code and solutions in a commodity environment.**" | same as W14 | 4 Jun 2026 | 2,799 | mature | **[O]** — the most quotable line in the corpus |
+| **W15b** | English → code as the maturity mechanism; LLM-powered test harness | "the natural progression of a skill is to start in English and end up in code. As you refine the skill, you reduce the scope, you reduce the variability."; "the testing can be more in explorer mode, because the testing can have the subjectivity and power of an LLM" | same as W14 | 4 Jun 2026 | 2,799 | mature | **[O]** |
+| **W16** | **Explorer-phase discipline: defer Town-Planner artifacts** | "there is no point doing things that are typical Villager and Town Planner company maturity when you are still dealing with Explorer ambiguity. Do not spend time creating things that are pure hypothesis you just cannot know" | `team/humans/dinis_cruz/briefs/06/19/strategy-phase-and-shipping/v0.33.28__strategy-brief__sg-send-wardley-maps-productizing-commoditizing-permissions-explorer-phase.md` | 19 Jun 2026 | 2,236 | mature | **[E]** — PST applied to *the company itself*, not to teams |
+| **W17** | **Safe is not secure** | "there is a difference between safe and secure. Secure is just the security metrics. Safe is whether it is aligned with the risk appetite, within the threshold of risk the business or the person is willing to accept." | `team/humans/dinis_cruz/briefs/06/23/wardley-maps/v0.33.33__strategy-brief__sg-send-wardley-maps-brief-user-needs-first-before-after-agent-as-user-maturity.md` | 23 Jun 2026 | 1,834 | mature | **[O]** |
+| **W18** | **The vibe-coded MVP is the best brief; the three-team shipping workflow** | "the vibe coded MVP **is** the specification. It is more precise, more concrete, and more usable than any document the business stakeholder could have written." | `team/humans/dinis_cruz/briefs/05/11/v0.27.32__article__explorer-villager-town-planner-vibe-coding-workflow.md` | 12 May 2026 (YAML `date:`) | 2,413 | mature | **[O]** — and note it *inverts* the seniority: "This work is best suited to junior and mid-level engineers" (Villager) / "the most experienced engineers on the team" (Town Planner) |
+| **W19** | A working tool is already a commodity; switching drags the user back to Genesis | "once a tool works, it has become a commodity for its user, and asking them to switch asks them back to Genesis, which is why change is so hard." | `team/humans/dinis_cruz/briefs/06/07/v0.32.7__strategy-brief__sg-send-tool-replacement-strategy-compatible-commoditize-de-risk.md` | 7 Jun 2026 | 2,535 | developing | **[E]** |
+| **W20** | Vaults embody the Wardley flow | "the vaults are so powerful because they let us experiment wildly in a very controlled way, then bring them into the main codebase as the villagers take over, and then productise, including the town-planner team that makes it super solid." | `team/humans/dinis_cruz/briefs/06/19/strategy-phase-and-shipping/v0.33.28__strategy-brief__sg-send-need-to-ship-iterate-learn-ci-pipeline-wardley-flow-cost-constraint.md` | 19 Jun 2026 | 1,557 | developing | **[E]** |
+| **W21** | Doctrine assessment as a standing role responsibility | "The Cartographer's doctrine responsibility is to periodically evaluate the… ecosystem against these principles and produce a score or health assessment… The doctrine assessment is fractal" | `team/roles/cartographer/REFERENCE__from-issues-fs.md` | 7 Feb 2026 | 4,537 | sketch (never executed) | **[E]** |
+| **W22** | Gameplay identification (ILC, open, ecosystem, tower-and-moat, Red Queen, sensing engines) | "Most Wardley Mapping practitioners stop at the map. The Cartographer must go further: doctrine assessment gives strategic health checks; gameplay analysis identifies available moves. These are where maps become actionable." | `team/roles/cartographer/REFERENCE__from-issues-fs.md` | 7 Feb 2026 | 4,537 | developing | **[E]** |
+| **W23** | **A map is a falsifiable claim, not a picture** | "A Wardley map is a **claim**, not a picture: it asserts where each component sits on the evolution axis and is therefore arguable." | `team/humans/dinis_cruz/briefs/08/14/sgit-site-and-hub/v0.33.58__strategy-brief__sgit-topic-sections-catalogue-read-keys-yes-write-keys-never-frozen-vaults.md` | 14 Aug 2026 | 3,338 | developing | **[O]** |
+| **W24** | **Somebody has to be the villagers — NFRs as the sellable unit** | "the sweet spot is to find the economic value where it's cheaper for these companies to pay a third party to maintain what I call the non-functional requirements"; "**Demand for a specific skill is rising sharply while the mechanism that produces that skill is being dismantled**" | `team/humans/dinis_cruz/briefs/07/31/markets-and-field-demo/v0.33.54__strategy-brief__sg-send-somebody-has-to-be-the-villagers-maintaining-non-functional-requirements-scarce-asset.md` | 31 Jul 2026 | 3,059 | mature | **[O]** |
+| **W25** | The same skill differs by Wardley character | "a skill, the same skill for a town planner, is very different for an explorer, for a villager. It is all about context-specific, but now we can do this, and we can scale." | `team/humans/dinis_cruz/briefs/06/04/v0.32.3__strategy-brief__sg-send-skills-as-graph-capturing-how-business-works.md` | 4 Jun 2026 | 3,244 | developing | **[O]** |
+| **W25b** | Wardley "why now" for skills | "skills are a good example of the Wardley map's evolution scale, where a number of things evolve, new orders appear, implementations appear above. Skills could only be possible with the level of LLMs we have right now" | same as W25 | 4 Jun 2026 | 3,244 | developing | [E] |
+| **W26** | Map the control flows and the cost flows together | "cost and control flows, and cost flows. The graph is almost like the map of this, the Wardley map of this." | `team/humans/dinis_cruz/briefs/05/24/sg-sentinel-batch2/v0.27.60__arch-brief__sg-sentinel-cost-attribution-accountant-agent.md` | 24 May 2026 | 2,641 | sketch | **[E]** |
+| **W27** | Every division has its own map and its own maturity | "companies are made of multiple companies, multiple divisions, each with a different focus, different evolutionary scales, different Wardley maps, different maturities. We need to take that into account." | `team/humans/dinis_cruz/briefs/06/18/agentic-permissions/v0.33.40__strategy-brief__graphs-of-graphs-ontology-of-ontologies-permissions-mapping-reality-not-complexity.md` | 18 Jun 2026 | 1,568 | sketch | **[E]** |
+| **W28** | **Paired before/after maps as the unit of argument** | "Each map is drawn twice. The reality map shows how immature the path is today… The with-our-service map shows the same value chain once our service supplies the missing data… **The distance between the two is the case for the service.**" | `team/humans/dinis_cruz/briefs/06/23/wardley-maps/v0.33.33__strategy-brief__sg-send-wardley-maps-brief-user-needs-first-before-after-agent-as-user-maturity.md` | 23 Jun 2026 | 1,834 | mature | **[E]** |
+| **W29** | User-needs-first doctrine (his statement of it) | "the thing about Wardley maps that is always important is to start with the user needs, so we start with what they actually want" | same as W28 | 23 Jun 2026 | 1,834 | mature | [S] |
+| **W30** | Push the value chain down / commoditise the experience | "it takes the parts that would otherwise be custom-built and bespoke… and commoditises them into reusable primitives, so the only thing left to be custom is the top line, the experience" | `team/humans/dinis_cruz/briefs/06/03/v0.31.12__strategy-brief__sg-send-vault-as-platform-of-primitives.md` | 3 Jun 2026 | 2,343 | developing | **[E]** |
+| **W31** | Honest mapping / do not overclaim | "**even in the tracked (free) mode, the data is still encrypted; we still do not have access to the full data, so the privacy properties still hold.** The maps should not overclaim." and "Is there a map that shows us badly? Worth drawing, as the test of whether these are analysis or marketing" | `…/v0.27.60__strategy-brief__sg-send-wardley-maps-setup-and-mermaid-capability.md` and `…/v0.33.53__strategy-brief__sg-send-wardley-map-of-the-airgapped-register…md` | 24 May / 28 Jul 2026 | 2,711 / 2,956 | mature | **[O]** |
+
+
+---
+
+## Teaching order — six altitudes
+
+The corpus is dense at the top and thin at the bottom. A reader arriving cold has nowhere to start, and the primer is only 846 words. Build the ladder in this order; each rung should be a page.
+
+**Altitude 1 — What a map is.** Anchor, position, evolution, the four stages. This is [S] and belongs to Wardley. **Link out to the book and to Wardley Mapping 101; do not rewrite it.** One paragraph, then a rendered example.
+
+**Altitude 2 — How to read a map.** W29 (user needs first), W28 (paired before/after maps — *"The distance between the two is the case for the service"*), W10 (the commodity illusion). This is where the site earns its keep for a newcomer: three named reading techniques, each with a rendered map.
+
+**Altitude 3 — How to write one that survives review.** W13 (the `[visibility, evolution]` coordinate contract), W13b (the parse rules), W23 (a map is a claim, not a picture), W31 (honest mapping — *"Is there a map that shows us badly? Worth drawing, as the test of whether these are analysis or marketing"*). Pair with `05__`.
+
+**Altitude 4 — Where doctrine bends.** W7 (custom axes and the evolution-vs-maturity rule), W6/W6b (alternative axes), W8 (de-commoditisation), W12 (you cannot map a gap). Four opinionated pages. This is the site's centre of gravity.
+
+**Altitude 5 — Maps as organisation.** W1 (Explorer/Villager/Town Planner), W2 (the theft), W14 (the skill lifecycle), W16 (explorer-phase discipline), W18 (the vibe-coded MVP as the brief, with its seniority inversion), W24 (somebody has to be the villagers), W25 (the same skill differs by character). See `02__`.
+
+**Altitude 6 — Maps as data.** W5 (maps are graphs with position), W21 (doctrine as a standing responsibility), W22 (gameplay), W26 (cost and control flows), W27 (every division its own map). This is the most architecturally ambitious layer and the least implemented — label it as design, not as shipped.
+
+---
+
+## Two vocabulary problems to fix before writing anything
+
+**1. Spelling drift.** The corpus uses *commoditise / commoditize / commoditising* and *productise / productize* interchangeably, sometimes in the same document. Pick one — **-ise**, to match the rest of the estate — and add a glossary line noting the -ize spellings are the same word.
+
+**2. Name drift.** *Explorer* and *Pioneer* are used for the same thing; so are *Villager* and *Settler*. The rename is stated outright **exactly once in the entire corpus**, parenthetically, in a brief about something else: *"(Explorer, Villager, and Town Planner map to Wardley's Pioneers, Settlers, and Town Planners.)"* The word *Settler* appears **once**, ever. The site must state the mapping in its own vocabulary, on its own page, with the citation to `blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html` — which the corpus carries in only one place.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/02__pioneers-settlers-town-planners.md
+==============================================================================
+# 02 — Explorer / Villager / Town Planner: PST as three literal agent teams
+
+**This is the page only this site can write.** Simon Wardley's Pioneers–Settlers–Town Planners model is well known as an *organisational* pattern for human teams. What exists in `__Send` is different: PST used as the **architecture of an AI agent system** — three separate directory trees, three session contracts, three evolution-stage mandates, and a documented handover between them.
+
+It has never been written up. Not on any site, not in `library/guides/`, not anywhere. It exists as `.claude/` configuration plus one February brief. Writing it up is the highest-value original page available.
+
+---
+
+## 1. What actually exists on disk
+
+```
+.claude/CLAUDE.md              .claude/explorer/CLAUDE.md      (816 words)
+                               .claude/villager/CLAUDE.md      (1,836 words)
+                               .claude/town-planner/CLAUDE.md  (942 words)
+
+team/roles/              <-- THE EXPLORER TEAM  (note: no "explorer/" prefix)
+team/villager/roles/
+team/town-planner/roles/
+```
+
+**There is no `team/explorer/` directory.** The Explorer team is the *unprefixed default* — `team/roles/` — confirmed by `.claude/CLAUDE.md`, which annotates `roles/` as `# Explorer team role-based review documents`.
+
+That asymmetry is not an accident worth apologising for; it is a design statement worth surfacing. **The Explorer is the origin state.** Villager and Town Planner are named departures from it. Everything starts unprefixed and at Genesis, and acquiring a prefix is what evolution looks like in a filesystem.
+
+---
+
+## 2. The operative table
+
+From `.claude/CLAUDE.md`, verbatim — the most authoritative statement of the mapping:
+
+| Team | Focus | Wardley Stage | Output |
+|---|---|---|---|
+| **Explorer** | Discover, experiment, build first versions | Genesis → Custom-Built | Minor versions (IFD) |
+| **Villager** | Stabilise, harden, deploy to production | Custom-Built → Product | Major versions (IFD releases) |
+| **Town Planner** | Transmute technical output into investment and business value | Product → Commodity | Investor materials, business strategy |
+
+Preceded by: *"As of v0.5.8, the project operates with **three teams** based on Wardley Maps methodology"*.
+
+Each team's own `CLAUDE.md` restates its stage in the second person — *"You operate at the **Genesis → Custom-Built** stages of the Wardley evolution axis"* — which is the mechanism that makes this more than a diagram. **The agent is told which stage it is standing on before it does anything.**
+
+Note the Town Planner's twist: its `CLAUDE.md` says *"**Product → Commodity** stages… but with a twist"*. The twist is that its output is not more commoditised *code* — it is investor materials. The Town Planner commoditises **the story**, not the software. That is a genuine deviation from Wardley's model and the page should say so.
+
+---
+
+## 3. Which roles sit in which population
+
+From the founding brief (14 Feb 2026), verbatim headings and rationales:
+
+- **Primarily Explorer** — Architect (*"Designing new components, experimenting with approaches"*), Designer, Dev, Journalist, Ambassador, Advocate, Sherpa
+- **Primarily Villager** — DevOps (*"Deployment, infrastructure, performance, monitoring"*), QA, GRC, DPO
+- **Across Both** — Conductor (*"Orchestrates both teams, manages the handover"*), CISO, AppSec, Librarian, Historian, Cartographer (*"Maps the system at both stages"*)
+
+**On-disk populations today:**
+
+| Team | Directory | Count | Roles |
+|---|---|---:|---|
+| Explorer | `team/roles/` | **17** | advocate, alchemist, ambassador, appsec, architect, cartographer, conductor, designer, dev, devops, dpo, grc, historian, journalist, librarian, qa, sherpa |
+| Villager | `team/villager/roles/` | **17** | as above, minus alchemist, **plus `translator`** |
+| Town Planner | `team/town-planner/roles/` | **4** | accountant, alchemist, designer, librarian |
+
+Two things here are worth a paragraph each on the page.
+
+**The Villager-exclusive `translator`.** `.claude/villager/CLAUDE.md` describes it as *"**Villager-exclusive**… the first role that exists **only** in the Villager team"*. This is Wardley-consistent and rather elegant: translation is a productisation activity. Nothing at Genesis needs translating, because nothing at Genesis has a second audience yet.
+
+**The Town Planner team was created a week after being deferred.** The founding brief is explicit: *"❌ **Town Planners Team** — not yet… Attempting to create the Town Planners team now would be premature. We don't have anything at commodity stage yet."* It was created on 20–21 Feb 2026, with the Alchemist as its founding role — **earlier than the brief's own stated criterion, and for a business rather than a technical reason.** Publish that. A documented deviation from your own plan, with the date and the reason, is exactly the kind of evidence the doctrine assessment style demands.
+
+> **Do not use the investor one-pager's counts** (Explorer 15 / Villager 16 / Town Planner 3). They disagree with the filesystem, and that file is on the do-not-publish list anyway.
+
+---
+
+## 4. The finding that makes this page honest
+
+**Of 33 `ROLE.md` files in the repo, exactly two mention Wardley.**
+
+- `team/villager/roles/cartographer/ROLE.md` (682 words, 6 mentions) — genuinely operationalised. Core mission: *"Map the production topology, deployment architecture, and evolution progress — track components as they move from custom-built to product stage on the Wardley evolution axis."* It carries a quality gate reading *"Every component has a Wardley evolution stage label"* and a workflow step *"Flag components approaching commodity stage (candidate for future Town Planners team)"*.
+- `team/town-planner/roles/accountant/ROLE.md` (385 words, 1 passing mention).
+
+**`team/roles/cartographer/ROLE.md` — the Explorer Cartographer, 2,057 words, the longest cartographer document in the repo — mentions Wardley zero times.** Its five core principles are about ASCII art, layering and dependency graphs. Its effectiveness table counts unmapped components and undiagrammed data flows. No evolution axis, no doctrine, no gameplay.
+
+The founding brief called the Cartographer *"central to this entire structure"*. Its role definition is a document in which the structure does not appear. Every other Explorer `ROLE.md` — architect (1,974 w), conductor (1,803 w), librarian (1,961 w) — is likewise silent.
+
+**So: the teams know their stage; the roles inside them do not.** The mandate lives in the session contract and never reaches the role definition. That is a real, specific, fixable defect, and naming it is what separates a pattern write-up from a brochure.
+
+---
+
+## 5. Asserted vs implemented
+
+| Claim | Status |
+|---|---|
+| Three teams exist as directories | **Implemented** |
+| Three distinct session contracts | **Implemented** — 816 / 1,836 / 942 words |
+| Each team bound to a Wardley stage | **Asserted** consistently in four places |
+| The seven separation rules (*"Villagers do NOT add features"*, *"Explorers do NOT deploy to production"*, distinct environments) | **Asserted** in `.claude/CLAUDE.md`; environment separation was still open decision AD-1 as of 14 Feb 2026 |
+| Individual roles know their population | **Not implemented** — 31 of 33 silent |
+| The Cartographer maintains a living evolution map | **Partially, then abandoned.** Three real maps, all 26 Feb 2026. The `reviews/` tree ends 11 Mar 2026. |
+| Handover briefs at `team/roles/explorer/handovers/` | **Not implemented** — the path named in `.claude/explorer/CLAUDE.md` does not exist |
+| Doctrine assessments, gameplay analyses | **Not implemented** |
+| Written up as a reusable pattern | **No.** `library/guides/agentic-setup/` has five guides; none mentions Explorer, Villager or Town Planner. |
+
+The Cartographer's own REFERENCE supplies the verdict on row 6: *"a map that was accurate three months ago and hasn't been updated is worse than no map."* It is now six months.
+
+---
+
+## 6. The two ideas that make the pattern more than a rename
+
+**The theft.** *"The key dynamic is what Wardley calls the **'theft'** — the villagers take (pinch) what the explorers have built and turn it into a product."* [S] — but the agentic version is new: in a human org the theft is a political event needing management. Between agent teams it is a **file move plus a version bump**, and it can be logged. That is a genuine advantage of doing PST with agents, and the page should claim it.
+
+**PST applied to artefacts, not people.** This is the strongest extension in the corpus (W14, 4 Jun 2026):
+
+> *"the lifecycle of a skill is to start as massive LLM, held together with string and gum, very expensive, lots of tokens, all the way to a product, all the way to code, and it almost becomes a commodity, eventually disappearing, because maybe it is absorbed by something else."*
+
+with the mechanism — *"the natural progression of a skill is to start in English and end up in code. As you refine the skill, you reduce the scope, you reduce the variability"* — and the consequence, which is the corpus's best line:
+
+> *"**Anybody who spends a lot of money on tokens has an engineering problem. They are using explorer-type code and solutions in a commodity environment.**"*
+
+That last sentence turns a strategy framework into an **operational cost diagnostic**. It is the single most useful thing this site can hand a working engineer, and it is currently unpublished.
+
+Related, and worth its own section: **the same skill differs by character** — *"a skill, the same skill for a town planner, is very different for an explorer, for a villager"* — and **the seniority inversion** in the vibe-coding article, which assigns Villager work to *"junior and mid-level engineers"* and Town Planner work to *"the most experienced engineers on the team"*, inverting the usual assumption that the exciting new thing goes to the seniors.
+
+---
+
+## 7. How to write the page
+
+1. **Lead with the filesystem**, not the theory. Three directory trees is a more arresting opening than a restatement of PST, and it is the part that is new.
+2. **Cite Wardley properly and early** — `blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html`, **CC BY-SA 3.0, not 4.0** (see `07__`). The corpus carries this citation in exactly one file; the site must carry it everywhere.
+3. **State the rename in one sentence** and never drift again: Explorer = Pioneer, Villager = Settler, Town Planner = Town Planner.
+4. **Publish §4 and §5 unsoftened.** A pattern write-up that admits 31 of 33 roles never got the memo is credible. One that doesn't, isn't.
+5. **Draw the map of the pattern itself.** Where do the three teams sit on an evolution axis? Where does `translator` sit? It does not exist yet and it is an obvious, cheap, original artefact.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/03__job-a__dinis-published-material.md
+==============================================================================
+# 03 — Job A: everything Dinis Cruz has published on Wardley Maps
+
+> *"do a research on other materials (videos, infographics, docs) that I have published around wardley maps"*
+
+**26 items, 2018–2025.** Full structured data in `sources__dinis-wardley-published.json` — id, date, date-precision, type, URL, role, collaborators, video URL, verification flag, and a note per item. **22 of 26 verified by fetching; 4 could not be fetched** (SlideShare and LinkedIn block automated retrieval, and I did not route around them).
+
+This should become `/dinis/` on the new site: a chronology, the videos embedded, and — the part that matters — the fragile items archived before they disappear.
+
+---
+
+## 1. The shape of it
+
+| Period | Output | Character |
+|---|---|---|
+| **2018** | 6 items | Founding. Two blog posts, three OSS sessions, the Medium seed piece. **The only year he organised a mapping track himself.** |
+| **2019** | 3 items | Institutional. The Wardley track runs without him organising it; mapping appears in an OWASP talk and a job ad. |
+| **2020** | 7 items | **The peak.** Five OSS sessions with Simon Wardley in the room, plus the Map Camp talk and its deck. |
+| **2021** | **0** | Silence. |
+| **2022** | 3 items | The reflective phase — including the only solo, fully-authored piece. |
+| **2023** | **0** | Silence. |
+| **2024** | 4 items | Two panels, two LinkedIn **shares of other people's work**. |
+| **2025** | 1 item | One clause in one co-authored article. |
+| **2026** | **0 published** | ~194 files of unpublished Wardley thinking in `__Send`. |
+
+**The headline for the site is that last row.** The public record stops in 2022 and the private record starts in 2026. There is no public bridge between them.
+
+---
+
+## 2. The through-line — four claims, held for seven years
+
+**(a) 2018: diagrams must become maps.** The Medium post of 7 Oct 2018 is the intellectual seed and the clearest statement of the whole position:
+
+> *"in most development teams, we are still at the 'Why do we need up-to-date diagrams?' phase. Where the question that we should be looking at is 'How can we make our diagrams every better and more valuable?' And the answer is Maps, which are diagrams with the following properties - are visual - have context (i.e. specific to purpose / perspective) - are mode of components - have at least one anchor - have a position (relative to anchor) - have a consistency of movement"*
+
+with the complaint that ordinary architecture diagrams *"miss the key mapping properties of: anchor, position (relative to anchor) and consistency of movement."*
+
+**(b) 2018: maps should be generated, not drawn.** *Creating Wardley Maps using Lambda Functions* opens on the frustration of not being able to *"programatically create the maps (ideally via [a] DSL or something like DOT language)"* and ends with a map generated inside a Lambda from programmatic values. **This is the same instinct that, in May 2026, becomes Mermaid `wardley-beta` in git** — eight years apart, one idea. That is the site's best narrative spine, and the fact that the 2018 code is now a 404 while the 2026 version renders is the story's ending.
+
+**(c) 2018–2020: context is the security asset.** The 2018 session deliberately mapped a cup of tea *and* an AWS attack in the same hour, and the outcomes page records the argument over *"whether the tea picker was visible"* as the teaching moment — position is contested, and that's the point. It becomes a title in Oct 2020: **"Why context is your crown jewels."** In security, "crown jewels" means data assets; he inverts it — the contextual understanding of your value chain is the jewel.
+
+**(d) 2020–2022: mapping is the missing half of threat modelling.** Stated flatly in the Mar 2022 session abstract: *"Wardley Maps could be the missing piece of the puzzle when doing Threat Models."*
+
+**And the hinge into AI (2025):**
+
+> *"MCP represents the **commoditization of LLM-to-tool interfaces**, which in turn enables higher-level constructs and rapid innovation (a concept noted in Wardley Maps' **Innovate-Leverage-Commoditize** cycle). We are currently in the **'Genesis and Custom Build' phase** of agents using MCP…"*
+
+One clause, co-authored, five years after the last substantive output. **Do not write the site as though a public position on agentic mapping already exists.** It doesn't. Creating it is the commission.
+
+---
+
+## 3. The direct ancestor worth building a page on
+
+**16 June 2020 — "Team Topologies & PST & Squads & Tribes"**, with Simon Wardley, Tony Richards and Luke Robbertse. Video: `youtube.com/watch?v=YKHPUZJMkUs`. Materials included a PDF, *Cell Structure for Organisations v2.5*.
+
+Six years later, `__Send` runs three agent teams named Explorer, Villager and Town Planner. **The 2026 pattern in `02__` has a documented 2020 origin, with Wardley himself in the conversation.** Put the two side by side on one page. That is the single most satisfying connection in the whole research, and nobody has ever drawn it.
+
+Supporting evidence from the same period: the Dec 2019 hiring post requires candidates to build and present a Wardley Map — *"about an industry, about you or even about a cup of coffee… we also want to see the candidate's experience of creating that map, the thought process and the learning experience"* — and lists Wardley alongside Spotify Squads, Team Topologies and Cynefin. The cup-of-coffee motif carries straight from the 2018 cup of tea.
+
+---
+
+## 4. Claims that exist in exactly one place
+
+Flag these on the page. Each is load-bearing and single-sourced:
+
+| Claim | Only source | Risk |
+|---|---|---|
+| The "crown jewels" thesis itself | SlideShare deck 238855895 | **The deck's contents are unread.** The title and a third-party agenda listing are all that survives. This is the biggest hole in the record. |
+| *"one of the most innovative and powerful frameworks that has emerged in the last decade"* | OSS session page, Jul 2022 | Site could go offline |
+| *"Wardley Maps could be the missing piece of the puzzle when doing Threat Models"* | OSS session page, Mar 2022 | Same |
+| The Lambda map generator | Dec 2018 blog post | **The repo is already 404.** Only the prose description survives. |
+
+---
+
+## 5. Archive before you publish — priority order
+
+The site should not link to fragile things without mirroring them. In order:
+
+1. **The SlideShare deck.** The only artefact of the Map Camp talk. Export to PDF from a real browser and mirror it. Do the same for the OSS 2018 outcomes deck and Steve Purkis's *"What do Wardley Maps mean to me"* from the same Map Camp.
+2. **The year-subdomains** — `2018.`, `2019.`, `2020.open-security-summit.org`. These are separate deployments holding participant lists, outcomes and session notes the current site lacks, and the canonical index openly says *"this list of events and sessions is not complete, we are still in the process of importing."* **The 2018 Maps and Graphs track — the only one Dinis organised — has no presence on the current site at all.**
+3. **The two LinkedIn posts.** Unfetchable, unarchivable, deletable, and the only evidence of 2024 activity. Capture by hand. And label them accurately: **both are shares of other people's work, not original writing.**
+4. **The 13 YouTube recordings.** All resolved live, all embeddable, all on one third-party channel. Ten are Dinis sessions (ids in the JSON); three more are the wider track — *Wardley Maps First Aid* (Petra Vukmirovic, `dQdQS4TaQ7U`), *Wardley Maps and services model at Glasswall* (Steve Purkis, `GS8Vndr-B4A`), *Maturity Mapping* (Chris McDermott, `ytYT8nhC5RQ`). Note several OSS pages embed `youtube-nocookie.com`.
+5. **The two blog posts.** The Blogger feed API confirms the `Wardley_Maps` label holds **exactly two entries** — that label *is* the complete list of his Wardley blogging. Mirror both in full.
+6. **Dying links inside the OSS pages themselves** — heysummit registration (now "This event is not live yet"), Zoom links with passwords in the URL, a `join.slack.com` invite, and **Google Slides `/e/2PACX-…/embed` published-deck links** that break the instant the owner unpublishes. Export those decks to PDF.
+
+---
+
+## 6. Three things not to get wrong
+
+1. **The two LinkedIn items are shares.** Presenting them as authored posts would be a straightforward misattribution.
+2. **Mini-summit dates are month-precision only.** OSS session pages carry a weekday but no date, and every mini-summit index page renders a **stale schedule table** — Mar 2022, Jul 2022 and Sep 2024 all return the identical "Monday 9th – Friday 13th" columns, which actually match Dec 2024. Items A12, A16–A19, A22, A23 are month+year+weekday only. **Do not synthesise exact dates.** The JSON carries a `date_precision` field for exactly this.
+3. **A26 is unconfirmed.** The video *"Wardley Maps in Cyber Security - Panel"* (`l59LK8246-s`) surfaces on searches for his name, but no session page was found and his participation is not established. Leave it out or mark it clearly.
+
+Two smaller traps: **"Wardley Maps First Aid" is dated 5 June 2020** by its YouTube title despite living under a `/may/` URL path — the 2020 summit slipped from May to June and the URLs never moved. And the `community.wardleymaps.com` crosspost of the Gen-Z templates post renders as **27/02/2024**, which is a Discourse migration artefact, not a republication.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/04__job-b__industry-resources.md
+==============================================================================
+# 04 — Job B: the industry resources, and how to build a page for each
+
+> *"find the best industry resources about it, and per resource create a page with the details, screenshots and links to those resources"*
+
+**34 resources profiled + 11 dead-or-dying entries.** All structured data is in `sources__industry-resources.json` — category, URL, type, maintainer, start date, **status as of August 2026**, **licence**, what it is, why it matters, limitations, best link, screenshot target, and the **exact attribution string** to use.
+
+`screenshots/targets.json` carries 30 capture targets with the same licence and attribution strings attached, so the screenshot and its credit line can never drift apart.
+
+---
+
+## 1. The angle that makes these pages worth writing
+
+Not "here are some links." **"Here is every link, verified on a stated date, with what is actually dead."**
+
+The community's own canonical indexes are wrong in August 2026:
+
+| Dead thing | Still listed as live by |
+|---|---|
+| **MapKeep** (ceased 30 May 2026 — the only real-time collaborative tool) | awesome-wardley-maps · Wikipedia · **Simon Wardley's own resources page** |
+| **MapScript** | awesome-wardley-maps · Wikipedia |
+| **Every doctrine assessment tool** (`doctrine.wardleymaps.com` + Stach's) | awesome-wardley-maps |
+| **The Map Camp Slack invite** (404) | awesome-wardley-maps · `map-camp.com/_pages/slack/` |
+| **The Leading Edge Forum course** (404) | awesome-wardley-maps · Courses section |
+
+And two Map Camp domains actively contradict each other: **`map-camp.com`** stops at Sept 2024 and advertises the dead Slack invite; **`mapcamp.co.uk`** carries the current position — Map Camp 2027 and a workshop on **12 November 2026**. A visitor landing on the `.com` will reasonably conclude the conference is dead. **Always link `mapcamp.co.uk`.**
+
+Every resource page should therefore carry a **verification stamp** — `Verified 2026-08-23 · HTTP 200 · captured.json` — sourced from the file `capture.js` writes. That single design decision is the site's whole competitive position in this category.
+
+**One live opportunity falls straight out of this:** there is currently **no working doctrine assessment tool anywhere in the ecosystem**, and `pki.sgit.ai` has a working 41-record doctrine assessment sitting inside a PKI pack. Moving it here (build order step 1) fills a real, named gap.
+
+---
+
+## 2. The page template
+
+Every resource page uses this shape. Nine fields, all of them already in the JSON.
+
+```
+/resources/<slug>/
+
+  <Name>                                  [category badge] [status badge]
+  ─────────────────────────────────────────────────────────────────────
+  [screenshot — screenshots/<id>.png, with the capture date beneath it]
+
+  What it is           4–6 sentences of substance, not a paraphrase of the title
+  Why it matters       what it is uniquely best for
+  Limitations          stated plainly; a page with no limitations section is marketing
+  Maintainer           person or org, and whether they are still active
+  Started              first published
+  Status               Aug 2026: actively maintained / dormant / archived / DEAD
+  Licence              exact, and what it permits — see §4
+  Best single link     the one URL to send someone
+  ─────────────────────────────────────────────────────────────────────
+  Verified 2026-08-23 · HTTP 200 · <attribution string>
+```
+
+**Two rules for the template.** The status badge is not decoration — it is the reason to visit. And the **attribution string is not optional** for anything CC BY-SA: it is a licence condition, and it is pre-written per resource in the JSON so nobody has to guess.
+
+---
+
+## 3. Ranked top ten
+
+If a reader looks at ten things, these ten, in this order:
+
+1. **Wardley Maps, Ch.1 — On Being Lost** — `medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec`. The primary source, and the chapter that establishes *why* before *how*. The CC BY-SA 4.0 licence on it is what makes the whole ecosystem exist.
+2. **Learn Wardley Mapping** — `learnwardleymapping.com`. The pedagogy the book lacks. Ben Mosior / Hired Thought. The free reference alone, especially the four-phase doctrine grid, is the fastest route from confusion to competence.
+3. **Crossing the River by Feeling the Stones** — `infoq.com/presentations/stuational-awareness/`. 48 free minutes of Wardley doing the thing. The highest-conversion artefact in the list.
+4. **OnlineWardleyMaps + its DSL reference** — `docs.onlinewardleymaps.com/docs/dsl-reference/`. You do not understand mapping until you have drawn one. Also the format standard the whole ecosystem targets. MIT.
+5. **awesome-wardley-maps** — `list.wardleymaps.com`. The community index, and **the only major resource under CC0** — so also the only one you can freely reuse as a base. (Rank it here for discovery, and correct its five dead entries on your own page.)
+6. **Wardley Mapping 101** — `wardleymaps.com/guides/wardley-mapping-101`. The best free 15-minute end-to-end worked example, one sustained case study.
+7. **What do Wardley maps really map? A settler writes** — Matt Edgar, 2017. **Read the strongest objection early**, before over-committing. The consensus-vs-evolution argument will change how you use the technique.
+8. **Wardley Maps in Mermaid (`wardley-beta`)** — `mermaid.js.org/syntax/wardley.html`. The most consequential recent development: maps in git, in pull requests, in documentation, with no tool. See `05__`.
+9. **Simon Wardley's map repository** — `github.com/swardley/WARDLEY-MAP-REPOSITORY`, best browsed via the rendered Mermaid mirror. **147 real maps across 22 industries.** Twenty of these teach more than two more chapters. ⚠️ licence flagged — link, do not mirror.
+10. **Where the map ends** — Danny Buerkli. The four structural limitations, stated fairly. The thing that stops mapping becoming a religion.
+
+---
+
+## 4. The licence problem — read this before copying anything
+
+**The Wardley ecosystem is CC BY-SA. This site is CC BY. Those do not mix cleanly.**
+
+ShareAlike is viral: publish an **adaptation** of CC BY-SA material and that page must itself be CC BY-SA 4.0, not CC BY 4.0. Quoting and linking are fine; adapting is what binds you.
+
+> **The practical rule for the whole site: keep CC BY-SA material as clearly-marked quotation and link-out, never as adaptation.** Then every page stays CC BY 4.0 and the estate's licence stays uniform. `07__` has the full treatment.
+
+Four regimes, and six things flagged:
+
+| Regime | Examples | What you may do |
+|---|---|---|
+| **CC0** | awesome-wardley-maps | Anything. No attribution required. The best base for your own list. |
+| **CC BY-SA 4.0** | the book, all compiled editions, Learn Wardley Mapping's free reference, the Mapping Canvas, wardleymaps.com, Wikipedia | Quote and screenshot with attribution. **Adapt only if you accept CC BY-SA on that page.** |
+| **CC BY-SA 3.0** ⚠️ | `blog.gardeviance.org` — Simon's blog | **Not 4.0. Keep the notice separate; do not merge the two.** |
+| **MIT / AGPL** | OWM, Mermaid, wardleyToGo, cli-owm, ArcKit (MIT) · Obsidian plugin, Tranquil's Map (**AGPL-3.0 — network clause**) | Retain the notice. AGPL's network clause matters if you ever embed one in a service. |
+| **All rights reserved** | LWM's paid course, InfoQ, YouTube, GCATI, Hudson's book, The Value Flywheel Effect, Xebia | Brief quotation and a page screenshot for identification. **No re-hosting, no clipping, no reproducing their diagrams.** |
+
+**🚩 Six flagged — link only until resolved:**
+
+- **`swardley/WARDLEY-MAP-REPOSITORY`** — README says CC BY-SA, the GitHub licence field says **GPL-3.0**. Contradictory. **Do not mirror.** (Craddock's mirror splits it: content CC BY-SA 4.0, code GPL-3.0.)
+- **WardleyPedia** — no licence stated. Do not assume the MediaWiki default.
+- **Matt Edgar's critique** — no statement, assume ARR. **The highest-value critique with the least clear rights.** Quote briefly, link out.
+- **Open Security Summit session pages** — no licence stated, and this includes Dinis's own sessions.
+- **Miro / Figma / draw.io templates** — mostly unstated and varying. Assume nothing; check per template.
+- **Discord and forum content** — personal messages. **Never quote a member without consent.**
+
+---
+
+## 5. Three "start here" paths
+
+The site should ship these as three routes through `/resources/`, not one list.
+
+**Newcomer** → Wardley Mapping 101 (15 min) → *Crossing the River* (48 min) → **draw one** in OnlineWardleyMaps using the Mapping Canvas as process, mapping *something you already understand deeply — not your company* → LWM's free reference → the doctrine grid, self-assessed against Phase 1 → book chapters 1–6 → **the Edgar critique, before you evangelise** → Discord via mapcamp.co.uk, and **12 Nov 2026** in the diary.
+
+**Security practitioner** → Wardley Mapping 101 (don't skip it because you're senior) → **Xebia's threat-modelling method** (map first, mark team boundaries as bias hotspots, ask what can be *deleted*, then STRIDE the areas the map flagged) → the OSS *Threat Models and Wardley Maps* session → Mario Platt's SABSA webinar → ***Where the map ends*, which matters most for you**: two of its four limitations are directly disabling in security — components only evolve under competitive pressure (much of internal security faces none), and you cannot map what you cannot see (which is definitionally the threat that gets you) → doctrine Phase 1, which reads as a security maturity model with the serial numbers filed off → put maps in git with Mermaid so they sit next to ADRs and get reviewed in PRs.
+
+**An agent** → this is `/agents/`, and it is the path the site is uniquely placed to write:
+
+1. **Grammar first.** The OWM DSL reference and the Mermaid syntax page. The error-prone fact: coordinates are **`[visibility, evolution]`**, not `[x, y]`. `05__` §2 proves it by rendering rather than asserting it.
+2. **Semantics.** A map has four constituents — anchor, position, type, evolution — and evolution is measured by **ubiquity vs certainty**, *not* by time or adoption curve. **Do not use diffusion-curve reasoning.**
+3. **Ground truth.** The 147-map repository, ~4,905 components, ~5,172 links, 22 sectors. The Mermaid mirror provides paired OWM/Mermaid representations with verified 1:1 fidelity — an excellent format-translation training pair.
+4. **Don't reinvent ArcKit.** MIT, actively maintained. Note its decomposition into `wardley.value-chain`, `wardley.doctrine`, `wardley.gameplay`, `wardley.climate` rather than one monolithic "make a map" action. Mirror that decomposition.
+5. **Deterministic rendering** — `cli-owm` (stdin→SVG, real OWM parser) or `wardleyToGo` — so the output is verifiable rather than merely plausible.
+6. **The epistemic guardrail, and it is mandatory.** The evolution axis plausibly encodes **consensus, not objective fact**. An LLM placing components on it is generating consensus-shaped output with no underlying evidence — Edgar's *"laundering assumptions into facts"*, at scale and at speed. **An agent must surface its evolution placements as explicitly contestable claims requiring human challenge, never as findings.**
+
+That last point is not a caveat to bury in a footer. It is the most important sentence on the `/agents/` page, and it rhymes exactly with the corpus's own position — *"a map is a claim, not a picture"* — and with the doctrine assessment's discipline of naming the artefact behind every rating.
+
+---
+
+## 6. Ecosystem health, in one paragraph
+
+Worth saying on the front page, because it is not what the dead links suggest. **The technique is healthy and arguably in an upswing**: Map Camp is returning after a two-year gap, Mermaid support has made maps native to git, OnlineWardleyMaps got a full rewrite in 2025, ArcKit is bringing mapping into agentic workflows with real adoption (2,000+ installs), and the VS Code extension shows ~4,856 installs. What has rotted is the **link layer**, not the practice. Which is a fixable problem, and fixing it is a good reason for this site to exist.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/05__maps-and-rendering.md
+==============================================================================
+# 05 — Maps, rendering, and two things this session established by testing
+
+Everything here was verified by rendering, not by reading documentation. Where the corpus already knew something, that is said; where this session extended it, that is said too.
+
+---
+
+## 1. What maps exist today
+
+| Form | Count | Where | Renders? |
+|---|---:|---|---|
+| **Rendered PNGs** | **8** | `…/briefs/05/24/sg-send-thread/wardley-maps/` — all `784 x 523, 8-bit/color RGB` | **Yes.** The only working visuals in the entire corpus. |
+| **Mermaid `wardley-beta` sources** | **13** | 8 in `…wardley-maps-rendered.md`, 1 in `…setup-and-mermaid-capability.md`, 4 in `…productizing-commoditizing-permissions…md` | **No — all 13 fail.** See §5. |
+| **ASCII maps** | **9** | across the cartographer reviews, the founding brief, the primer, the air-gap brief, the skill-lifecycle brief | Yes, in monospace |
+| **Position tables as maps** | **8** | `…first-pass-eight-maps-user-needs-before-after.md` — `Component / Visibility / Today / With our service` | Unrendered, but **the most analytically dense maps in the corpus** and trivially convertible |
+| **`.owm` files, map JSON, map SVG** | **0** | — | OWM interchange is specified in the Cartographer REFERENCE and never implemented |
+
+Plus, live on the network: **8 PNGs** served from the `sgit.ai` Strategy Maps vault (client-side decrypted, a `MutationObserver` rewrites vault-path image refs to blob URLs), **6 inline SVGs** generated client-side on `sgit.ai/demos/sgit-maps.html`, and **10 Mermaid maps** across two `pki.sgit.ai` packs — the estate's first use of `wardley-beta` in published HTML.
+
+**This pack adds the first rendered SVG Wardley maps in the estate: `maps/`, four of them, source and output.**
+
+---
+
+## 2. The coordinate contract — proven, not asserted
+
+`graphs.sgit.ai` warns that coordinates are `[visibility, evolution]`, not `[x, y]`, and that transposing them *"renders without error while asserting a different claim"*. The corpus says the same (W13, 24 May 2026). **This session tested it.**
+
+Probe rendered with Mermaid CLI 11.14.0, plot area x∈[48,852], y∈[48,552], y growing downward:
+
+```
+anchor    "A_high_vis_genesis"    [0.90, 0.10]   -->  drawn at x≈128, y≈95
+component "B_low_vis_commodity"   [0.10, 0.90]   -->  drawn at x≈780, y≈494
+```
+
+`0.90` put the first component **near the top** (high visibility) and `0.10` put it **near the left** (genesis). Confirmed:
+
+> **First number = visibility → the Y axis, 1 = top, visible to the user.
+> Second number = evolution → the X axis, 1 = right, commodity.**
+
+There is no error and no warning if you transpose them. The map renders, looks plausible, and says something else. **This is the single highest-value fact on the `/agents/` page**, and the site should state it with this evidence rather than as received wisdom.
+
+---
+
+## 3. The parse rules — the corpus was right, and incomplete
+
+The corpus records (W13b, 24 May 2026) that *"component and anchor names that contain a hyphen, an ampersand, or a slash cause a parse error"*, and recommends *"keep component and anchor names to letters and spaces"*.
+
+That is correct but avoidable. This session established the full rule and the fix, by bisection on Mermaid **11.14.0**:
+
+| In an **unquoted** name | Result |
+|---|---|
+| spaces (`Draw a map`) | **OK** |
+| underscores (`Real_time`) | **OK** |
+| parentheses (`Draw (fast)`) | **OK** |
+| **hyphen** (`Real-time collab`) | **FAILS** |
+| **dot** (`doctrine.wardleymaps.com`) | **FAILS** |
+| **slash** (`AI/ML`) | **FAILS** |
+
+**The fix is quoting** — `component "Real-time collab" [0.7, 0.6]` parses fine, and so does `"doctrine.wardleymaps.com"`. But there is a trap:
+
+> **Quoting the declaration and not the link still fails.** `component "Real-time collab" …` followed by `User --> Real-time collab` is a syntax error. **Quote the name everywhere it appears** — declaration, link lines, and `evolve` statements.
+
+Failure mode: **a silent "Syntax error in text" SVG**, byte-identical in size across every broken input, with no line number. In a batch render that looks exactly like success until you open the file. `capture`-style pipelines should grep the output for `error-text` — that is what this session did, and it is what caught it.
+
+**Practical rule for the site: quote every anchor and component name, always.** It costs two characters and removes the whole class of failure. The four maps in `maps/` do this.
+
+---
+
+## 4. The render pipeline — proven, and it should be a script
+
+The corpus describes the recipe in prose only — *"Mermaid CLI v11.14.0 plus the Playwright-bundled Chromium"* — with no script, no Makefile target and no CI job. Here it is as something runnable:
+
+```bash
+# puppeteer-config.json
+{"executablePath":"/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+ "args":["--no-sandbox","--disable-dev-shm-usage"]}
+
+for f in maps/*.mmd; do
+  npx @mermaid-js/mermaid-cli@11.14.0 \
+      -i "$f" -o "${f%.mmd}.svg" \
+      -p puppeteer-config.json -b white -w 1400 -H 900
+  grep -q "error-text" "${f%.mmd}.svg" && echo "FAILED: $f"   # <- the check that matters
+done
+```
+
+Two notes. Mermaid CLI ships its own Puppeteer and will try to download Chrome; pointing `executablePath` at an existing Chromium is what makes it work in a sandbox. And **the `grep` is not optional** — without it a broken map ships silently.
+
+Ship this as `bin/render-maps.sh` plus a CI job, and add a check that every `.mmd` has a current `.svg`. That closes gap 3 in `08__`.
+
+---
+
+## 5. The 13 broken sources — day-one fix
+
+None of the 13 Mermaid sources in the repo render, for two mundane reasons:
+
+1. **Wrong code fence.** Eight-plus use a bare ` ``` ` with `wardley-beta` on the *next* line; four use ` ```wardley-beta `. Neither is recognised. GitHub and Mermaid both want ` ```mermaid ` with `wardley-beta` as the first line *inside* the block.
+2. **One unquoted `note`.** In the 19 June brief: `note Genesis or custom built today: bespoke, manual, hope driven [0.34, 0.04]` — `note` requires quotes around its text.
+
+Both are trivial. Fixing them turns 13 dead code blocks into 13 rendered maps and is the cheapest high-visibility win available. Do it before writing any new maps.
+
+Then convert the **8 position tables** from the 23 June brief — they are already `Component | Visibility | Today | With our service`, which is `wardley-beta` in all but syntax, and they carry the **paired before/after** structure (W28) that makes them arguments rather than diagrams: *"The distance between the two is the case for the service."*
+
+---
+
+## 6. The four maps this pack ships
+
+In `maps/`, each as `.mmd` source and rendered `.svg`. They are drawn about the site's own subject matter so they can go straight onto pages.
+
+| Map | What it claims | Page |
+|---|---|---|
+| **M1 — The tool ecosystem, August 2026** | Authoring and versioning are product-to-commodity; **collaboration, doctrine assessment and agent authoring sit at Genesis with nothing under them** — the holes MapKeep and the doctrine tools left | `/resources/` opener |
+| **M2 — The two absences** | The same point stated as loss: two user needs that had working implementations in 2025 and have none in August 2026 | `/resources/dead/` |
+| **M3 — Maps for agents** | The new user need. Reading is served; **writing, and especially contesting a placement, are not** — "evidence for placement" is the least evolved node on the map | `/agents/` |
+| **M4 — The site as a value chain** | What this site is, mapped. Resource pages and doctrine at custom-built; the `llms.txt` surface as the shared component; static hosting as commodity | `/about/` |
+
+**They are claims, not decorations.** Every placement is arguable and should be argued with — which is the whole thesis. Publish the `.mmd` next to the `.svg` so a reader can fork the argument in a pull request. That is the corpus's own standard, from `pki.sgit.ai`: *"the maps live in the source and are reviewable in a diff."*
+
+---
+
+## 7. What is still missing after this pack
+
+- **No `.owm` export.** A site that wants to interoperate with the Wardley community has nothing to hand it. `cli-owm` and `wardleyToGo` both consume OWM text; a converter is small.
+- **No map diffs.** *"every significant change comes with a map diff — a before/after showing what moved"* is specified in the Cartographer REFERENCE. There is exactly one dated pair in the corpus and no mechanism.
+- **No Claude skill for maps**, despite being asked for twice.
+- **No stored map graph.** The corpus's strongest architectural claim — maps are graphs with position, so map queries are graph queries with positional filters — is listed as PROPOSED and has no implementation in any of the four repos. **If the site wants to demonstrate it, it will have to build it.** Say that on `/shipped/` rather than implying otherwise.
+- **No "map that shows us badly."** Asked for explicitly as the honesty test of the whole series: *"Is there a map that shows us badly? Worth drawing, as the test of whether these are analysis or marketing."* It still does not exist. **Drawing it would be the most credible single page on the site.**
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/06__site-architecture.md
+==============================================================================
+# 06 — Site Architecture
+
+## The house pattern to follow
+
+**Copy `pki.sgit.ai`.** It is the most complete site in the network — the only one carrying all six house markers — and it already hosts the doctrine work this site is taking over.
+
+| Marker | sgit.ai | **pki** | nhi | sg-sentinel | graphs | riskmandate |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| `/llms.txt` | ✓ | **✓** | ✓ | ✓ | ✓ | ✓ |
+| `/llms-full.txt` | ✓ | **✗** | ✗ | ✗ | ✓ | ✓ |
+| `/documents/` | ✗ | **✓** | ✓ | ✓ | ✓ | ✗ |
+| `/admin/comms.html` | ✗ | **✓** | ✓ | ✓ | ✓ | ✗ |
+| `/admin/versions.html` | ✓ | **✓** | ✓ | ✓ | ✓ | ✗ |
+| `/about/participant.html` | ✗ | **✓** | ✓ | ✗ | ✓ | ✗ |
+| `/shipped/` | ✗ | **✓** | ✗ | ✗ | ✓ | ✗ |
+
+Take pki's build pipeline too — `pki.sgit.ai/admin/index.html` documents it: hand-written static HTML with **programmatically injected chrome** (nav, footers, version badges) so it cannot drift; every push to `dev` runs link checking, version consistency, canonical-URL verification and **key-leak detection**, then auto-tags and deploys to GitHub Pages. Take its **raw-plus-curated split** (`/documents/` curated, `/briefs/` raw markdown). **Add the `/llms-full.txt` that pki lacks.**
+
+Add one thing no sibling has: **a link-verification job**. Given §1 of `04__`, a site about an ecosystem whose own indexes are wrong should be the one that checks. Publish the run date.
+
+---
+
+## Page by page
+
+### `/` — the front page
+300 words, and none of them currently exist in the corpus. Open on the thesis — **maps are claims, not pictures** — then the three things this site has that others don't: the doctrine assessment, the PST-as-agent-teams pattern, and 34 verified resources. Close on the quotable line: *"Anybody who spends a lot of money on tokens has an engineering problem."* One rendered map above the fold — M1.
+
+### `/doctrine/` — **build first**
+The 41 records from `pki.sgit.ai/packs/registry-mvp/doctrine.html`, moved wholesale. Keep everything that makes it good: the four-phase grouping, the six categories, the click-to-filter, the distribution bar, the four-level scale (`strong` Practised · `partial` Partly · `weak` Not practised · `na` No basis yet), and above all the discipline that **every rating names the artefact it rests on**, so *"a reader who disagrees has the evidence in front of them."* Keep the self-assessment caveat too — it labels itself the weakest kind of assessment and compensates with evidence.
+
+Serve `doctrine.json` as a stable endpoint (`id, cat, phase, name, what, status, us, evidence`). **There is no working doctrine assessment tool anywhere in the ecosystem right now.** A public JSON schema plus a worked example is the closest thing to one, and costs nothing extra.
+
+Leave a stub on pki.sgit.ai pointing here.
+
+### `/method/` — the opinionated core
+Four pages, one per original contribution: **de-commoditisation**, **the custom-axis verdict** (with its rule — *relabel the axis when the thing genuinely evolves; use a maturity model when the thing merely improves*), **you cannot map a gap / the broken middle**, and **maps are graphs with position**. Each opens with the quote, states the claim, shows a map, and names what would falsify it.
+
+### `/patterns/pst/` — the most original page
+`02__` in full. Lead with the filesystem, not the theory. Include §4 (31 of 33 roles never got the memo) and §5 (asserted vs implemented) unsoftened. Cite `blog.gardeviance.org/2015/03/…` — **CC BY-SA 3.0**.
+
+### `/resources/` — Job B
+34 pages on the template in `04__` §2, plus `/resources/dead/` for the 11 dead-or-dying entries. Three start-here routes (newcomer / security / agent) as the primary navigation, the flat A–Z as secondary. Every page carries a dated verification stamp and the pre-written attribution string.
+
+### `/dinis/` — Job A
+The chronology from `03__`, 26 items, the 13 recordings embedded. Show the silences — 2021, 2023, and the 2026 gap where 194 unpublished files sit. Feature the 2020 *Team Topologies & PST* session as the documented ancestor of `/patterns/pst/`. Mirror the fragile items and say which are mirrors.
+
+### `/maps/` — the gallery
+The 8 PNGs, the 13 repaired Mermaid sources, the 8 converted position tables, and this pack's 4 SVGs. **Source next to render, every time** — *"the maps live in the source and are reviewable in a diff."* And a page for **the map that shows us badly**, when it is drawn.
+
+### `/agents/` — the machine surface
+The coordinate contract with the rendering proof (`05__` §2), the parse rules and the quote-everything rule (`05__` §3), the definitions endpoint for all 33 concepts, and the **epistemic guardrail** from `04__` §5 — placements are contestable claims, never findings. This is the surface the commission was really about.
+
+### `/shipped/`
+`00__` §5, unsoftened: 0 of 13 sources render, the evolution map died on 26 Feb 2026, no doctrine or gameplay analysis was ever produced inside `__Send`, maps-as-graphs is PROPOSED, 31 of 33 roles are silent.
+
+### `/network/`
+The seven-site map. And note that **four siblings mention Wardley zero times** and should link here:
+
+- **`nhi.sgit.ai`** — strongest candidate. `graphs.sgit.ai` records four unrendered permissions maps including *"Hope Driven Development"*, but `nhi.sgit.ai/hope/` contains no maps at all. Its five-step framework — Enumerate, **Map**, Bound, Observe, Issue no credential — is asking for one.
+- **`sg-sentinel.sgit.ai`** — zero mentions across 23 documents. Allowlist-vs-denylist is a natural map.
+- **`riskmandate.ai`** — zero mentions. RAMM maturity is adjacent to doctrine.
+- **`sgit.ai`** — has the maps, but `/network/` lists four sites and no mapping site. Needs a fifth entry.
+
+### `/admin/`
+`comms.html` with numbered asks (N1…) and tasks (T1…), `versions.html`. Per the house pattern, publish the build order **unresolved**, with `08__`'s open questions and tensions visible.
+
+---
+
+## What moves, what gets referenced, what stays
+
+| Asset | Verdict |
+|---|---|
+| `pki.sgit.ai/packs/registry-mvp/doctrine.html` + `doctrine.json` | **MOVE** — with a stub |
+| `pki.sgit.ai/packs/registry-mvp/wardley-maps.html` (6 maps) | **MOVE** |
+| `pki.sgit.ai/packs/map-your-case/wardley-maps.html` (4 maps, M1–M4) | **MOVE** |
+| `sgit.ai/demos/strategy-maps.html` (8 PNGs, vault-served) | **REFERENCE** — it is a live demo of the vault decryption mechanism; moving it breaks the demo |
+| `sgit.ai/demos/sgit-maps.html` (6 inline SVGs) | **REFERENCE** |
+| `graphs.sgit.ai/v1/maps/index.html` | **REFERENCE both ways** — it is the methodology-and-inventory page, and its unrendered backlog is ready-made launch content |
+| Strategy Maps vault `ookq4mn4` (33 files, 830 KB) | **REFERENCE** — read key is published; there is no doctrine content in it |
+| `docs.diniscruz.ai` MCP article | **STAY** — one passing clause; mirror the paragraph, link the original |
+
+**Vault key discipline:** every key on the `sgit.ai` catalogue is an `sgit_rk1_` **read** key, published deliberately; no write keys were exposed anywhere in the survey. Keep it that way. Before linking any vault, confirm its write key is escrowed — publishing a read key for a vault whose write key is lost freezes it permanently.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/07__boundaries-and-licensing.md
+==============================================================================
+# 07 — Boundaries, licensing and house style
+
+This site has a licensing problem the other `*.sgit.ai` sites do not have, and it is worth getting right before the first page is written.
+
+---
+
+## 1. The CC BY / CC BY-SA collision
+
+**The estate publishes CC BY 4.0. The Wardley ecosystem publishes CC BY-SA 4.0.** They are compatible for *reading* and incompatible for *adapting*.
+
+ShareAlike is viral. Quote CC BY-SA material with attribution and nothing happens. **Adapt** it — rewrite, restructure, translate, build a derivative table from it — and the resulting page must itself be CC BY-SA 4.0. You cannot relicense someone else's adaptation as CC BY.
+
+> **The rule for this site: CC BY-SA material appears as clearly-marked quotation and link-out, never as adaptation.** Then every page stays CC BY 4.0 and the network's licence stays uniform.
+
+Where you genuinely want to adapt — a rewritten doctrine list, a restructured climatic-patterns table — do it on a **clearly-marked page carrying its own CC BY-SA 4.0 notice**, and say why at the top. One or two such pages are fine. A site with a mixed and unlabelled licence is not.
+
+**Watch the 3.0/4.0 split.** Simon Wardley's book and most of the ecosystem are **CC BY-SA 4.0**. His blog `blog.gardeviance.org` is **CC BY-SA 3.0**. These are different licences with different notices. **Do not merge them into one footer.**
+
+Standard attribution string, used across the ecosystem:
+
+> *Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0.*
+
+`sources__industry-resources.json` carries the correct string per resource; `screenshots/targets.json` carries the same strings attached to the capture targets so a screenshot and its credit can never drift apart.
+
+---
+
+## 2. What this site's own content is
+
+Everything written for `wardley-maps.sgit.ai` — every page, `/documents/`, `/llms.txt`, `/llms-full.txt`, the admin surfaces, this pack, and the four maps in `maps/` — is **CC BY 4.0**, consistent with the rest of the network. Stamp every raw markdown document:
+
+```
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+```
+
+Run `licence-audit.py` (shipped in the `graphs.sgit.ai` pack) in `--check` mode as a CI gate so the stamp cannot drift.
+
+**The maps this pack ships are original works**, drawn from this pack's own research. They are CC BY 4.0 and carry no ShareAlike obligation. The *technique* they use is Wardley's and should be credited as such — crediting a technique is courtesy and good practice, not a licence condition.
+
+---
+
+## 3. Do not publish
+
+From the `__Send` corpus. These are not judgement calls — each names commercial terms, a competitor, a customer, or a private individual.
+
+| Path | Reason |
+|---|---|
+| `library/alchemist/materials/` — **the whole tree** | Investor-grade commercial material: pricing (£5/500 credits, £49–999/month), customer count, burn, TAM, a **named-competitor price table** (Intralinks, Datasite), founder CV, pitch decks, revenue and competitive-positioning models. None of it is needed for a Wardley site. |
+| `team/town-planner/roles/librarian/reviews/02/21/v0.5.8__review__cbr-investment-catalogue.md` | Catalogues **a separate company's** private investment repository. Third-party commercial detail. |
+| `team/town-planner/roles/alchemist/reviews/03/10/` — both files | Investor strategy and internal velocity metrics. |
+| `…/07/17/commercial-model/v0.33.49__strategy-brief__sg-send-gen-ai-consulting-model…md` | Contract structure, hourly rates, response-time price ladder, delivery location. **Partial extraction allowed:** the explorer→villager handover section (~2 paragraphs) and the Simon Wardley source citation are publishable; the commercial model is not. |
+| `…/06/23/wardley-maps/…first-pass-eight-maps…md` — **Map 8 only** | The competitive-landscape map attaches maturity judgements to living companies: *"NHI security (Astrix, …)"*, *"identity / PAM (Okta, CyberArk, Veza)"*, *"agent observability (LangSmith, …)"*. **Maps 1–7 and the cross-cutting reading are safe.** Redact Map 8 or generalise it to categories. |
+| `…/06/08/v0.33.2__research-brief__sg-send-tls-ssl-cybersecurity-skills-landscape.md` | Names a **private individual** as a commercial target. The Wardley task inside it (Research Task 9) is safe in isolation; the surrounding brief is not. |
+| `…/06/10/integration-landscape/…mappings-implementation-cost-criteria.md` | Vendor-by-vendor cost and disposition scoring. **The idea of a vendor evolution view is publishable; the scored table is not.** |
+| `…/05/26/v0.27.64__strategy-brief__sg-send-security-report-vault-demo-pentest.md` | Pentest material. Only 4 Wardley mentions; not worth the risk. |
+| `…/07/31/markets-and-field-demo/…somebody-has-to-be-the-villagers…md` | **Publishable with care.** The Wardley/NFR argument is strong and belongs on the site. But the *"one in five strategic dealmakers walked away"* M&A figure and seven market statistics are loosely attributed (*"reported"*, *"is cited as finding"*), and the brief itself flags that *"much of what circulates is vendor commentary recycling a smaller set of underlying studies."* Re-source or soften. |
+
+Everything else in Tiers 0–1 of the manifest is clean, and most already carries the CC BY 4.0 stamp.
+
+---
+
+## 4. Third-party names — the line
+
+**Fine:** naming a technique, a framework, a standard, or a tool. Naming Simon Wardley, Ben Mosior, Chris Daniel, Matt Edgar, Danny Buerkli, John Grant, Tristan Slominski and the other practitioners in `04__` — they are public authors of public work, credited for it.
+
+**Fine:** saying MapKeep shut down on 30 May 2026 and crediting Tristan Slominski for building it. That is a factual, sourced obituary and the community needs it recorded.
+
+**Not fine:** attaching maturity or capability judgements to named commercial competitors (Map 8), reproducing a vendor cost-scoring table, or naming a private individual as a commercial target.
+
+**Never:** quoting Discord or forum members without consent. Those are personal messages regardless of technical accessibility.
+
+---
+
+## 5. Screenshot ethics
+
+`capture.js` screenshots pages. Three rules:
+
+1. **A page screenshot for identification is defensible almost everywhere**, including ARR material — it is how a directory works. **Clipping content out of a page is not.** Never reproduce Xebia's diagrams, InfoQ's video frames, or GCATI's syllabus.
+2. **The attribution string travels with the image.** It is pre-written per target in `targets.json`. Render it under the image, not in a global footer.
+3. **Publish `captured.json`.** Status, title, final URL, timestamp — for successes and failures alike. In an ecosystem where the canonical indexes point at dead tools, a screenshot without a provable date is worth much less than one with.
+
+---
+
+## 6. Network boundaries
+
+| Site | Owns | This site defers on |
+|---|---|---|
+| **`wardley-maps.sgit.ai`** | Mapping technique, doctrine, the PST pattern, the resource index, Dinis's mapping history | — |
+| `graphs.sgit.ai` | Graph theory, meaning through connectivity, G³, maps-*as*-graphs rendering methodology | **Cross-link, don't duplicate.** Its `/v1/maps/` page is the methodology-and-inventory surface; this site is the technique surface. |
+| `pki.sgit.ai` | PKI, the registry MVP | Keeps the pack context; the doctrine page and both map pages move here with stubs |
+| `risks.sgit.ai` | Risk concepts, acceptance, the grounding ladder | Risk-as-an-evolution-axis is a shared idea — one link each way |
+| `nhi.sgit.ai`, `sg-sentinel.sgit.ai` | Non-human identity, sentinel | Should link *here*; currently mention Wardley zero times |
+| `riskmandate.ai` | Commercial | References, is not referenced |
+| `sgit.ai` | The vault product, the demos | Hosts the Strategy Maps vault and the two live demo pages; those stay |
+
+---
+
+## 7. House style
+
+- **`-ise`, not `-ize`**, throughout. The corpus mixes them freely; the site must not. One glossary line noting they are the same word.
+- **Explorer / Villager / Town Planner** for the agent teams, always paired with Wardley's originals on first use. *Settler* appears once in the entire corpus — do not adopt it.
+- **Quote generously and attribute exactly.** The corpus's best lines are better than any paraphrase of them, and quotation is the licence-safe move anyway.
+- **Every map ships its source.** No rendered image without the `.mmd` next to it.
+- **Every resource page carries a verification date.** No exceptions — it is the site's entire differentiator in that category.
+- **Name what would falsify a claim.** A map is a claim; a page asserting one should say what evidence would change it.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/08__gaps-and-open-questions.md
+==============================================================================
+# 08 — Gaps, open questions and honest tensions
+
+---
+
+## 1. Must be written fresh — nothing in the corpus covers these
+
+| # | Page | Why |
+|---|---|---|
+| **G1** | **The front page** | 300 words that open the argument for a cold reader. The pieces exist — maps-as-claims, the token-spend diagnostic, the rotted link layer — and nobody has assembled them. |
+| **G2** | **The PST pattern write-up** | The corpus's most original contribution exists only as `.claude/` configuration plus one February brief. `library/guides/agentic-setup/` has five guides; **none mentions Explorer, Villager or Town Planner.** `02__` is the raw material. |
+| **G3** | **`/agents/` and the definitions endpoint** | 33 concepts as machine-readable JSON, plus the coordinate contract, the parse rules and the epistemic guardrail. The commission was explicitly about agents; there is no surface today. |
+| **G4** | **A teaching path** | One 846-word primer, then a cliff into advanced application. **Nothing bridges them** — no worked example that builds a map from a blank page. `01__`'s six altitudes are the skeleton. |
+| **G5** | **A glossary** | Spelling drift (commoditise/-ize, productise/-ize) and name drift (Explorer/Pioneer, Villager/Settler) run through the whole corpus. |
+| **G6** | **`/shipped/`** | Nothing renders, the evolution map is six months stale, maps-as-graphs is unimplemented. Without this page the site over-claims and breaks the convention the siblings are built on. |
+| **G7** | **Consistent attribution** | **Only two documents in the entire corpus cite Simon Wardley with a URL.** Most assert doctrine without a source. A public Wardley site cannot do that. Three documents already model the right footer — copy it everywhere. |
+
+---
+
+## 2. Artefacts that were commissioned and never made
+
+Each is a specific, dated promise the corpus records and does not keep. Any of them would make a good launch page.
+
+1. **The three maps commissioned 28 July** — air gap, translation, evidence chain. The reality doc records all three as PROPOSED: *"all three need to be built, rendered, and published"*.
+2. **The TLS/SSL skills-landscape map**, commissioned 8 June 2026. Never produced.
+3. **A competitive-comparison map** of the kind the Cartographer REFERENCE specifies (*"Issues-FS vs GitHub Issues, vs Jira, vs Linear"*). The only competitive map that exists is Map 8, which is on the do-not-publish list.
+4. **An alternative-axis map.** Six alternative axes are proposed — openness, automation, documentation, test coverage, graph connectivity, plus visibility and risk overlays — and **zero maps use one.** Even the axis the 28 July verdict explicitly sanctions (air gap → file → API → event-driven) was never drawn.
+5. **A doctrine assessment inside `__Send`.** A standing Cartographer responsibility with a named principle list. Never produced. (The one that exists is pki.sgit.ai's — a different project.)
+6. **A gameplay analysis.** Gameplays are named in three places — ILC, ecosystem play, tower-and-moat, Red Queen, sensing engines, open approaches — and applied in one paragraph.
+7. **A Claude skill for maps.** Asked for twice. `library/skills/` has no mapping skill.
+8. **"A map that shows us badly."** Asked for explicitly as the honesty test of the whole series. **This is the one to draw first.** It would be the most credible page on the site.
+
+---
+
+## 3. Open questions worth publishing unresolved
+
+Following the `pki.sgit.ai` convention of numbering open questions in public.
+
+| # | Question | Where the corpus gets closest |
+|---|---|---|
+| **Q1** | **If the evolution axis encodes consensus rather than fact, what is a map's epistemic status?** Edgar's critique and the corpus's own *"a map is a claim, not a picture"* are the same worry from opposite directions — and neither says what to do about it. | W23; Edgar 2017 |
+| **Q2** | **When is a relabelled axis still a Wardley map?** The 28 July rule — *relabel when the thing genuinely evolves; use a maturity model when it merely improves* — is the sharpest answer anyone has given. Does it hold for the risk and visibility overlays? | W6, W6b, W7 |
+| **Q3** | **Can you map a gap after all?** *"you cannot map a gap, because a gap has no evolution"* is stated absolutely. But the air-gap map exists and is called the sharpest single map in the estate. Which is it? | W12 |
+| **Q4** | **Is de-commoditisation a gap in doctrine or a misreading of it?** It is presented as the former. The strongest counter-argument — that Wardley's ILC already covers a commodity enabling higher-order custom activity — has not been engaged with. | W8, W9 |
+| **Q5** | **What makes an evolution placement defensible?** The doctrine assessment demands every rating name its artefact. **No map in the corpus attaches evidence to a placement.** Should they? | doctrine.json; W23 |
+| **Q6** | **Should an agent be allowed to place components at all**, or only to render placements a human has made? `04__` §5 says surface them as contestable claims. That is a policy, not an answer. | — |
+| **Q7** | **Does the PST→agent-team mapping actually improve outcomes**, or is it a legible metaphor? There is no measurement. The one operationalised role definition out of 33 is thin evidence either way. | `02__` §5 |
+| **Q8** | **Who maintains a living map, now that we know nobody did?** The map died on 26 Feb 2026 against the corpus's own warning. If the discipline failed with a named role and a stated responsibility, what would make it work? | `02__` §5 |
+
+---
+
+## 4. Honest tensions
+
+Things the site should hold rather than resolve.
+
+1. **The site is CC BY inside a CC BY-SA ecosystem.** Manageable, but it constrains real editorial choices — see `07__` §1. Say so on the licence page rather than hoping nobody notices.
+2. **The corpus is far ahead of the artefacts.** 33 concepts, 194 files, and eight working PNGs. A map of this mapping practice would put most of it at Genesis, and that is a slightly awkward thing for a mapping site to admit. Admit it anyway.
+3. **The most original contribution is the least implemented.** PST-as-agent-teams is genuinely novel and 31 of 33 role definitions never got the memo.
+4. **The public record and the private record do not touch.** Seven years of security-era mapping, then silence, then 194 unpublished files of agentic-era mapping. **The bridge is one clause in one co-authored article.** The site is that bridge — which means it is making a claim, not reporting one.
+5. **Curating an ecosystem while criticising its indexes.** Pointing out that `awesome-wardley-maps` lists five dead things is fair and useful. It is also the CC0 resource this site benefits from most. Credit it warmly while correcting it.
+6. **"Maps are graphs with position" is the best idea here and has no code.** It is the corpus's strongest architectural claim and it is listed PROPOSED. Publishing it as method rather than as software is honest; publishing it without saying so is not.
+7. **A doctrine self-assessment is the weakest kind of evidence** — the pki page says so itself. Its answer, naming the artefact behind every rating, is good. It is not the same as an external audit, and the page should keep saying so.
+
+---
+
+## 5. Loose ends worth ten minutes each
+
+- **The Map Camp 2020 recording** for *"Cybersecurity: Why Context is your Crown Jewels"*. Sessions are on the Leading Edge Forum YouTube channel; a 13-video playlist exists at `youtube.com/playlist?list=PLP0vnsXbJsRXpKWEFe956zjGrawwQ0wb3`. **Manual clicking will find it.**
+- **The SlideShare deck.** The only artefact of that talk, unread behind a Cloudflare wall. Export from a real browser.
+- **`youtube.com/watch?v=l59LK8246-s`** — *"Wardley Maps in Cyber Security - Panel"*. Title and channel confirmed; no session page found; **Dinis's participation unconfirmed.** Resolve or omit.
+- **`swardley/WARDLEY-MAP-REPOSITORY`'s licence.** README says CC BY-SA, the GitHub field says GPL-3.0. **Ask.** 147 maps are worth one email.
+- **The exact dates** for OSS mini-summit sessions A12, A16–A19, A22, A23. The index pages render a stale schedule table; only month+weekday is established. The year-subdomains may hold the real dates.
+- **`nhi.sgit.ai`'s four unrendered permissions maps**, including *"Hope Driven Development"*, recorded by `graphs.sgit.ai` but absent from `nhi.sgit.ai/hope/`. Find them, render them, ship them.
+
+---
+
+This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /briefs/LICENSE.md
+==============================================================================
+# Licence
+
+## This pack
+
+Everything in this brief pack — the nine numbered documents, `09__source-manifest.csv`, both `sources__*.json` files, the four maps in `maps/` (both `.mmd` source and rendered `.svg`), `screenshots/capture.js`, `screenshots/targets.json`, this file and `README.md` — is released under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**.
+
+    Copyright (c) 2026 Dinis Cruz
+    Licensed under CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+
+Attribution: **Dinis Cruz**, with AI co-authorship (Claude, Anthropic). Where a source document names model co-authors, carry those names forward.
+
+The four maps are **original works**, drawn from this pack's own research. They carry no ShareAlike obligation. The *technique* they use is Simon Wardley's and is credited as such — crediting a technique is good practice, not a licence condition.
+
+## The site this pack commissions
+
+**The entire content of `wardley-maps.sgit.ai`** — every page, `/documents/`, `/llms.txt`, `/llms-full.txt` and the admin surfaces — is to be published under **CC BY 4.0**, consistent with the rest of the `*.sgit.ai` network. Put the licence in `/llms.txt`, in the page footer, and at the foot of every raw markdown document:
+
+    This document is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+Use `licence-audit.py` (shipped in the `graphs.sgit.ai` pack) in `--check` mode as a CI gate so the stamp cannot drift.
+
+---
+
+## ⚠️ The one that matters: CC BY vs CC BY-SA
+
+**This site sits inside a CC BY-SA ecosystem.** That is the single biggest licensing trap in the build, and it does not apply to any other site in the network.
+
+ShareAlike is viral. **Quoting** CC BY-SA material with attribution is fine. **Adapting** it — rewriting, restructuring, translating, building a derivative table from it — obliges you to license the resulting page CC BY-SA 4.0, not CC BY 4.0.
+
+> **The rule: CC BY-SA material appears as clearly-marked quotation and link-out, never as adaptation.** Then every page stays CC BY 4.0 and the network's licence stays uniform. Where you genuinely want to adapt, do it on a page carrying its own CC BY-SA 4.0 notice and say why at the top.
+
+Standard attribution string, used across the ecosystem:
+
+> *Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0.*
+
+**Watch the version split.** The book and most of the ecosystem are **CC BY-SA 4.0**. Simon Wardley's blog `blog.gardeviance.org` is **CC BY-SA 3.0**. Different licences, different notices — do not merge them into one footer.
+
+---
+
+## What this licence does not cover
+
+| Material | Regime | What the site must do |
+|---|---|---|
+| **Simon Wardley's book, Learn Wardley Mapping's free reference, the Mapping Canvas, wardleymaps.com, Wikipedia** | **CC BY-SA 4.0** | Quote and screenshot with the attribution string. Do not adapt. |
+| **`blog.gardeviance.org`** | **CC BY-SA 3.0** ⚠️ | Same, with a *separate* 3.0 notice. |
+| **awesome-wardley-maps** | **CC0 1.0** | Anything, no attribution required. The best base for your own list — and it lists five dead things as live, so correct it while crediting it. |
+| **OWM, Mermaid, wardleyToGo, cli-owm, ArcKit** | **MIT** | Retain the notice. Technique credit to Wardley is separate. |
+| **Obsidian plugin, Tranquil's Map** | **AGPL-3.0** ⚠️ | Network clause — matters if you ever embed one in a service. |
+| **The 8 prior-art articles on `docs.diniscruz.ai`** | **CC0 1.0** | More permissive than CC BY, so republishing is fine — but attribute anyway and keep `rel="canonical"` on the original URL with the recorded `first_published` date. |
+| **InfoQ, YouTube, GCATI, Xebia, LWM's paid course, Hudson's and Bell/Thorpe's books** | **All rights reserved** | Brief quotation and a page screenshot for identification. **No re-hosting, no clipping, no reproducing their diagrams.** |
+| **Vault contents** at `sgit.ai/demos/vaults/` | Per-vault; read keys publishable, **write keys never** | Confirm the write key is escrowed before linking. Publishing a read key for a vault whose write key is lost freezes it permanently. |
+| **Tier-3 rows in the manifest** (6 rows) | Internal | **Do not publish, quote or paraphrase.** Listed so you know to skip them. |
+| **Tier-2 rows** (7 rows) | Partial | Marked `EXTRACT ONLY` / `IDEA ONLY` / `CARE` / `ARCHIVE FIRST`. Read the `why_it_matters` column before touching them. |
+
+## 🚩 Six flagged — link only until resolved
+
+- **`swardley/WARDLEY-MAP-REPOSITORY`** — README says CC BY-SA, GitHub licence field says **GPL-3.0**. **Do not mirror.** 147 maps are worth one email to resolve.
+- **WardleyPedia** — no licence stated. Do not assume the MediaWiki default.
+- **Matt Edgar's critique** — no statement, assume ARR. Highest-value critique, least clear rights.
+- **Open Security Summit session pages** — no licence stated, including Dinis's own sessions.
+- **Miro / Figma / draw.io templates** — mostly unstated, varying. Check per template.
+- **Discord and forum content** — personal messages. Never quote a member without consent.
+
+## Third-party names
+
+Naming a technique, framework, standard, tool or public author is fine — Simon Wardley, Ben Mosior, Chris Daniel, Matt Edgar, Danny Buerkli, Tristan Slominski and the others in `04__` are credited for public work. Recording that MapKeep shut down on 30 May 2026 and crediting Slominski for building it is a factual obituary the community needs.
+
+Attaching maturity or capability judgements to **named commercial competitors** is not fine — that is why Map 8 of the eight-maps brief is marked REDACT and why the whole `library/alchemist/materials/` tree is Tier-3.
+
+---
+
+This file is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+
+==============================================================================
+=== /maps/M1__tooling-ecosystem.mmd — wardley-beta source
+==============================================================================
+wardley-beta
+  title M1 - The Wardley mapping tool ecosystem, August 2026
+  anchor "Mapper" [0.95, 0.55]
+  component "Draw a map" [0.86, 0.62]
+  component "Share a map" [0.80, 0.48]
+  component "Version a map" [0.74, 0.55]
+  component "Assess doctrine" [0.70, 0.22]
+  component "Agent authoring" [0.66, 0.20]
+  component "OnlineWardleyMaps" [0.58, 0.70]
+  component "OWM text syntax" [0.50, 0.78]
+  component "Mermaid wardley-beta" [0.46, 0.66]
+  component "Git" [0.38, 0.95]
+  component "SVG rendering" [0.30, 0.82]
+  component "Real-time collaboration" [0.62, 0.30]
+  component "Doctrine tool" [0.56, 0.10]
+  component "ArcKit" [0.60, 0.34]
+  "Mapper" --> "Draw a map"
+  "Mapper" --> "Share a map"
+  "Mapper" --> "Version a map"
+  "Mapper" --> "Assess doctrine"
+  "Mapper" --> "Agent authoring"
+  "Draw a map" --> "OnlineWardleyMaps"
+  "OnlineWardleyMaps" --> "OWM text syntax"
+  "Version a map" --> "Mermaid wardley-beta"
+  "Mermaid wardley-beta" --> "OWM text syntax"
+  "Mermaid wardley-beta" --> "Git"
+  "Mermaid wardley-beta" --> "SVG rendering"
+  "OnlineWardleyMaps" --> "SVG rendering"
+  "Share a map" --> "Real-time collaboration"
+  "Assess doctrine" --> "Doctrine tool"
+  "Agent authoring" --> "ArcKit"
+  "ArcKit" --> "OWM text syntax"
+
+
+==============================================================================
+=== /maps/M2__the-two-absences.mmd — wardley-beta source
+==============================================================================
+wardley-beta
+  title M2 - The two absences - what the ecosystem lost in 2026
+  anchor "Mapping practitioner" [0.95, 0.50]
+  component "Situational awareness" [0.88, 0.40]
+  component "Collaborative authoring" [0.72, 0.32]
+  component "Doctrine self-assessment" [0.70, 0.20]
+  component "Single-player authoring" [0.68, 0.72]
+  component "Maps in version control" [0.60, 0.64]
+  component "Mapkeep" [0.55, 0.30]
+  component "doctrine.wardleymaps.com" [0.52, 0.12]
+  component "MapScript" [0.50, 0.26]
+  "Mapping practitioner" --> "Situational awareness"
+  "Situational awareness" --> "Collaborative authoring"
+  "Situational awareness" --> "Doctrine self-assessment"
+  "Situational awareness" --> "Single-player authoring"
+  "Situational awareness" --> "Maps in version control"
+  "Collaborative authoring" --> "Mapkeep"
+  "Doctrine self-assessment" --> "doctrine.wardleymaps.com"
+  "Single-player authoring" --> "MapScript"
+
+
+==============================================================================
+=== /maps/M3__maps-for-agents.mmd — wardley-beta source
+==============================================================================
+wardley-beta
+  title M3 - Maps for agents - where the new user need sits
+  anchor "Agent" [0.95, 0.30]
+  component "Reason about strategy" [0.88, 0.22]
+  component "Read a map" [0.80, 0.55]
+  component "Write a map" [0.76, 0.38]
+  component "Contest a placement" [0.72, 0.08]
+  component "Machine-readable corpus" [0.60, 0.45]
+  component "OWM DSL" [0.55, 0.78]
+  component "Mermaid wardley-beta" [0.52, 0.66]
+  component "Coordinate contract" [0.46, 0.40]
+  component "Evidence for placement" [0.40, 0.10]
+  component "Deterministic renderer" [0.34, 0.60]
+  "Agent" --> "Reason about strategy"
+  "Reason about strategy" --> "Read a map"
+  "Reason about strategy" --> "Write a map"
+  "Reason about strategy" --> "Contest a placement"
+  "Read a map" --> "Machine-readable corpus"
+  "Machine-readable corpus" --> "OWM DSL"
+  "Write a map" --> "Mermaid wardley-beta"
+  "Write a map" --> "Coordinate contract"
+  "Mermaid wardley-beta" --> "Deterministic renderer"
+  "Contest a placement" --> "Evidence for placement"
+
+
+==============================================================================
+=== /maps/M4__the-site.mmd — wardley-beta source
+==============================================================================
+wardley-beta
+  title M4 - wardley-maps.sgit.ai as a value chain
+  anchor "Reader or agent" [0.95, 0.45]
+  component "Understand mapping" [0.88, 0.50]
+  component "Find the good resources" [0.84, 0.35]
+  component "Read the doctrine work" [0.78, 0.25]
+  component "See a worked example" [0.74, 0.42]
+  component "Resource pages" [0.62, 0.30]
+  component "Doctrine assessment" [0.58, 0.18]
+  component "Rendered maps" [0.54, 0.55]
+  component "Map sources in git" [0.46, 0.70]
+  component "llms.txt surface" [0.40, 0.48]
+  component "Static hosting" [0.24, 0.92]
+  "Reader or agent" --> "Understand mapping"
+  "Reader or agent" --> "Find the good resources"
+  "Reader or agent" --> "Read the doctrine work"
+  "Reader or agent" --> "See a worked example"
+  "Find the good resources" --> "Resource pages"
+  "Read the doctrine work" --> "Doctrine assessment"
+  "See a worked example" --> "Rendered maps"
+  "Rendered maps" --> "Map sources in git"
+  "Understand mapping" --> "llms.txt surface"
+  "Resource pages" --> "llms.txt surface"
+  "llms.txt surface" --> "Static hosting"
+  "Map sources in git" --> "Static hosting"
+
+
+==============================================================================
+=== /index.md
+==============================================================================
+# Maps are claims, not pictures
+
+*wardley-maps.sgit.ai · site v0.1.0 · CC BY 4.0 · part of the [sgit.ai](https://sgit.ai) network*
+
+A Wardley map asserts where every component sits on the evolution axis. That makes it
+**arguable** — and almost nobody publishes theirs anywhere it can be argued with. This site
+publishes its maps as source next to the render, its doctrine ratings with the artefact each
+one rests on, and its resource list with the date every link was last checked. Everything here
+is meant to be disagreed with in a pull request.
+
+- [Start here](start/index.html) — six rungs from "I read the introduction" to "I can argue about a placement"
+- [The doctrine assessment](doctrine/index.html) — 40 records, each naming its evidence
+- [34 resources, verified](resources/index.html) — not listed
+
+---
+
+## Three things here that are not anywhere else
+
+**[A doctrine assessment that names its evidence](doctrine/index.html).** Forty records across
+Wardley's six categories and four phases, every rating carrying the artefact it rests on so a
+reader who disagrees has the evidence in front of them. There is currently **no working doctrine
+assessment tool anywhere in the ecosystem** — both are dead, and the community index still lists
+them.
+
+**[Pioneers–Settlers–Town Planners as three literal agent teams](patterns/pst/index.html).** Not
+a metaphor: three directory trees, three session contracts, three evolution-stage mandates. The
+agent is told which stage of the evolution axis it is standing on before it does anything. And
+31 of the 33 role definitions inside those teams never got the memo, which the page says out
+loud.
+
+**[Thirty-four resources with a date on every one](resources/index.html).** MapKeep is dead.
+MapScript is dead. Every doctrine assessment tool is dead. The Map Camp Slack invite 404s. All
+of them are still listed as live by `awesome-wardley-maps`, by Wikipedia, and in two cases by
+Simon Wardley's own resources page.
+
+---
+
+## Four claims about the method
+
+Each one comes out of applying mapping to an agentic software project for six months, and each
+names what evidence would change it.
+
+| The claim | Why it matters |
+|---|---|
+| [De-commoditisation](method/de-commoditisation.html) | A thing can be commoditised at one phase of evolution while still being meaningfully custom-built at the next. The map shows the commodity; it does not show the shield. |
+| [The custom-axis verdict](method/custom-axes.html) | *Relabel the axis when the thing genuinely evolves; use a maturity model when the thing merely improves.* |
+| [You cannot map a gap](method/broken-middle.html) | A gap has no evolution, so it cannot be positioned. What you get instead is a shape: the ends are solved, the middle is people. |
+| [Maps are graphs with position](method/maps-as-graphs.html) | A map is a projection of a graph; map queries are graph queries with positional filters. **And it has no implementation.** |
+
+---
+
+> **Anybody who spends a lot of money on tokens has an engineering problem. They are using
+> explorer-type code and solutions in a commodity environment.**
+
+4 June 2026, and unpublished until now. It turns a strategy framework into an operational cost
+diagnostic: an invoice becomes evidence of a position on the evolution axis.
+[The skill lifecycle it comes from →](patterns/pst/index.html#skills)
+
+---
+
+## What is not here
+
+- **Zero of the thirteen Mermaid map sources in the source repository rendered.** Two mundane
+  causes. The eight PNGs from 24 May were the only working visuals in the whole corpus.
+- **The living evolution map died on 26 February 2026** — six months stale, against the corpus's
+  own warning that *"a map that was accurate three months ago and hasn't been updated is worse
+  than no map."*
+- **The best idea here has no code.** *Maps are graphs with position* is listed as PROPOSED.
+- **The map that shows us badly has not been drawn**, and it was asked for explicitly as the test
+  of whether these are analysis or marketing.
+
+[All of it, unsoftened →](shipped/index.html)
+
+---
+
+## If you are an agent
+
+[/llms.txt](llms.txt) and [/llms-full.txt](llms-full.txt) are the whole surface;
+[/agents/concepts.json](agents/concepts.json) is the definitions endpoint; and
+[/agents/](agents/index.html) carries the two things that are easy to get wrong.
+
+**First:** Mermaid and OnlineWardleyMaps coordinates are `[visibility, evolution]`, not
+`[x, y]`. Transposing them renders without an error and asserts something else entirely — proven
+there by rendering, not repeated from documentation.
+
+**Second, and it is not a footnote:** the evolution axis plausibly encodes consensus rather than
+objective fact, so a model placing components on it is generating consensus-shaped output with
+no underlying evidence. **An agent must surface its placements as contestable claims requiring
+challenge, never as findings.**
+
+---
+
+*Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog,
+blog.gardeviance.org, is CC BY-SA 3.0 — a different licence, quoted under a separate notice.
+Nothing here is an adaptation of either. [The licence position in full](about/licensing.html).*
+
+*This page is released under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0).*

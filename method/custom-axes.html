@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The custom-axis verdict — relabel when it evolves, use a maturity model when it improves</title>
+<meta name="description" content="The evolution axis does not have to read Genesis, custom-built, product, commodity. You can go from air gap to file to API to event-driven. The rule that settles when you may: relabel the axis when the thing genuinely evolves; use a maturity model when the thing merely improves.">
+<link rel="canonical" href="https://wardley-maps.sgit.ai/method/custom-axes.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="wardley-maps.sgit.ai">
+<meta property="og:url" content="https://wardley-maps.sgit.ai/method/custom-axes.html">
+<meta property="og:title" content="Relabel the axis when the thing evolves; use a maturity model when it improves">
+<meta property="og:description" content="The evolution axis does not have to read Genesis, custom-built, product, commodity. You can go from air gap to file to API to event-driven. The rule that settles when you may: relabel the axis when the thing genuinely evolves; use a maturity model when the thing merely improves.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../assets/favicon.svg" color="#0f766e">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<nav class="site"><div class="row">
+  <a class="brand" href="../index.html">wardley-maps<span>.sgit.ai</span></a>
+  <a class="parent" href="https://sgit.ai" title="sgit.ai — the parent project: the vault layer, the shipped CLI, and the Strategy Maps vault this site's map inventory draws on">↗ part of <b>sgit.ai</b></a>
+  <span class="stage-pill">research site</span>
+  <a class="ver" href="../admin/versions.html" title="Site release history">v0.1.0</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-items">
+    <div class="ni ni-has">
+      <a class="nl" href="../start/index.html">Learn<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../start/index.html">Start here</a>
+      <a class="sl" href="../maps/index.html">The map gallery</a>
+      <a class="sl" href="../glossary/index.html">Glossary</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl here" href="../method/index.html">Method<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../method/index.html">The four claims</a>
+      <a class="sl" href="../method/de-commoditisation.html">De-commoditisation</a>
+      <a class="sl here" href="../method/custom-axes.html">The custom-axis verdict</a>
+      <a class="sl" href="../method/broken-middle.html">The broken middle</a>
+      <a class="sl" href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../doctrine/index.html">Doctrine<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../doctrine/index.html">The 40-record assessment</a>
+      <a class="sl" href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../resources/index.html">Resources<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../resources/index.html">All 34, verified</a>
+      <a class="sl" href="../resources/dead/index.html">Dead or dying</a>
+      <a class="sl" href="../resources/verification.html">Link verification</a>
+      <a class="sl" href="../dinis/index.html">Dinis Cruz on mapping, 2018–2025</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../agents/index.html">For agents<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../agents/index.html">The machine surface</a>
+      <a class="sl" href="../shipped/index.html">What ships, and what doesn't</a>
+      <a class="sl" href="../network/index.html">The network</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../admin/comms.html">Site<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../admin/comms.html">Comms: tasks &amp; requests</a>
+      <a class="sl" href="../admin/versions.html">Release history</a>
+      <a class="sl" href="../admin/index.html">Admin &amp; engineering</a>
+      <a class="sl" href="../documents/index.html">The documents</a>
+      <a class="sl" href="../about/licensing.html">Licensing</a>
+      <a class="sl" href="../about/participant.html">Where we lose</a>
+      </div>
+    </div>
+  </div>
+  <a class="gh" href="https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps">★ GitHub</a>
+  <script src="../assets/nav.js" defer></script>
+</div></nav>
+
+<main class="doc">
+<p class="crumb"><a href="../index.html">wardley-maps.sgit.ai</a> / <a href="../method/index.html">Method</a> / The custom-axis verdict</p>
+<h1>The custom-axis verdict</h1>
+<p class="badges"><span class="badge b-original">Original contribution</span>
+  <span class="badge b-type">28 July 2026</span>
+  <span class="badge b-type">W7 · <a href="../glossary/index.html#w7">glossary</a></span></p>
+
+<blockquote class="challenge">the evolution scale doesn't necessarily need to be Genesis,
+custom-built, product and commodity; you can go from air gap to file to API to
+event-driven.</blockquote>
+
+<p class="lead">Relabelling the evolution axis is one of the most common things people try in
+their second month of mapping, and one of the fastest ways to produce something that looks like
+a Wardley map and reasons like a spreadsheet. This is the sharpest answer in the corpus to when
+you may do it, and it fits in one sentence.</p>
+
+<p class="claim"><b>Relabel the axis when the thing genuinely evolves; use a maturity model when
+the thing merely improves.</b></p>
+
+<h2 id="test">What the rule is actually testing</h2>
+<p>Wardley's four stages are not four adjectives for "how good is it". They name a process:
+something appears, gets built badly by people who need it, gets productised by people who see a
+market, and finally becomes so ubiquitous and so well-understood that it is bought without
+thought. The axis measures <b>ubiquity against certainty</b>. It is not a time axis and not an
+adoption curve.</p>
+
+<p>So the test the rule proposes is: <b>do your labels name stages of that same process, or do
+they name rungs on a ladder of quality?</b></p>
+
+<div class="tablewrap"><table>
+  <thead><tr><th>Proposed axis</th><th class="safe">Verdict</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><code>air gap → file → API → event-driven</code></td>
+        <td><b class="yes">A relabelled evolution axis</b></td>
+        <td>Each stage is a genuinely different <em>kind</em> of thing, with its own economics
+          and its own failure modes. Moving right is not "the same integration, better" — it is
+          a different integration that became possible because the one to its left became
+          ubiquitous. That is evolution.</td></tr>
+    <tr><td><code>no tests → some tests → good coverage → full coverage</code></td>
+        <td><b class="no">A maturity model</b></td>
+        <td>Same activity, more of it. Nothing new becomes possible at the right-hand end that
+          was inconceivable at the left. Draw it as a maturity model and stop calling it a map.</td></tr>
+    <tr><td><code>not-visible → fully-visible</code> (the visibility overlay)</td>
+        <td><b class="opt-part">Open</b></td>
+        <td>Proposed in the corpus as an alternative axis. It is a property of a component
+          relative to a user rather than a stage of its evolution — which is, notably, what the
+          <em>other</em> axis of a Wardley map already measures. Unresolved: see below.</td></tr>
+    <tr><td><code>risk: not-understood → fully-accepted</code></td>
+        <td><b class="opt-part">Open</b></td>
+        <td>Same question. There is a real argument that risk understanding does evolve — from
+          nobody having seen this failure to it being a line item in a standard control set —
+          and an equally real argument that this is a maturity model wearing a map's clothes.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="axes">The six axes that were proposed and never drawn</h2>
+<p>The corpus proposes alternative axes in two places — <em>"by treating the evolution axis as
+a configurable dimension rather than a fixed one, and by storing axis metadata in the graph
+alongside everything else"</em> (7 February 2026), and again as visibility and risk overlays
+(19 June 2026). Six were named: <b>openness, automation, documentation, test coverage, graph
+connectivity</b>, plus the visibility and risk overlays.</p>
+
+<div class="warnbox"><b>Zero maps in the corpus use one.</b> Not even the axis this very verdict
+sanctions — <code>air gap → file → API → event-driven</code> — was ever drawn. Six proposed
+axes, one explicit ruling in their favour, and no artefact. Applying the rule above to the six
+proposals is uncomfortable, too: <em>test coverage</em> and <em>documentation</em> look like
+maturity models by the verdict's own test. That is the verdict working correctly, and it is
+worth saying rather than quietly not mentioning.</div>
+
+<h2 id="what-changes">What changes if you accept it</h2>
+<p>Two things, and the second is the useful one.</p>
+<p><b>You stop arguing about whether custom axes are allowed</b> and start arguing about whether
+a specific one passes the test — which is a much better argument, because it is about the domain
+rather than about the method.</p>
+<p><b>You get a reason to reject most of them.</b> The rule is not permissive. Applied honestly
+it rejects the majority of relabelled axes people propose, including several in the corpus that
+proposed it. A rule that only ever says yes is not doing any work.</p>
+
+<h2 id="falsify">What would falsify it</h2>
+<ul>
+  <li><b>A relabelled axis that passes the test and still produces nonsense.</b> If genuine
+    evolution is not sufficient for the map to behave — if, say, the climatic patterns stop
+    holding on a relabelled axis even when the stages are real — the rule is necessary but not
+    sufficient and needs a second clause.</li>
+  <li><b>A maturity model that behaves like a map anyway.</b> If you can take
+    <code>no tests → full coverage</code>, place components on it, and find that anticipation
+    and gameplay still work, then the distinction is aesthetic and the rule should be
+    dropped.</li>
+  <li><b>Wardley's own position.</b> This has not been put to him, and the question of when the
+    axis may be relabelled is old enough that there may be a published answer this corpus has
+    not found. If there is, it wins on priority.</li>
+</ul>
+
+<h2 id="open">Left open</h2>
+<p><a href="../admin/comms.html#q2">Q2</a>: does the rule hold for the risk and visibility
+overlays? The corpus proposes both and the verdict does not adjudicate them. This page has
+argued above that visibility is the weaker of the two, since a Wardley map already has a
+visibility axis — but that is an argument, not a resolution.</p>
+
+<h2 id="related">Related</h2>
+<ul>
+  <li><a href="broken-middle.html">You cannot map a gap</a> — the same brief, 28 July 2026, and
+    the map that provoked both.</li>
+  <li><a href="de-commoditisation.html">De-commoditisation</a> — pushing against what the
+    stages mean rather than what they are called.</li>
+  <li><a href="../resources/what-do-wardley-maps-really-map-a-settler-writes-critique.html">Matt
+    Edgar's critique</a> — if the axis encodes consensus rather than fact, the question of what
+    you may relabel it to gets considerably more awkward.</li>
+</ul>
+
+<div class="pagenav">
+  <a href="de-commoditisation.html">← De-commoditisation</a>
+  <a href="broken-middle.html">You cannot map a gap →</a>
+</div>
+</main>
+
+<footer class="site"><div class="cols">
+  <div>
+    <div class="brandline">wardley-maps<span>.sgit.ai</span></div>
+    <p>Wardley Mapping as a research site: the technique, an original doctrine assessment, 34 industry resources verified rather than listed, and the mapping thinking behind the <a href="https://sgit.ai" style="display:inline;padding:0"><b>sgit.ai</b></a> network. This site's own content is CC BY 4.0; the ecosystem it quotes is CC BY-SA — <a href="../about/licensing.html" style="display:inline;padding:0">the difference matters</a>.</p>
+    <p class="netline"><a href="https://sgit.ai"><b>↗ sgit.ai</b></a> — the parent project and the Strategy Maps vault · <a href="https://graphs.sgit.ai/v1/maps/index.html">↗ graphs.sgit.ai</a> — maps as graphs · <a href="https://pki.sgit.ai">↗ pki.sgit.ai</a> — where the doctrine assessment was built · <a href="https://sgit.ai/network/index.html">↗ the network</a></p>
+    <p class="partnote">⚠ Participant disclosure: published by the sgit project, which uses the mapping practice this site documents and is assessed by the doctrine page it hosts. <a href="../about/participant.html" style="display:inline;padding:0">Read the disclosure</a>.</p>
+    <p class="partnote">Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog, <a href="https://blog.gardeviance.org/" style="display:inline;padding:0">blog.gardeviance.org</a>, is CC BY-SA <b>3.0</b> — a different licence, quoted under a separate notice. Nothing here is an adaptation of either.</p>
+    <p class="verline">site <a href="../admin/versions.html">v0.1.0</a> · <a href="../admin/index.html">engineering</a> · <a href="../about/licensing.html">CC BY 4.0</a></p>
+  </div>
+  <div>
+    <h4>Start</h4>
+    <a href="../start/index.html">&#8594; Start here</a>
+    <a href="../maps/index.html">The map gallery</a>
+    <a href="../glossary/index.html">Glossary</a>
+    <a href="../shipped/index.html">What ships, and what doesn't</a>
+  </div>
+  <div>
+    <h4>The four claims</h4>
+    <a href="../method/de-commoditisation.html">De-commoditisation</a>
+    <a href="../method/custom-axes.html">The custom-axis verdict</a>
+    <a href="../method/broken-middle.html">The broken middle</a>
+    <a href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+    <a href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+  </div>
+  <div>
+    <h4>The record</h4>
+    <a href="../doctrine/index.html">The doctrine assessment</a>
+    <a href="../resources/index.html">34 resources, verified</a>
+    <a href="../resources/dead/index.html">Dead or dying</a>
+    <a href="../dinis/index.html">Dinis Cruz, 2018–2025</a>
+    <a href="../documents/index.html">The documents</a>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <a href="../admin/comms.html">Comms: tasks &amp; requests</a>
+    <a href="../admin/versions.html">Release history</a>
+    <a href="../about/licensing.html">Licensing</a>
+    <a href="../llms.txt">llms.txt</a>
+    <a href="../llms-full.txt">llms-full.txt</a>
+  </div>
+</div></footer>
+</body>
+</html>

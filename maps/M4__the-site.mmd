@@ -1,0 +1,25 @@
+wardley-beta
+  title M4 - wardley-maps.sgit.ai as a value chain
+  anchor "Reader or agent" [0.95, 0.45]
+  component "Understand mapping" [0.88, 0.50]
+  component "Find the good resources" [0.84, 0.35]
+  component "Read the doctrine work" [0.78, 0.25]
+  component "See a worked example" [0.74, 0.42]
+  component "Resource pages" [0.62, 0.30]
+  component "Doctrine assessment" [0.58, 0.18]
+  component "Rendered maps" [0.54, 0.55]
+  component "Map sources in git" [0.46, 0.70]
+  component "llms.txt surface" [0.40, 0.48]
+  component "Static hosting" [0.24, 0.92]
+  "Reader or agent" --> "Understand mapping"
+  "Reader or agent" --> "Find the good resources"
+  "Reader or agent" --> "Read the doctrine work"
+  "Reader or agent" --> "See a worked example"
+  "Find the good resources" --> "Resource pages"
+  "Read the doctrine work" --> "Doctrine assessment"
+  "See a worked example" --> "Rendered maps"
+  "Rendered maps" --> "Map sources in git"
+  "Understand mapping" --> "llms.txt surface"
+  "Resource pages" --> "llms.txt surface"
+  "llms.txt surface" --> "Static hosting"
+  "Map sources in git" --> "Static hosting"

@@ -1,0 +1,742 @@
+[
+  {
+    "id": "01-book-on-being-lost",
+    "name": "Wardley Maps \u2014 Ch.1 On Being Lost",
+    "url": "https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Simon Wardley, CC BY-SA 4.0",
+    "status": 403,
+    "finalUrl": "https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec",
+    "title": "Attention Required! | Cloudflare",
+    "file": "01-book-on-being-lost.webp",
+    "bytes": 32900,
+    "capturedAt": "2026-08-23T21:18:35.479Z",
+    "ok": true,
+    "blocked": true,
+    "source_px": [
+      2880,
+      2042
+    ],
+    "source_bytes": 198962,
+    "published_px": [
+      1200,
+      851
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d72042 PNG capture."
+  },
+  {
+    "id": "02-book-index",
+    "name": "Wardley Maps \u2014 the Medium publication",
+    "url": "https://medium.com/wardleymaps",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Simon Wardley, CC BY-SA 4.0",
+    "status": 403,
+    "finalUrl": "https://medium.com/wardleymaps",
+    "title": "Attention Required! | Cloudflare",
+    "file": "02-book-index.webp",
+    "bytes": 29996,
+    "capturedAt": "2026-08-23T21:18:47.130Z",
+    "ok": true,
+    "blocked": true,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 176485,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "03-learnwardleymapping",
+    "name": "Learn Wardley Mapping",
+    "url": "https://learnwardleymapping.com/",
+    "licence": "CC BY-SA 4.0 (free reference only)",
+    "attribution": "Ben Mosior / Hired Thought, CC BY-SA 4.0",
+    "status": 200,
+    "finalUrl": "https://learnwardleymapping.com/",
+    "title": "Home \u2013 Learn Wardley Mapping",
+    "file": "03-learnwardleymapping.webp",
+    "bytes": 14792,
+    "capturedAt": "2026-08-23T21:18:59.094Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 118273,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "04-doctrine-grid",
+    "name": "LWM doctrine grid",
+    "url": "https://learnwardleymapping.com/doctrine/",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Mosior / Hired Thought; doctrine after Wardley; grid after Fogleman",
+    "status": 200,
+    "finalUrl": "https://learnwardleymapping.com/doctrine/",
+    "title": "Doctrine \u2013 Learn Wardley Mapping",
+    "file": "04-doctrine-grid.webp",
+    "bytes": 177148,
+    "capturedAt": "2026-08-23T21:19:13.168Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      9520
+    ],
+    "source_bytes": 1163138,
+    "published_px": [
+      1200,
+      3967
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d79520 PNG capture."
+  },
+  {
+    "id": "05-onlinewardleymaps",
+    "name": "OnlineWardleyMaps editor",
+    "url": "https://onlinewardleymaps.com/",
+    "licence": "MIT (code)",
+    "attribution": "OnlineWardleyMaps, MIT. Technique: Simon Wardley, CC BY-SA 4.0",
+    "status": 200,
+    "finalUrl": "https://onlinewardleymaps.com/",
+    "title": "Wardley Maps - Online Wardley Maps",
+    "file": "05-onlinewardleymaps.webp",
+    "bytes": 43414,
+    "capturedAt": "2026-08-23T21:19:30.016Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 510161,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "06-owm-dsl-reference",
+    "name": "OWM DSL reference",
+    "url": "https://docs.onlinewardleymaps.com/docs/dsl-reference/",
+    "licence": "MIT",
+    "attribution": "OnlineWardleyMaps docs, MIT",
+    "status": 200,
+    "finalUrl": "https://docs.onlinewardleymaps.com/docs/dsl-reference/",
+    "title": "DSL Reference | Online Wardley Maps",
+    "file": "06-owm-dsl-reference.webp",
+    "bytes": 175052,
+    "capturedAt": "2026-08-23T21:19:44.414Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      9490
+    ],
+    "source_bytes": 1159324,
+    "published_px": [
+      1200,
+      3954
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d79490 PNG capture."
+  },
+  {
+    "id": "07-mermaid-wardley",
+    "name": "Mermaid wardley-beta syntax",
+    "url": "https://mermaid.js.org/syntax/wardley.html",
+    "licence": "MIT",
+    "attribution": "Mermaid, MIT",
+    "status": 200,
+    "finalUrl": "https://mermaid.js.org/syntax/wardley.html",
+    "title": "Wardley Maps (v11.14.0+) | Mermaid",
+    "file": "07-mermaid-wardley.webp",
+    "bytes": 120718,
+    "capturedAt": "2026-08-23T21:20:12.214Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      44652
+    ],
+    "truncated_height": true,
+    "source_bytes": 3893244,
+    "published_px": [
+      1200,
+      4000
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d744652 PNG capture, cropped to the first 4000px."
+  },
+  {
+    "id": "08-awesome-list",
+    "name": "awesome-wardley-maps",
+    "url": "https://list.wardleymaps.com/",
+    "licence": "CC0 1.0",
+    "attribution": "No attribution required (CC0); credit John Grant as a courtesy",
+    "status": 200,
+    "finalUrl": "https://list.wardleymaps.com/",
+    "title": "Wardley Maps Awesome List",
+    "file": "08-awesome-list.webp",
+    "bytes": 43824,
+    "capturedAt": "2026-08-23T21:20:24.628Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 289013,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "09-wardleymaps-101",
+    "name": "Wardley Mapping 101 (Chris Daniel)",
+    "url": "https://www.wardleymaps.com/guides/wardley-mapping-101",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Krzysztof Daniel, wardleymaps.com, CC BY-SA 4.0",
+    "status": 200,
+    "finalUrl": "https://www.wardleymaps.com/guides/wardley-mapping-101",
+    "title": "Mapping 101: A Beginner's Guide - Strategic Guide | Wardley Maps",
+    "file": "09-wardleymaps-101.webp",
+    "bytes": 230878,
+    "capturedAt": "2026-08-23T21:20:46.397Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      27676
+    ],
+    "truncated_height": true,
+    "source_bytes": 3653129,
+    "published_px": [
+      1200,
+      4000
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d727676 PNG capture, cropped to the first 4000px."
+  },
+  {
+    "id": "10-gardeviance",
+    "name": "Bits or pieces? \u2014 Simon Wardley's blog",
+    "url": "https://blog.gardeviance.org/",
+    "licence": "CC BY-SA 3.0 \u2014 NOT 4.0",
+    "attribution": "Simon Wardley, CC BY-SA 3.0. Do not merge with the 4.0 notice.",
+    "status": 200,
+    "finalUrl": "https://blog.gardeviance.org/",
+    "title": "Bits or pieces?",
+    "file": "10-gardeviance.webp",
+    "bytes": 48516,
+    "capturedAt": "2026-08-23T21:20:59.601Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 400425,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "11-swardleymaps",
+    "name": "swardleymaps.com",
+    "url": "https://www.swardleymaps.com/",
+    "licence": "not stated",
+    "attribution": "Simon Wardley \u2014 link only, licence not stated",
+    "status": 200,
+    "finalUrl": "https://www.swardleymaps.com/",
+    "title": "Wardley Maps - Strategic Mapping for Business Evolution",
+    "file": "11-swardleymaps.webp",
+    "bytes": 30854,
+    "capturedAt": "2026-08-23T21:21:12.257Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 644183,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "12-wikipedia",
+    "name": "Wikipedia: Wardley map",
+    "url": "https://en.wikipedia.org/wiki/Wardley_map",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Wikipedia contributors, CC BY-SA 4.0, link back to the article",
+    "status": 200,
+    "finalUrl": "https://en.wikipedia.org/wiki/Wardley_map",
+    "title": "Wardley map - Wikipedia",
+    "file": "12-wikipedia.webp",
+    "bytes": 100460,
+    "capturedAt": "2026-08-23T21:21:24.464Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 555398,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "13-map-repository",
+    "name": "swardley/WARDLEY-MAP-REPOSITORY",
+    "url": "https://github.com/swardley/WARDLEY-MAP-REPOSITORY",
+    "licence": "AMBIGUOUS \u2014 README says CC BY-SA, GitHub field says GPL-3.0",
+    "attribution": "FLAGGED: link only, do not mirror until resolved",
+    "status": 200,
+    "finalUrl": "https://github.com/swardley/WARDLEY-MAP-REPOSITORY",
+    "title": "GitHub - swardley/WARDLEY-MAP-REPOSITORY: Maps from the 2022 AND BEYOND research projects \u00b7 GitHub",
+    "file": "13-map-repository.webp",
+    "bytes": 53600,
+    "capturedAt": "2026-08-23T21:21:42.837Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 474753,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "14-mermaid-mirror",
+    "name": "wardley-maps-mermaid (rendered mirror)",
+    "url": "https://github.com/tractorjuice/wardley-maps-mermaid/",
+    "licence": "see repo",
+    "attribution": "Craddock mirror; content CC BY-SA 4.0, code GPL-3.0",
+    "status": 200,
+    "finalUrl": "https://github.com/tractorjuice/wardley-maps-mermaid/",
+    "title": "GitHub - tractorjuice/wardley-maps-mermaid: Mirror of swardley/WARDLEY-MAP-REPOSITORY with each map rendered as Mermaid wardley-beta alongside the OWM source. 100% component/link retention, |\u0394\u03b5|=0. \u00b7 GitHub",
+    "file": "14-mermaid-mirror.webp",
+    "bytes": 64542,
+    "capturedAt": "2026-08-23T21:22:01.052Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 504316,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "15-arckit",
+    "name": "ArcKit \u2014 mapping for AI coding assistants",
+    "url": "https://github.com/tractorjuice/arc-kit",
+    "licence": "MIT (vendored maps CC BY-SA 4.0)",
+    "attribution": "ArcKit, MIT; bundled maps Simon Wardley CC BY-SA 4.0",
+    "status": 200,
+    "finalUrl": "https://github.com/tractorjuice/arc-kit",
+    "title": "GitHub - tractorjuice/arc-kit: The Enterprise Architecture Governance Harness \u2014 strategy, architecture, delivery, and assurance using AI coding assistants \u00b7 GitHub",
+    "file": "15-arckit.webp",
+    "bytes": 69234,
+    "capturedAt": "2026-08-23T21:22:21.820Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 519478,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "16-wardleytogo",
+    "name": "wardleyToGo",
+    "url": "https://github.com/owulveryck/wardleyToGo",
+    "licence": "MIT",
+    "attribution": "Olivier Wulveryck, MIT",
+    "status": 200,
+    "finalUrl": "https://github.com/owulveryck/wardleyToGo",
+    "title": "GitHub - owulveryck/wardleyToGo: Create your WardleyMaps as code/data and render it as SVG (onlinewardleymap and wtg language supported) \u00b7 GitHub",
+    "file": "16-wardleytogo.webp",
+    "bytes": 66434,
+    "capturedAt": "2026-08-23T21:22:40.205Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 509622,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "17-cli-owm",
+    "name": "cli-owm",
+    "url": "https://github.com/monkeypants/cli-owm",
+    "licence": "MIT",
+    "attribution": "cli-owm, MIT",
+    "status": 200,
+    "finalUrl": "https://github.com/monkeypants/cli-owm",
+    "title": "GitHub - monkeypants/cli-owm: CLI program for rendering Wardley Map DSL \u00b7 GitHub",
+    "file": "17-cli-owm.webp",
+    "bytes": 58870,
+    "capturedAt": "2026-08-23T21:22:58.282Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 468554,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "18-mapping-canvas",
+    "name": "Wardley Mapping Canvas",
+    "url": "https://github.com/HiredThought/wardley-mapping-canvas",
+    "licence": "CC BY-SA 4.0",
+    "attribution": "Ben Mosior / Hired Thought, CC BY-SA 4.0",
+    "status": 200,
+    "finalUrl": "https://github.com/HiredThought/wardley-mapping-canvas",
+    "title": "GitHub - HiredThought/wardley-mapping-canvas: A repository for the Wardley Mapping Canvas \u00b7 GitHub",
+    "file": "18-mapping-canvas.webp",
+    "bytes": 53804,
+    "capturedAt": "2026-08-23T21:23:16.365Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 408358,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "19-mapcamp",
+    "name": "Map Camp (current site)",
+    "url": "https://www.mapcamp.co.uk/",
+    "licence": "not stated",
+    "attribution": "Map Camp \u2014 link only. NOTE: map-camp.com is the STALE domain; never link it.",
+    "status": 200,
+    "finalUrl": "https://www.mapcamp.co.uk/",
+    "title": "Mapping | Map Camp 24",
+    "file": "19-mapcamp.webp",
+    "bytes": 71162,
+    "capturedAt": "2026-08-23T21:23:32.147Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 2347814,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "20-infoq-crossing-river",
+    "name": "Crossing the River by Feeling the Stones",
+    "url": "https://www.infoq.com/presentations/stuational-awareness/",
+    "licence": "ARR (InfoQ ToU)",
+    "attribution": "InfoQ \u2014 page screenshot for identification only; no re-hosting, no clipping",
+    "status": 200,
+    "finalUrl": "https://www.infoq.com/presentations/stuational-awareness/",
+    "title": "Crossing the River by Feeling the Stones - InfoQ",
+    "file": "20-infoq-crossing-river.webp",
+    "bytes": 56098,
+    "capturedAt": "2026-08-23T21:24:18.472Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 790404,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "21-mattedgar-critique",
+    "name": "What do Wardley maps really map? A settler writes",
+    "url": "https://blog.mattedgar.com/2017/08/13/what-do-wardley-maps-really-map-a-settler-writes/",
+    "licence": "no statement \u2014 assume ARR",
+    "attribution": "FLAGGED: Matt Edgar. Screenshot for commentary only; quote briefly, link out.",
+    "status": 200,
+    "finalUrl": "https://blog.mattedgar.com/2017/08/13/what-do-wardley-maps-really-map-a-settler-writes/",
+    "title": "What do Wardley maps really map? A settler writes \u2013 Matt Edgar writes here",
+    "file": "21-mattedgar-critique.webp",
+    "bytes": 327974,
+    "capturedAt": "2026-08-23T21:24:35.811Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      14000
+    ],
+    "truncated_height": true,
+    "source_bytes": 3464954,
+    "published_px": [
+      1200,
+      4000
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d714000 PNG capture, cropped to the first 4000px."
+  },
+  {
+    "id": "22-buerkli-critique",
+    "name": "Where the map ends",
+    "url": "https://dannybuerkli.medium.com/where-the-map-ends-understanding-wardley-maps-limitations-6c41b8feae68",
+    "licence": "Medium default \u2014 ARR",
+    "attribution": "Danny Buerkli \u2014 commentary only",
+    "status": 403,
+    "finalUrl": "https://dannybuerkli.medium.com/where-the-map-ends-understanding-wardley-maps-limitations-6c41b8feae68",
+    "title": "Attention Required! | Cloudflare",
+    "file": "22-buerkli-critique.webp",
+    "bytes": 29996,
+    "capturedAt": "2026-08-23T21:24:48.032Z",
+    "ok": true,
+    "blocked": true,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 176485,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "23-xebia-threat-modeling",
+    "name": "Wardley Mapping for Threat Modeling",
+    "url": "https://xebia.com/blog/using-wardley-mapping-for-optimizing-your-threat-modeling-strategy/",
+    "licence": "corporate blog \u2014 ARR",
+    "attribution": "Xebia \u2014 describe the method, link for the diagrams. Do NOT reproduce its maps.",
+    "status": 200,
+    "finalUrl": "https://xebia.com/blog/using-wardley-mapping-for-optimizing-your-threat-modeling-strategy/",
+    "title": "Using Wardley Mapping For Optimizing Your Threat Modeling Strategy | Xebia",
+    "file": "23-xebia-threat-modeling.webp",
+    "bytes": 57574,
+    "capturedAt": "2026-08-23T21:25:03.000Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 282328,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "24-oss-wardley-project",
+    "name": "Open Security Summit \u2014 Wardley Maps project",
+    "url": "https://open-security-summit.org/projects/wardley-maps/",
+    "licence": "not stated",
+    "attribution": "FLAGGED: Open Security Summit \u2014 link only",
+    "status": 200,
+    "finalUrl": "https://open-security-summit.org/projects/wardley-maps/",
+    "title": "Wardley Maps",
+    "file": "24-oss-wardley-project.webp",
+    "bytes": 40066,
+    "capturedAt": "2026-08-23T21:25:18.002Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 720500,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "25-oss-why-changed-my-thinking",
+    "name": "Why Wardley Maps changed how I think (Dinis, solo)",
+    "url": "https://open-security-summit.org/sessions/2022/mini-summits/jul/wardley-maps/why-wardley-maps-changed-how-i-think/",
+    "licence": "not stated",
+    "attribution": "Open Security Summit \u2014 Dinis's own session; own-work claim still needs the site's own licence note",
+    "status": 200,
+    "finalUrl": "https://open-security-summit.org/sessions/2022/mini-summits/jul/wardley-maps/why-wardley-maps-changed-how-i-think/",
+    "title": "Why Wardley Maps changed how I think",
+    "file": "25-oss-why-changed-my-thinking.webp",
+    "bytes": 51190,
+    "capturedAt": "2026-08-23T21:25:31.487Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 1714537,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "26-gcati",
+    "name": "GCATI Foundation in Wardley Mapping",
+    "url": "https://gcati.org/certification/wardley-mapping/foundation",
+    "licence": "not stated \u2014 ARR",
+    "attribution": "GCATI \u2014 page screenshot only, do not reproduce the syllabus",
+    "ok": false,
+    "error": "Error: page.goto: net::ERR_FAILED at https://gcati.org/certification/wardley-mapping/foundation",
+    "blocked": false
+  },
+  {
+    "id": "27-pki-doctrine",
+    "name": "OWN \u2014 pki.sgit.ai doctrine assessment",
+    "url": "https://pki.sgit.ai/packs/registry-mvp/doctrine.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0",
+    "status": 200,
+    "finalUrl": "https://pki.sgit.ai/packs/registry-mvp/doctrine.html",
+    "title": "Appendix C \u2014 Wardley doctrine, and where this project actually stands \u00b7 pki.sgit.ai",
+    "file": "27-pki-doctrine.webp",
+    "bytes": 332014,
+    "capturedAt": "2026-08-23T21:25:46.398Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      12242
+    ],
+    "truncated_height": true,
+    "source_bytes": 2348626,
+    "published_px": [
+      1200,
+      4000
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d712242 PNG capture, cropped to the first 4000px."
+  },
+  {
+    "id": "28-sgit-strategy-maps",
+    "name": "OWN \u2014 sgit.ai strategy maps (vault-served)",
+    "url": "https://sgit.ai/demos/strategy-maps.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0. Client-side decryption \u2014 allow extra wait.",
+    "status": 200,
+    "finalUrl": "https://sgit.ai/demos/strategy-maps.html",
+    "title": "The Strategy in Seven Maps \u2014 a real document republished from a vault \u2014 sgit.ai demos",
+    "file": "28-sgit-strategy-maps.webp",
+    "bytes": 71178,
+    "capturedAt": "2026-08-23T21:26:04.228Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 408751,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "29-graphs-maps",
+    "name": "OWN \u2014 graphs.sgit.ai maps-as-graphs",
+    "url": "https://graphs.sgit.ai/v1/maps/index.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0",
+    "status": 200,
+    "finalUrl": "https://graphs.sgit.ai/v1/maps/index.html",
+    "title": "Wardley maps as graphs \u2014 graphs.sgit.ai",
+    "file": "29-graphs-maps.webp",
+    "bytes": 66586,
+    "capturedAt": "2026-08-23T21:26:16.105Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      1800
+    ],
+    "source_bytes": 368202,
+    "published_px": [
+      1200,
+      750
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d71800 PNG capture."
+  },
+  {
+    "id": "30-pki-wardley-maps",
+    "name": "OWN \u2014 pki.sgit.ai six Wardley maps",
+    "url": "https://pki.sgit.ai/packs/registry-mvp/wardley-maps.html",
+    "licence": "CC BY 4.0 (own)",
+    "attribution": "Dinis Cruz, CC BY 4.0. Mermaid renders client-side \u2014 allow extra wait.",
+    "status": 200,
+    "finalUrl": "https://pki.sgit.ai/packs/registry-mvp/wardley-maps.html",
+    "title": "09 \u2014 Wardley maps \u00b7 registry-mvp \u00b7 pki.sgit.ai",
+    "file": "30-pki-wardley-maps.webp",
+    "bytes": 353778,
+    "capturedAt": "2026-08-23T21:26:40.989Z",
+    "ok": true,
+    "blocked": false,
+    "source_px": [
+      2880,
+      25472
+    ],
+    "truncated_height": true,
+    "source_bytes": 5066157,
+    "published_px": [
+      1200,
+      4000
+    ],
+    "derivative": "Resized to 1200px wide and re-encoded as WebP q82 from the 2880\u00d725472 PNG capture, cropped to the first 4000px."
+  }
+]

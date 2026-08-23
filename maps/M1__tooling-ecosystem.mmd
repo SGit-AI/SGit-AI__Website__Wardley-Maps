@@ -1,0 +1,32 @@
+wardley-beta
+  title M1 - The Wardley mapping tool ecosystem, August 2026
+  anchor "Mapper" [0.95, 0.55]
+  component "Draw a map" [0.86, 0.62]
+  component "Share a map" [0.80, 0.48]
+  component "Version a map" [0.74, 0.55]
+  component "Assess doctrine" [0.70, 0.22]
+  component "Agent authoring" [0.66, 0.20]
+  component "OnlineWardleyMaps" [0.58, 0.70]
+  component "OWM text syntax" [0.50, 0.78]
+  component "Mermaid wardley-beta" [0.46, 0.66]
+  component "Git" [0.38, 0.95]
+  component "SVG rendering" [0.30, 0.82]
+  component "Real-time collaboration" [0.62, 0.30]
+  component "Doctrine tool" [0.56, 0.10]
+  component "ArcKit" [0.60, 0.34]
+  "Mapper" --> "Draw a map"
+  "Mapper" --> "Share a map"
+  "Mapper" --> "Version a map"
+  "Mapper" --> "Assess doctrine"
+  "Mapper" --> "Agent authoring"
+  "Draw a map" --> "OnlineWardleyMaps"
+  "OnlineWardleyMaps" --> "OWM text syntax"
+  "Version a map" --> "Mermaid wardley-beta"
+  "Mermaid wardley-beta" --> "OWM text syntax"
+  "Mermaid wardley-beta" --> "Git"
+  "Mermaid wardley-beta" --> "SVG rendering"
+  "OnlineWardleyMaps" --> "SVG rendering"
+  "Share a map" --> "Real-time collaboration"
+  "Assess doctrine" --> "Doctrine tool"
+  "Agent authoring" --> "ArcKit"
+  "ArcKit" --> "OWM text syntax"

@@ -1,0 +1,443 @@
+{
+  "schema": "dinis-wardley-published/v1",
+  "compiled": "2026-08-23",
+  "method": "WebSearch + WebFetch only; SlideShare, LinkedIn, YouTube pages and archive.org were not fetchable from the build sandbox and are marked verified:false",
+  "count": 26,
+  "items": [
+    {
+      "id": "A01",
+      "date": "2018-06-04",
+      "date_precision": "exact",
+      "title": "Create Wardley Maps for multiple security scenarios",
+      "type": "conference session",
+      "venue": "Open Security Summit 2018 \u2014 Maps and Graphs track",
+      "url": "https://2018.open-security-summit.org/tracks/maps-and-graphs/user-sessions/create-wardley-mappings-for-multiple-security-scenarios/",
+      "role": "organiser",
+      "collaborators": [
+        "Aurelijus Stanislovaitis",
+        "Tony Richards"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "The only track Dinis is named as organising. Mapped a cup of tea AND an AWS attack in the same session."
+    },
+    {
+      "id": "A02",
+      "date": "2018-06-04",
+      "date_precision": "exact",
+      "title": "Outcomes: Create Wardley Maps for multiple security scenarios",
+      "type": "outcomes page + slide deck",
+      "venue": "Open Security Summit 2018",
+      "url": "https://2018.open-security-summit.org/outcomes/tracks/maps-and-graphs/user-sessions/create-wardley-mappings-for-multiple-security-scenarios/",
+      "role": "organiser",
+      "collaborators": [
+        "Tony Richards"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "Deck at slideshare.net/opensecsummit/oss2018-outcomes-... \u2014 not fetchable. Records the disagreement over 'whether the tea picker was visible' as the teaching moment."
+    },
+    {
+      "id": "A03",
+      "date": "2018-06-07",
+      "date_precision": "exact",
+      "title": "SOC Value Chain using Wardley maps",
+      "type": "conference session",
+      "venue": "Open Security Summit 2018",
+      "url": "https://2018.open-security-summit.org/tracks/maps-and-graphs/user-sessions/soc-value-chain-using-wardley-maps/",
+      "role": "participant",
+      "collaborators": [
+        "Phil Huggins (organiser)",
+        "Jemma Davis-Smith",
+        "James Wharton",
+        "Ian Taylor",
+        "Phil Parker",
+        "Tony Richards",
+        "Anton Delsink",
+        "Simon Wardley"
+      ],
+      "verified": true,
+      "video": null,
+      "note": ""
+    },
+    {
+      "id": "A04",
+      "date": "2018-10-07",
+      "date_precision": "exact",
+      "title": "Dot Language (graph based diagrams)",
+      "type": "blog post",
+      "venue": "Medium (@dinis.cruz)",
+      "url": "https://medium.com/@dinis.cruz/dot-language-graph-based-diagrams-c3baf4c0decc",
+      "role": "sole author",
+      "collaborators": [],
+      "verified": true,
+      "video": null,
+      "note": "THE INTELLECTUAL SEED. 'the answer is Maps, which are diagrams with the following properties - are visual - have context - are mode of components - have at least one anchor - have a position (relative to anchor) - have a consistency of movement'"
+    },
+    {
+      "id": "A05",
+      "date": "2018-12-12",
+      "date_precision": "exact",
+      "title": "3 Wardley Maps Templates I'm using to talk to Generation Z Developers",
+      "type": "blog post",
+      "venue": "blog.diniscruz.com / diniscruz.blogspot.com",
+      "url": "https://diniscruz.blogspot.com/2018/12/3-wardley-maps-templates-im-using-to.html",
+      "role": "sole author",
+      "collaborators": [],
+      "verified": true,
+      "video": null,
+      "note": "One of only TWO posts under the Wardley_Maps label. Crossposted to community.wardleymaps.com (which mis-dates it 27/02/2024 \u2014 a migration artefact, not a republication)."
+    },
+    {
+      "id": "A06",
+      "date": "2018-12-12",
+      "date_precision": "exact",
+      "title": "Creating Wardley Maps using Lambda Functions",
+      "type": "blog post",
+      "venue": "blog.diniscruz.com / diniscruz.blogspot.com",
+      "url": "https://diniscruz.blogspot.com/2018/12/creating-wardley-maps-using-lambda.html",
+      "role": "sole author",
+      "collaborators": [],
+      "verified": true,
+      "video": null,
+      "note": "MAPS AS CODE, 2018. Opens on being unable to 'programatically create the maps (ideally via [a] DSL or something like DOT language)'. The repo github.com/pbx-gs/wardley-maps-generator is now 404 \u2014 the code is gone."
+    },
+    {
+      "id": "A07",
+      "date": "2019-06-06",
+      "date_precision": "exact",
+      "title": "Simon Wardley keynote (OSS 2019)",
+      "type": "keynote",
+      "venue": "Open Security Summit 2019",
+      "url": "https://2019.open-security-summit.org/outcomes/wardley-mapping/working-sessions/wardley-keynote/",
+      "role": "summit founder",
+      "collaborators": [
+        "Simon Wardley"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "Page records: video none, slides none."
+    },
+    {
+      "id": "A08",
+      "date": "2019-10-24",
+      "date_precision": "exact",
+      "title": "Making Fact-Based Security & Risk Decisions (using OWASP Security Bot & Data Science)",
+      "type": "chapter talk",
+      "venue": "OWASP London",
+      "url": "https://github.com/OWASP/www-chapter-london/blob/master/tab_pastevents.md",
+      "role": "speaker",
+      "collaborators": [],
+      "verified": true,
+      "video": null,
+      "note": "Abstract names Wardley Maps among the toolset alongside Jira, Slack, Jupyter, Lambda and OSBot."
+    },
+    {
+      "id": "A09",
+      "date": "2019-12-19",
+      "date_precision": "exact",
+      "title": "We are hiring 5x 'Productivity Engineers' Interns for our Squads",
+      "type": "blog post",
+      "venue": "Medium",
+      "url": "https://medium.com/@dinis.cruz/we-are-hiring-5x-productivity-engineers-interns-for-our-squads-rules-of-engagement-6bc8b685e5d3",
+      "role": "sole author",
+      "collaborators": [],
+      "verified": true,
+      "video": null,
+      "note": "Requires applicants to BUILD AND PRESENT A WARDLEY MAP \u2014 'about an industry, about you or even about a cup of coffee'. Lists Wardley alongside Spotify Squads, Team Topologies and Cynefin."
+    },
+    {
+      "id": "A10",
+      "date": "2020-06-15",
+      "date_precision": "exact",
+      "title": "Threat Mapping (using Maps in Cyber Security)",
+      "type": "working session + video",
+      "venue": "Open Security Summit 2020",
+      "url": "https://2020.open-security-summit.org/tracks/wardley-maps/working-sessions/threat-mapping/",
+      "role": "participant",
+      "collaborators": [
+        "Simon Wardley",
+        "Petra Vukmirovic"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=9F3PuuBTu98",
+      "note": "YouTube title: 'Threat Mapping (Social practice theory and applying maturity mapping) - 15 Jun'"
+    },
+    {
+      "id": "A11",
+      "date": "2020-06-16",
+      "date_precision": "exact",
+      "title": "Team Topologies & PST & Squads & Tribes",
+      "type": "working session + video",
+      "venue": "Open Security Summit 2020",
+      "url": "https://2020.open-security-summit.org/tracks/wardley-maps/working-sessions/team-topologies/",
+      "role": "participant",
+      "collaborators": [
+        "Simon Wardley",
+        "Tony Richards",
+        "Luke Robbertse"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=YKHPUZJMkUs",
+      "note": "THE DIRECT ANCESTOR of the 2026 Explorer/Villager/Town-Planner agent teams \u2014 PST discussed with Simon Wardley in the room, six years earlier. Materials: Google Slides + PDF 'Cell Structure for Organisations v2.5'."
+    },
+    {
+      "id": "A12",
+      "date": "2020-06",
+      "date_precision": "month",
+      "title": "How do I do it \u2014 Bring your own map",
+      "type": "working session",
+      "venue": "Open Security Summit 2020",
+      "url": "https://2020.open-security-summit.org/tracks/wardley-maps/working-sessions/how-do-i-do-it-byom/",
+      "role": "named participant",
+      "collaborators": [
+        "Mario Platt",
+        "Simon Wardley",
+        "Petra Vukmirovic",
+        "Tony Richards",
+        "Ben Schofield"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "Track page says Tuesday; his participant page says Monday. Day not established."
+    },
+    {
+      "id": "A13",
+      "date": "2020-06",
+      "date_precision": "month",
+      "title": "Wardley Mapping Covid Safe Paths App",
+      "type": "working session + video",
+      "venue": "Open Security Summit 2020 \u2014 Covid track",
+      "url": "https://2020.open-security-summit.org/tracks/covid/wardley-mapping-covid-safe-paths-app/",
+      "role": "participant",
+      "collaborators": [
+        "Simon Wardley",
+        "Adam Leon Smith"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=YkgV6gZNdvE",
+      "note": ""
+    },
+    {
+      "id": "A14",
+      "date": "2020-10-13",
+      "date_precision": "exact",
+      "title": "Cybersecurity: Why Context is your Crown Jewels",
+      "type": "conference talk (panel)",
+      "venue": "Map Camp 2020",
+      "url": "https://www.map-camp.com/_pages/events/",
+      "role": "panellist",
+      "collaborators": [
+        "Petra Vukmirovic",
+        "Sarah Clarke"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "RECORDING URL NOT ESTABLISHED. Map Camp 2020 sessions are on the Leading Edge Forum YouTube channel; a 13-video playlist exists at youtube.com/playlist?list=PLP0vnsXbJsRXpKWEFe956zjGrawwQ0wb3. Worth five minutes of manual clicking."
+    },
+    {
+      "id": "A15",
+      "date": null,
+      "date_precision": "not established (c. Oct 2020)",
+      "title": "Map camp - Why context is your crown jewels (Wardley Maps and Threat Modeling)",
+      "type": "slide deck",
+      "venue": "SlideShare (deck id 238855895)",
+      "url": "https://www.slideshare.net/DinisCruz/map-camp-why-context-is-your-crown-jewels-wardley-maps-and-threat-modeling",
+      "role": "sole author",
+      "collaborators": [],
+      "verified": false,
+      "video": null,
+      "note": "HIGHEST PRIORITY ARCHIVE TARGET. The only artefact of the Map Camp talk, and the 'crown jewels' thesis exists nowhere else in readable form. SlideShare serves a Cloudflare challenge; contents unread. Export to PDF from a real browser and mirror."
+    },
+    {
+      "id": "A16",
+      "date": "2020-12",
+      "date_precision": "month",
+      "title": "AMA (Ask Me Anything) with Simon Wardley",
+      "type": "working session + video",
+      "venue": "Open Security Summit Dec 2020 mini-summit",
+      "url": "https://open-security-summit.org/sessions/2020/mini-summits/dec/wardley-maps/ama-with-simon-wardley/",
+      "role": "host",
+      "collaborators": [
+        "Simon Wardley"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=OAwmV3VsjaY",
+      "note": "Dinis (then Glasswall) hosting Simon Wardley."
+    },
+    {
+      "id": "A17",
+      "date": "2022-03",
+      "date_precision": "month",
+      "title": "Threat Models and Wardley Maps",
+      "type": "working session + video",
+      "venue": "Open Security Summit Mar 2022 mini-summit",
+      "url": "https://open-security-summit.org/sessions/2022/mini-summits/mar/threat-modeling/threat-models-and-wardley-maps/",
+      "role": "participant",
+      "collaborators": [
+        "Brook S.E. Schoenfield",
+        "Dave van Stein",
+        "Izar Tarandach",
+        "Jakub Kaluzny",
+        "Krzysztof Daniel"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=KxS7TzpreZQ",
+      "note": "THE MOST EXPLICIT STATEMENT OF HIS POSITION: 'Wardley Maps could be the missing piece of the puzzle when doing Threat Models.'"
+    },
+    {
+      "id": "A18",
+      "date": "2022-07",
+      "date_precision": "month",
+      "title": "Why Wardley Maps changed how I think",
+      "type": "working session + video",
+      "venue": "Open Security Summit Jul 2022 mini-summit",
+      "url": "https://open-security-summit.org/sessions/2022/mini-summits/jul/wardley-maps/why-wardley-maps-changed-how-i-think/",
+      "role": "solo",
+      "collaborators": [],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=6gpgnYo6M14",
+      "note": "THE SINGLE MOST DINIS-AUTHORED WARDLEY ARTEFACT THAT SURVIVES. Solo. Describes mapping as 'one of the most innovative and powerful frameworks that has emerged in the last decade'."
+    },
+    {
+      "id": "A19",
+      "date": "2022-09",
+      "date_precision": "month",
+      "title": "Data Culture",
+      "type": "working session + video",
+      "venue": "Open Security Summit Sep 2022 mini-summit",
+      "url": "https://open-security-summit.org/sessions/2022/mini-summits/sep/wardley-maps/data-culture/",
+      "role": "participant",
+      "collaborators": [
+        "Tudor Girba",
+        "Tariq Rashid",
+        "Mark Craddock",
+        "Aleksandar Simovic"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=FcaUN4w2TdY",
+      "note": ""
+    },
+    {
+      "id": "A20",
+      "date": "2024-01-12",
+      "date_precision": "derived from LinkedIn activity id",
+      "title": "Scenario analysis with Wardley maps",
+      "type": "LinkedIn post (share)",
+      "venue": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/diniscruz_scenario-analysis-with-wardley-maps-activity-7151671690853285890-Or_v",
+      "role": "sharer, not author",
+      "collaborators": [
+        "Simon Wardley (original author)"
+      ],
+      "verified": false,
+      "video": null,
+      "note": "A SHARE, NOT ORIGINAL WRITING. Post text unread (robots disallow). Do not present as authored."
+    },
+    {
+      "id": "A21",
+      "date": "2024-01-29",
+      "date_precision": "derived from LinkedIn activity id",
+      "title": "A Strategy and Wardley Mapping primer",
+      "type": "LinkedIn post (share)",
+      "venue": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/diniscruz_a-strategy-and-wardley-mapping-primer-activity-7157550467890184192-wVpR",
+      "role": "sharer, not author",
+      "collaborators": [
+        "davesresearch.com (original)"
+      ],
+      "verified": false,
+      "video": null,
+      "note": "A SHARE, NOT ORIGINAL WRITING."
+    },
+    {
+      "id": "A22",
+      "date": "2024-06",
+      "date_precision": "month",
+      "title": "Attack Surface Mapping",
+      "type": "working session + video",
+      "venue": "Open Security Summit Jun 2024 mini-summit",
+      "url": "https://open-security-summit.org/sessions/2024/mini-summits/jun/governance/attack-surface-mapping/",
+      "role": "participant",
+      "collaborators": [
+        "Simon Wardley",
+        "Tariq Rashid",
+        "Krzysztof Daniel",
+        "Tudor Girba"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=aYh60wq4LXg",
+      "note": "Wardley mapping NOT named in the abstract \u2014 included on panel composition alone. Weakest item; consider omitting."
+    },
+    {
+      "id": "A23",
+      "date": "2024-09",
+      "date_precision": "month",
+      "title": "Advanced Persistent Threat (APT) Mapping and Mitigation",
+      "type": "working session + video",
+      "venue": "Open Security Summit Sep 2024 mini-summit \u2014 Wardley Maps project",
+      "url": "https://open-security-summit.org/sessions/2024/mini-summits/sep/wardley-maps/advanced-persistent-threat-apt-mapping-and-mitigation/",
+      "role": "participant",
+      "collaborators": [
+        "Simon Wardley"
+      ],
+      "verified": true,
+      "video": "https://www.youtube.com/watch?v=7ZMZMYB-DiI",
+      "note": "THE LAST SUBSTANTIVE WARDLEY OUTPUT before the two-year silence."
+    },
+    {
+      "id": "A24",
+      "date": "2025-06-10",
+      "date_precision": "exact",
+      "title": "Security Implications of the Model Context Protocol (MCP) and the Need for Robust Infrastructure",
+      "type": "research article (one passing Wardley reference)",
+      "venue": "docs.diniscruz.ai",
+      "url": "https://docs.diniscruz.ai/2025/06/10/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.html",
+      "role": "co-author",
+      "collaborators": [
+        "ChatGPT Deep Research"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "THE ONLY PUBLIC BRIDGE TO THE AI ERA: 'MCP represents the commoditization of LLM-to-tool interfaces... (a concept noted in Wardley Maps' Innovate-Leverage-Commoditize cycle). We are currently in the Genesis and Custom Build phase of agents using MCP'. One clause. Mirror it."
+    },
+    {
+      "id": "A25",
+      "date": null,
+      "date_precision": "standing",
+      "title": "Open Security Summit \u2014 Wardley Maps project (standing membership)",
+      "type": "project membership",
+      "venue": "Open Security Summit",
+      "url": "https://open-security-summit.org/projects/wardley-maps/",
+      "role": "active member",
+      "collaborators": [
+        "Simon Wardley",
+        "Avi Douglen",
+        "Sarah Clarke",
+        "Steve Purkis",
+        "Petra Vukmirovic",
+        "Mario Platt",
+        "Chris McDermott",
+        "Ben Schofield",
+        "Alan Jenkins"
+      ],
+      "verified": true,
+      "video": null,
+      "note": "Structural, not an event. Establishes the standing relationship."
+    },
+    {
+      "id": "A26",
+      "date": null,
+      "date_precision": "not established",
+      "title": "Wardley Maps in Cyber Security - Panel",
+      "type": "video",
+      "venue": "Open Security Summit YouTube channel",
+      "url": "https://www.youtube.com/watch?v=l59LK8246-s",
+      "role": "UNCONFIRMED",
+      "collaborators": [],
+      "verified": false,
+      "video": "https://www.youtube.com/watch?v=l59LK8246-s",
+      "note": "UNRESOLVED. Title and channel confirmed via oEmbed; no session page found; Dinis's participation NOT confirmed. Do not publish as his until verified."
+    }
+  ]
+}

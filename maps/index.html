@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The map gallery — source next to render, every time</title>
+<meta name="description" content="Four original Wardley maps, each shipped as the wardley-beta source next to the rendered SVG so the argument can be forked in a pull request. Plus the render pipeline, the coordinate proof, and the thirteen sources that did not render and why.">
+<link rel="canonical" href="https://wardley-maps.sgit.ai/maps/index.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="wardley-maps.sgit.ai">
+<meta property="og:url" content="https://wardley-maps.sgit.ai/maps/index.html">
+<meta property="og:title" content="The map gallery — four maps, source next to render">
+<meta property="og:description" content="Four original Wardley maps, each shipped as the wardley-beta source next to the rendered SVG so the argument can be forked in a pull request. Plus the render pipeline, the coordinate proof, and the thirteen sources that did not render and why.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../assets/favicon.svg" color="#0f766e">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<nav class="site"><div class="row">
+  <a class="brand" href="../index.html">wardley-maps<span>.sgit.ai</span></a>
+  <a class="parent" href="https://sgit.ai" title="sgit.ai — the parent project: the vault layer, the shipped CLI, and the Strategy Maps vault this site's map inventory draws on">↗ part of <b>sgit.ai</b></a>
+  <span class="stage-pill">research site</span>
+  <a class="ver" href="../admin/versions.html" title="Site release history">v0.1.0</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-items">
+    <div class="ni ni-has">
+      <a class="nl here" href="../start/index.html">Learn<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../start/index.html">Start here</a>
+      <a class="sl here" href="../maps/index.html">The map gallery</a>
+      <a class="sl" href="../glossary/index.html">Glossary</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../method/index.html">Method<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../method/index.html">The four claims</a>
+      <a class="sl" href="../method/de-commoditisation.html">De-commoditisation</a>
+      <a class="sl" href="../method/custom-axes.html">The custom-axis verdict</a>
+      <a class="sl" href="../method/broken-middle.html">The broken middle</a>
+      <a class="sl" href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../doctrine/index.html">Doctrine<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../doctrine/index.html">The 40-record assessment</a>
+      <a class="sl" href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../resources/index.html">Resources<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../resources/index.html">All 34, verified</a>
+      <a class="sl" href="../resources/dead/index.html">Dead or dying</a>
+      <a class="sl" href="../resources/verification.html">Link verification</a>
+      <a class="sl" href="../dinis/index.html">Dinis Cruz on mapping, 2018–2025</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../agents/index.html">For agents<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../agents/index.html">The machine surface</a>
+      <a class="sl" href="../shipped/index.html">What ships, and what doesn't</a>
+      <a class="sl" href="../network/index.html">The network</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../admin/comms.html">Site<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../admin/comms.html">Comms: tasks &amp; requests</a>
+      <a class="sl" href="../admin/versions.html">Release history</a>
+      <a class="sl" href="../admin/index.html">Admin &amp; engineering</a>
+      <a class="sl" href="../documents/index.html">The documents</a>
+      <a class="sl" href="../about/licensing.html">Licensing</a>
+      <a class="sl" href="../about/participant.html">Where we lose</a>
+      </div>
+    </div>
+  </div>
+  <a class="gh" href="https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps">★ GitHub</a>
+  <script src="../assets/nav.js" defer></script>
+</div></nav>
+
+<main class="doc">
+<p class="crumb"><a href="../index.html">wardley-maps.sgit.ai</a> / Maps</p>
+<h1>The map gallery</h1>
+<p class="lead">Four maps, each shipped as <b>source next to render</b>. That is not a
+presentation choice — it is the point. A rendered map is a picture you can admire or ignore; a
+map whose source sits beside it is an argument you can fork, edit and send back as a pull
+request. <em>"The maps live in the source and are reviewable in a diff."</em></p>
+
+<p class="claim">Each one below states what it claims and <b>what would falsify it</b>. A map
+that cannot be wrong is a decoration. If you think a placement is off, the coordinates are two
+clicks away and the repository takes pull requests.</p>
+
+<section class="mapentry" id="m1">
+  <h3>M1 — The mapping tool ecosystem, August 2026</h3>
+  <figure class="mapfig">
+    <img src="M1__tooling-ecosystem.svg" alt="Wardley map: M1 — The mapping tool ecosystem, August 2026" loading="lazy">
+    <figcaption><a href="M1__tooling-ecosystem.mmd">M1__tooling-ecosystem.mmd — the source</a> ·
+      <a href="M1__tooling-ecosystem.svg">the rendered SVG</a></figcaption>
+  </figure>
+  <p><b>What it claims.</b> Authoring and versioning are product-to-commodity and healthy. <b>Collaboration, doctrine assessment and agent authoring sit at Genesis with nothing under them.</b> Those three holes are not a coincidence: MapKeep was the only tool with real-time collaboration and died on 30 May 2026, and both doctrine assessment tools are dead.</p>
+  <p class="claim"><b>What would falsify it.</b> That <em>agent authoring</em> belongs on this map at all. It is placed at Genesis on the strength of one actively-maintained tool (ArcKit) and an argument; if agent authoring is really a feature of the existing tools rather than a user need of its own, the node should not be there. Also arguable: whether <em>Git</em> at 0.95 is doing any work on a map about mapping, or is just true.</p>
+</section>
+<section class="mapentry" id="m2">
+  <h3>M2 — The two absences: what the ecosystem lost in 2026</h3>
+  <figure class="mapfig">
+    <img src="M2__the-two-absences.svg" alt="Wardley map: M2 — The two absences: what the ecosystem lost in 2026" loading="lazy">
+    <figcaption><a href="M2__the-two-absences.mmd">M2__the-two-absences.mmd — the source</a> ·
+      <a href="M2__the-two-absences.svg">the rendered SVG</a></figcaption>
+  </figure>
+  <p><b>What it claims.</b> The same point as M1, stated as loss rather than as a gap. <b>Two user needs had working implementations in 2025 and have none in August 2026.</b> Collaborative authoring lost MapKeep; doctrine self-assessment lost both of its tools. Single-player authoring and maps in version control are fine, which is why the loss is easy to miss.</p>
+  <p class="claim"><b>What would falsify it.</b> That the two absences are the same kind of thing. Collaborative authoring lost a tool that was <em>working and popular</em>; doctrine assessment lost tools that may never have had many users. If the second was already dead in practice, M2 overstates the loss by drawing them side by side.</p>
+</section>
+<section class="mapentry" id="m3">
+  <h3>M3 — Maps for agents: where the new user need sits</h3>
+  <figure class="mapfig">
+    <img src="M3__maps-for-agents.svg" alt="Wardley map: M3 — Maps for agents: where the new user need sits" loading="lazy">
+    <figcaption><a href="M3__maps-for-agents.mmd">M3__maps-for-agents.mmd — the source</a> ·
+      <a href="M3__maps-for-agents.svg">the rendered SVG</a></figcaption>
+  </figure>
+  <p><b>What it claims.</b> Anchored on an agent rather than a person. <b>Reading a map is served; writing one is half-served; contesting a placement is not served at all</b> — and <em>evidence for placement</em> is the least evolved node on the map. That last node is the whole argument of <a href="../agents/index.html">/agents/</a>.</p>
+  <p class="claim"><b>What would falsify it.</b> The claim that <em>contest a placement</em> is a distinct user need rather than a sub-need of writing one. And the placement of <em>machine-readable corpus</em> at 0.45: 147 maps in a public repository with paired OWM and Mermaid representations is arguably further right than that.</p>
+</section>
+<section class="mapentry" id="m4">
+  <h3>M4 — wardley-maps.sgit.ai as a value chain</h3>
+  <figure class="mapfig">
+    <img src="M4__the-site.svg" alt="Wardley map: M4 — wardley-maps.sgit.ai as a value chain" loading="lazy">
+    <figcaption><a href="M4__the-site.mmd">M4__the-site.mmd — the source</a> ·
+      <a href="M4__the-site.svg">the rendered SVG</a></figcaption>
+  </figure>
+  <p><b>What it claims.</b> This site, mapped. Resource pages and the doctrine assessment sit at custom-built; the <code>llms.txt</code> surface is the shared component two branches depend on; static hosting is commodity. Drawn so that the site is subject to the same treatment as everything else on it.</p>
+  <p class="claim"><b>What would falsify it.</b> Whether <em>rendered maps</em> deserves 0.55 on a site that shipped four of them. And whether <em>read the doctrine work</em> is a real user need or a thing we happen to have and would like people to want. That second one is the honest failure mode of any map drawn by the party being mapped.</p>
+</section>
+
+<h2 id="pipeline">How they were rendered</h2>
+<p>The recipe existed in the corpus as prose for three months — <em>"Mermaid CLI v11.14.0 plus
+the Playwright-bundled Chromium"</em> — with no script, no make target and no CI job. In that
+time <b>zero of the thirteen wardley-beta sources in the source repository rendered.</b> It is
+a script now: <a href="../bin/render-maps.sh"><code>bin/render-maps.sh</code></a>.</p>
+
+<pre class="shell">for f in maps/*.mmd; do
+  npx @mermaid-js/mermaid-cli@11.14.0 \
+      -i "$f" -o "${f%.mmd}.svg" -p puppeteer-config.json -b white -w 1400 -H 900
+  <span class="y">grep -q "error-text" "${f%.mmd}.svg" && echo "FAILED: $f"</span>   <span class="g"># the line that matters</span>
+done</pre>
+
+<div class="warnbox"><b>The grep is not optional.</b> A broken <code>wardley-beta</code> source
+does not fail. It renders a <em>"Syntax error in text"</em> SVG — no line number, no stderr,
+exit status zero, and a byte-identical file every time. In a batch render that is
+indistinguishable from success until somebody opens the file, which is precisely how thirteen
+broken maps sat in a repository for three months.
+<a href="../admin/build/validate.js">The release gate</a> runs the same check, so a map that
+renders an error cannot be published.</div>
+
+<h2 id="coordinates">The coordinate contract, proven rather than repeated</h2>
+<p>Both OnlineWardleyMaps and Mermaid take <code>[visibility, evolution]</code>, which is the
+opposite of the usual <code>(x, y)</code>. Everyone repeats this. This site tested it — probe
+rendered with Mermaid CLI 11.14.0, plot area x∈[48,852], y∈[48,552], y growing downward:</p>
+<pre class="shell">anchor    "A_high_vis_genesis"    [0.90, 0.10]   <span class="g">--&gt;  drawn at x≈128, y≈95</span>
+component "B_low_vis_commodity"   [0.10, 0.90]   <span class="g">--&gt;  drawn at x≈780, y≈494</span></pre>
+<p class="claim"><b>First number = visibility → the Y axis, 1 = top, visible to the user.<br>
+Second number = evolution → the X axis, 1 = right, commodity.</b></p>
+<p><b>There is no error and no warning if you transpose them.</b> The map renders, looks
+plausible, and asserts something else entirely. That is the single most expensive fact on
+<a href="../agents/index.html">the agent page</a>, and it is stated there with this evidence
+rather than as received wisdom.</p>
+
+<h2 id="parsing">The parse rule that removes a whole class of failure</h2>
+<p>The corpus knew hyphens broke component names. Bisection on Mermaid 11.14.0 established the
+full rule:</p>
+<div class="tablewrap"><table>
+  <thead><tr><th>In an <b>unquoted</b> name</th><th class="safe">Result</th></tr></thead>
+  <tbody>
+    <tr><td>spaces — <code>Draw a map</code></td><td><b class="yes">OK</b></td></tr>
+    <tr><td>underscores — <code>Real_time</code></td><td><b class="yes">OK</b></td></tr>
+    <tr><td>parentheses — <code>Draw (fast)</code></td><td><b class="yes">OK</b></td></tr>
+    <tr><td>hyphen — <code>Real-time collab</code></td><td><b class="no">FAILS</b></td></tr>
+    <tr><td>dot — <code>doctrine.wardleymaps.com</code></td><td><b class="no">FAILS</b></td></tr>
+    <tr><td>slash — <code>AI/ML</code></td><td><b class="no">FAILS</b></td></tr>
+  </tbody>
+</table></div>
+<p>Quoting fixes all three — <code>component "Real-time collab" [0.7, 0.6]</code> parses fine.
+<b>But quoting the declaration and not the link still fails:</b> a quoted declaration followed
+by <code>User --&gt; Real-time collab</code> is a syntax error.</p>
+<p class="claim"><b>Quote every anchor and component name, everywhere it appears</b> —
+declaration, link lines, and <code>evolve</code> statements. It costs two characters and removes
+the entire failure mode. The four maps above do this.</p>
+
+<h2 id="inventory">What else exists, and what does not</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Form</th><th>Count</th><th>Where</th><th class="safe">Renders?</th></tr></thead>
+  <tbody>
+    <tr><td><b>These four, as SVG</b></td><td>4</td><td>Here, source and render</td><td><b class="yes">Yes</b></td></tr>
+    <tr><td>Rendered PNGs</td><td>8</td><td>Served from the <a href="https://sgit.ai/demos/strategy-maps.html">sgit.ai Strategy Maps vault</a>, client-side decrypted</td><td><b class="yes">Yes</b></td></tr>
+    <tr><td>Inline SVGs, generated client-side</td><td>6</td><td><a href="https://sgit.ai/demos/sgit-maps.html">sgit.ai/demos/sgit-maps.html</a></td><td><b class="yes">Yes</b></td></tr>
+    <tr><td>Mermaid <code>wardley-beta</code> in published HTML</td><td>10</td><td>Across two <a href="https://pki.sgit.ai/packs/registry-mvp/wardley-maps.html">pki.sgit.ai packs</a></td><td><b class="yes">Yes</b></td></tr>
+    <tr><td>Mermaid sources in the source repository</td><td><b>13</b></td><td>Three briefs</td><td><b class="no">No — all 13 fail</b>, for two mundane reasons</td></tr>
+    <tr><td>ASCII maps</td><td>9</td><td>Cartographer reviews, the founding brief, the primer</td><td>In monospace</td></tr>
+    <tr><td>Position tables used as maps</td><td>8</td><td>One June 2026 brief</td><td>Unrendered — and the most analytically dense maps in the corpus</td></tr>
+    <tr><td><code>.owm</code> files, map JSON</td><td><b>0</b></td><td>—</td><td>Specified, never implemented</td></tr>
+  </tbody>
+</table></div>
+<p>The thirteen fail because eight-plus use a bare <code>```</code> fence with
+<code>wardley-beta</code> on the <em>next</em> line, four use <code>```wardley-beta</code>, and
+one <code>note</code> line is missing its required quotes. Both are trivial. Fixing them is
+<a href="../admin/comms.html#t2">T2</a>, and it is the cheapest high-visibility win available
+anywhere in this project.</p>
+
+<div class="note"><b>The map that has not been drawn.</b> The corpus asks for one explicitly:
+<em>"Is there a map that shows us badly? Worth drawing, as the test of whether these are
+analysis or marketing."</em> It still does not exist. Drawing it would be the most credible
+single page on this site, and until it is drawn every map above should be read with that
+absence in mind. <a href="../shipped/index.html">/shipped/</a> ·
+<a href="../admin/comms.html#t1">T1</a></div>
+
+<h2 id="licence">On these four maps</h2>
+<p>They are original works, drawn from this site's own research, and they are <b>CC BY 4.0</b>
+with no ShareAlike obligation. The <em>technique</em> they use is Simon Wardley's and is
+credited as such — crediting a technique is courtesy and good practice, not a licence
+condition. <a href="../about/licensing.html">The full position →</a></p>
+
+<div class="pagenav">
+  <a href="../start/index.html">← Start here</a>
+  <a href="../agents/index.html">The machine surface →</a>
+</div>
+</main>
+
+<footer class="site"><div class="cols">
+  <div>
+    <div class="brandline">wardley-maps<span>.sgit.ai</span></div>
+    <p>Wardley Mapping as a research site: the technique, an original doctrine assessment, 34 industry resources verified rather than listed, and the mapping thinking behind the <a href="https://sgit.ai" style="display:inline;padding:0"><b>sgit.ai</b></a> network. This site's own content is CC BY 4.0; the ecosystem it quotes is CC BY-SA — <a href="../about/licensing.html" style="display:inline;padding:0">the difference matters</a>.</p>
+    <p class="netline"><a href="https://sgit.ai"><b>↗ sgit.ai</b></a> — the parent project and the Strategy Maps vault · <a href="https://graphs.sgit.ai/v1/maps/index.html">↗ graphs.sgit.ai</a> — maps as graphs · <a href="https://pki.sgit.ai">↗ pki.sgit.ai</a> — where the doctrine assessment was built · <a href="https://sgit.ai/network/index.html">↗ the network</a></p>
+    <p class="partnote">⚠ Participant disclosure: published by the sgit project, which uses the mapping practice this site documents and is assessed by the doctrine page it hosts. <a href="../about/participant.html" style="display:inline;padding:0">Read the disclosure</a>.</p>
+    <p class="partnote">Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog, <a href="https://blog.gardeviance.org/" style="display:inline;padding:0">blog.gardeviance.org</a>, is CC BY-SA <b>3.0</b> — a different licence, quoted under a separate notice. Nothing here is an adaptation of either.</p>
+    <p class="verline">site <a href="../admin/versions.html">v0.1.0</a> · <a href="../admin/index.html">engineering</a> · <a href="../about/licensing.html">CC BY 4.0</a></p>
+  </div>
+  <div>
+    <h4>Start</h4>
+    <a href="../start/index.html">&#8594; Start here</a>
+    <a href="../maps/index.html">The map gallery</a>
+    <a href="../glossary/index.html">Glossary</a>
+    <a href="../shipped/index.html">What ships, and what doesn't</a>
+  </div>
+  <div>
+    <h4>The four claims</h4>
+    <a href="../method/de-commoditisation.html">De-commoditisation</a>
+    <a href="../method/custom-axes.html">The custom-axis verdict</a>
+    <a href="../method/broken-middle.html">The broken middle</a>
+    <a href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+    <a href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+  </div>
+  <div>
+    <h4>The record</h4>
+    <a href="../doctrine/index.html">The doctrine assessment</a>
+    <a href="../resources/index.html">34 resources, verified</a>
+    <a href="../resources/dead/index.html">Dead or dying</a>
+    <a href="../dinis/index.html">Dinis Cruz, 2018–2025</a>
+    <a href="../documents/index.html">The documents</a>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <a href="../admin/comms.html">Comms: tasks &amp; requests</a>
+    <a href="../admin/versions.html">Release history</a>
+    <a href="../about/licensing.html">Licensing</a>
+    <a href="../llms.txt">llms.txt</a>
+    <a href="../llms-full.txt">llms-full.txt</a>
+  </div>
+</div></footer>
+</body>
+</html>

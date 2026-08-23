@@ -1,0 +1,23 @@
+wardley-beta
+  title M3 - Maps for agents - where the new user need sits
+  anchor "Agent" [0.95, 0.30]
+  component "Reason about strategy" [0.88, 0.22]
+  component "Read a map" [0.80, 0.55]
+  component "Write a map" [0.76, 0.38]
+  component "Contest a placement" [0.72, 0.08]
+  component "Machine-readable corpus" [0.60, 0.45]
+  component "OWM DSL" [0.55, 0.78]
+  component "Mermaid wardley-beta" [0.52, 0.66]
+  component "Coordinate contract" [0.46, 0.40]
+  component "Evidence for placement" [0.40, 0.10]
+  component "Deterministic renderer" [0.34, 0.60]
+  "Agent" --> "Reason about strategy"
+  "Reason about strategy" --> "Read a map"
+  "Reason about strategy" --> "Write a map"
+  "Reason about strategy" --> "Contest a placement"
+  "Read a map" --> "Machine-readable corpus"
+  "Machine-readable corpus" --> "OWM DSL"
+  "Write a map" --> "Mermaid wardley-beta"
+  "Write a map" --> "Coordinate contract"
+  "Mermaid wardley-beta" --> "Deterministic renderer"
+  "Contest a placement" --> "Evidence for placement"

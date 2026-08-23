@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maps are graphs with position — the strongest idea here, and it has no code</title>
+<meta name="description" content="A Wardley map is not a separate artefact from the graph. It is a graph with positional metadata: the graph is primary, the map is a projection, and map queries are graph queries with positional filters. Published as method and labelled as design, because there is no implementation.">
+<link rel="canonical" href="https://wardley-maps.sgit.ai/method/maps-as-graphs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="wardley-maps.sgit.ai">
+<meta property="og:url" content="https://wardley-maps.sgit.ai/method/maps-as-graphs.html">
+<meta property="og:title" content="Maps are graphs with position — and it has no implementation">
+<meta property="og:description" content="A Wardley map is not a separate artefact from the graph. It is a graph with positional metadata: the graph is primary, the map is a projection, and map queries are graph queries with positional filters. Published as method and labelled as design, because there is no implementation.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../assets/favicon.svg" color="#0f766e">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<nav class="site"><div class="row">
+  <a class="brand" href="../index.html">wardley-maps<span>.sgit.ai</span></a>
+  <a class="parent" href="https://sgit.ai" title="sgit.ai — the parent project: the vault layer, the shipped CLI, and the Strategy Maps vault this site's map inventory draws on">↗ part of <b>sgit.ai</b></a>
+  <span class="stage-pill">research site</span>
+  <a class="ver" href="../admin/versions.html" title="Site release history">v0.1.0</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-items">
+    <div class="ni ni-has">
+      <a class="nl" href="../start/index.html">Learn<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../start/index.html">Start here</a>
+      <a class="sl" href="../maps/index.html">The map gallery</a>
+      <a class="sl" href="../glossary/index.html">Glossary</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl here" href="../method/index.html">Method<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../method/index.html">The four claims</a>
+      <a class="sl" href="../method/de-commoditisation.html">De-commoditisation</a>
+      <a class="sl" href="../method/custom-axes.html">The custom-axis verdict</a>
+      <a class="sl" href="../method/broken-middle.html">The broken middle</a>
+      <a class="sl here" href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../doctrine/index.html">Doctrine<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../doctrine/index.html">The 40-record assessment</a>
+      <a class="sl" href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../resources/index.html">Resources<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../resources/index.html">All 34, verified</a>
+      <a class="sl" href="../resources/dead/index.html">Dead or dying</a>
+      <a class="sl" href="../resources/verification.html">Link verification</a>
+      <a class="sl" href="../dinis/index.html">Dinis Cruz on mapping, 2018–2025</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../agents/index.html">For agents<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../agents/index.html">The machine surface</a>
+      <a class="sl" href="../shipped/index.html">What ships, and what doesn't</a>
+      <a class="sl" href="../network/index.html">The network</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../admin/comms.html">Site<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../admin/comms.html">Comms: tasks &amp; requests</a>
+      <a class="sl" href="../admin/versions.html">Release history</a>
+      <a class="sl" href="../admin/index.html">Admin &amp; engineering</a>
+      <a class="sl" href="../documents/index.html">The documents</a>
+      <a class="sl" href="../about/licensing.html">Licensing</a>
+      <a class="sl" href="../about/participant.html">Where we lose</a>
+      </div>
+    </div>
+  </div>
+  <a class="gh" href="https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps">★ GitHub</a>
+  <script src="../assets/nav.js" defer></script>
+</div></nav>
+
+<main class="doc">
+<p class="crumb"><a href="../index.html">wardley-maps.sgit.ai</a> / <a href="../method/index.html">Method</a> / Maps are graphs with position</p>
+<h1>Maps are graphs with position</h1>
+<p class="badges"><span class="badge b-original">Original contribution</span>
+  <span class="badge b-type">7 February 2026</span>
+  <span class="badge b-type">W5 · <a href="../glossary/index.html#w5">glossary</a></span>
+  <span class="badge s-weak">No implementation</span></p>
+
+<blockquote class="challenge">a Wardley Map is not a separate artifact from the graph. It is a
+graph with positional metadata.… The graph is primary; the map is a projection… Map queries are
+graph queries with positional filters.</blockquote>
+
+<h2 id="claim">The claim</h2>
+<p>Every Wardley map is already a graph. It has nodes — the anchor and the components — and
+directed edges — the dependency links. The two coordinates on each node are attributes of the
+node, not a separate kind of information. The picture is a rendering of the graph with those two
+attributes used as x and y.</p>
+
+<p>Taken seriously, that has a consequence that is bigger than it first sounds: <b>the map stops
+being the artefact you maintain.</b> The graph is what you maintain. The map is one view of it,
+generated on demand — and it is not even the most useful view for many questions.</p>
+
+<p class="claim">If the graph is primary, then a question like <em>"what depends on something we
+have placed at Genesis?"</em> is not a mapping question at all. It is a graph traversal with a
+filter on a node attribute. So is <em>"which components moved right since March?"</em>, and
+<em>"what is the least evolved thing on the critical path to this user need?"</em> — which is the
+question most maps are drawn to answer, and which nobody can currently ask a map because a map
+is a PNG.</p>
+
+<h2 id="follows">What follows if it holds</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>If a map is a graph…</th><th class="safe">…then</th></tr></thead>
+  <tbody>
+    <tr><td>Position is a node attribute</td><td>Alternative axes are just other attributes.
+      <a href="custom-axes.html">Relabelling the axis</a> becomes a rendering choice rather than
+      a schema change — which is exactly what the corpus proposed when it said to store
+      <em>"axis metadata in the graph alongside everything else."</em></td></tr>
+    <tr><td>The map is a projection</td><td>Two maps of the same system are two queries, not two
+      documents that can disagree. The <a href="index.html#reading">paired before/after</a>
+      technique becomes a diff over one graph rather than two hand-drawn pictures somebody has
+      to keep in sync.</td></tr>
+    <tr><td>Maps are queryable</td><td>A map diff — <em>"a before/after showing what
+      moved"</em> — is computable rather than eyeballed. That is specified in the corpus as a
+      standing requirement and has exactly one dated pair to show for it.</td></tr>
+    <tr><td>Evidence attaches to nodes</td><td>The doctrine assessment's discipline — every
+      rating names the artefact it rests on — becomes available for placements too. Which is
+      <a href="../admin/comms.html#q5">Q5</a>, and currently no map in the corpus attaches
+      evidence to a single placement.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="unbuilt">And it does not exist</h2>
+<div class="warnbox"><b>There is no implementation of any of this, in any of the four
+repositories.</b> The reality document lists it as <b>PROPOSED</b>. There is no stored map
+graph, no positional query, no map diff, and no <code>.owm</code> or map-JSON export anywhere in
+the corpus. What exists is this argument, four rendered SVGs, and a handful of Mermaid sources —
+all of which are pictures with the graph implicit in the text, which is the situation the claim
+is complaining about.<br><br>
+Publishing an architectural idea as method is legitimate. Publishing it without saying it is
+unbuilt would not be, and it would be a particularly poor thing to do on a page arguing that
+maps should be checkable. So: <b>this is design.</b>
+<a href="../shipped/index.html">/shipped/</a> says so too.</div>
+
+<p>The nearest thing to a demonstration on this site is small and worth being precise about:
+the four maps in <a href="../maps/index.html">the gallery</a> ship their source next to their
+render, so the graph <em>is</em> recoverable — by parsing a text file, which is not the same as
+querying a graph, but is the difference between a claim you can check and one you cannot. And
+<a href="https://graphs.sgit.ai/v1/maps/index.html">graphs.sgit.ai</a> holds the methodology for
+maps-as-graphs rendering; this page holds the argument. The two should be read together.</p>
+
+<h2 id="falsify">What would falsify it</h2>
+<ul>
+  <li><b>A map question that is not a graph question.</b> The claim is strong: <em>map queries
+    are graph queries with positional filters</em>. One useful, common mapping question that
+    cannot be expressed that way — anything involving the <em>shape</em> of a region rather than
+    its nodes, for instance, like <a href="broken-middle.html">the broken middle</a> — weakens
+    it considerably. That example is not hypothetical; it is on this site.</li>
+  <li><b>Implementations that exist and do not work like this.</b> OnlineWardleyMaps,
+    wardleyToGo and cli-owm all parse a text DSL into an internal structure. If none of them
+    finds a graph representation worth exposing, that is evidence the projection framing buys
+    less than it promises.</li>
+  <li><b>Building it and finding the queries are not interesting.</b> The cheapest falsifier
+    available, and the one nobody has run.</li>
+</ul>
+
+<h2 id="related">Related</h2>
+<ul>
+  <li><a href="../agents/index.html">/agents/</a> — the coordinate contract and the parse
+    rules, which are what a machine needs to get the graph out of the text.</li>
+  <li><a href="https://graphs.sgit.ai/v1/maps/index.html">graphs.sgit.ai/v1/maps/</a> — the
+    methodology-and-inventory surface for the same idea. Cross-linked deliberately rather than
+    duplicated.</li>
+</ul>
+
+<div class="pagenav">
+  <a href="broken-middle.html">← You cannot map a gap</a>
+  <a href="../patterns/pst/index.html">Explorer / Villager / Town Planner →</a>
+</div>
+</main>
+
+<footer class="site"><div class="cols">
+  <div>
+    <div class="brandline">wardley-maps<span>.sgit.ai</span></div>
+    <p>Wardley Mapping as a research site: the technique, an original doctrine assessment, 34 industry resources verified rather than listed, and the mapping thinking behind the <a href="https://sgit.ai" style="display:inline;padding:0"><b>sgit.ai</b></a> network. This site's own content is CC BY 4.0; the ecosystem it quotes is CC BY-SA — <a href="../about/licensing.html" style="display:inline;padding:0">the difference matters</a>.</p>
+    <p class="netline"><a href="https://sgit.ai"><b>↗ sgit.ai</b></a> — the parent project and the Strategy Maps vault · <a href="https://graphs.sgit.ai/v1/maps/index.html">↗ graphs.sgit.ai</a> — maps as graphs · <a href="https://pki.sgit.ai">↗ pki.sgit.ai</a> — where the doctrine assessment was built · <a href="https://sgit.ai/network/index.html">↗ the network</a></p>
+    <p class="partnote">⚠ Participant disclosure: published by the sgit project, which uses the mapping practice this site documents and is assessed by the doctrine page it hosts. <a href="../about/participant.html" style="display:inline;padding:0">Read the disclosure</a>.</p>
+    <p class="partnote">Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog, <a href="https://blog.gardeviance.org/" style="display:inline;padding:0">blog.gardeviance.org</a>, is CC BY-SA <b>3.0</b> — a different licence, quoted under a separate notice. Nothing here is an adaptation of either.</p>
+    <p class="verline">site <a href="../admin/versions.html">v0.1.0</a> · <a href="../admin/index.html">engineering</a> · <a href="../about/licensing.html">CC BY 4.0</a></p>
+  </div>
+  <div>
+    <h4>Start</h4>
+    <a href="../start/index.html">&#8594; Start here</a>
+    <a href="../maps/index.html">The map gallery</a>
+    <a href="../glossary/index.html">Glossary</a>
+    <a href="../shipped/index.html">What ships, and what doesn't</a>
+  </div>
+  <div>
+    <h4>The four claims</h4>
+    <a href="../method/de-commoditisation.html">De-commoditisation</a>
+    <a href="../method/custom-axes.html">The custom-axis verdict</a>
+    <a href="../method/broken-middle.html">The broken middle</a>
+    <a href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+    <a href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+  </div>
+  <div>
+    <h4>The record</h4>
+    <a href="../doctrine/index.html">The doctrine assessment</a>
+    <a href="../resources/index.html">34 resources, verified</a>
+    <a href="../resources/dead/index.html">Dead or dying</a>
+    <a href="../dinis/index.html">Dinis Cruz, 2018–2025</a>
+    <a href="../documents/index.html">The documents</a>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <a href="../admin/comms.html">Comms: tasks &amp; requests</a>
+    <a href="../admin/versions.html">Release history</a>
+    <a href="../about/licensing.html">Licensing</a>
+    <a href="../llms.txt">llms.txt</a>
+    <a href="../llms-full.txt">llms-full.txt</a>
+  </div>
+</div></footer>
+</body>
+</html>

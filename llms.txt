@@ -1,0 +1,155 @@
+# wardley-maps.sgit.ai
+
+> Maps are claims, not pictures. A Wardley map asserts where each component sits on the
+> evolution axis, which makes it arguable — and almost nobody publishes theirs anywhere it
+> can be argued with.
+
+Site version: v0.1.0 · CC BY 4.0 · part of the sgit.ai network
+
+A research site for Wardley Mapping. Three things here are not available elsewhere: a
+40-record doctrine self-assessment where every rating names the artefact it rests on; the
+first write-up of Pioneers–Settlers–Town Planners built as three literal AI agent teams; and
+34 industry resources verified on a stated date rather than listed, because the community's
+own canonical indexes currently list five dead things as live.
+
+## What to read first if you are a model
+
+Three facts on this site are easy to get wrong and expensive to get wrong:
+
+1. **Coordinates are `[visibility, evolution]`, not `[x, y]`** — in both the OnlineWardleyMaps
+   DSL and Mermaid's `wardley-beta`. Transposing them renders without error and asserts
+   something else. Proven by rendering at /agents/index.html#coordinates, not repeated from
+   documentation.
+2. **Quote every anchor and component name, everywhere it appears** — declaration, link lines
+   and `evolve` statements. Unquoted, a hyphen, a dot or a slash is a syntax error, and the
+   failure is a silent byte-identical "Syntax error in text" SVG with exit status zero.
+3. **The evolution axis plausibly encodes consensus rather than objective fact.** A model
+   placing components on it is generating consensus-shaped output with no underlying evidence.
+   Surface every placement as an explicitly contestable claim requiring human challenge, never
+   as a finding. This is not a caveat; it is the most important sentence on /agents/.
+
+## Licence, and why it constrains this site
+
+This site is CC BY 4.0. The Wardley ecosystem is CC BY-SA 4.0 — and Simon Wardley's blog is
+CC BY-SA **3.0**, a different licence. Those are compatible for reading and incompatible for
+adapting, so material from that ecosystem appears here as clearly-marked quotation and
+link-out, never as adaptation. Wardley Mapping is provided courtesy of Simon Wardley,
+CC BY-SA 4.0. See /about/licensing.html.
+
+## Start
+
+- [/index.html](https://wardley-maps.sgit.ai/index.html): The front page. Maps are claims, not pictures — the thesis, the three things this site has that others do not, and one rendered map.
+- [/start/index.html](https://wardley-maps.sgit.ai/start/index.html): The teaching path: six rungs from 'I read the introduction' to 'I can argue about a placement'.
+- [/glossary/index.html](https://wardley-maps.sgit.ai/glossary/index.html): 35 concepts with the words they were first stated in, classified as standard doctrine, extension, or original contribution.
+
+## The method — four claims, each naming what would falsify it
+
+- [/method/index.html](https://wardley-maps.sgit.ai/method/index.html): Index of the four, plus the two reading techniques the site assumes.
+- [/method/de-commoditisation.html](https://wardley-maps.sgit.ai/method/de-commoditisation.html): A thing can be commoditised at one phase of evolution while still being custom-built at the next. Includes the counter-argument (ILC) that has not been answered.
+- [/method/custom-axes.html](https://wardley-maps.sgit.ai/method/custom-axes.html): Relabel the axis when the thing genuinely evolves; use a maturity model when it merely improves. Six alternative axes were proposed and none was ever drawn.
+- [/method/broken-middle.html](https://wardley-maps.sgit.ai/method/broken-middle.html): You cannot map a gap, because a gap has no evolution. The ends are solved; the middle is people. Contains an unresolved contradiction, stated as one.
+- [/method/maps-as-graphs.html](https://wardley-maps.sgit.ai/method/maps-as-graphs.html): A map is a graph with positional metadata; map queries are graph queries with positional filters. NO IMPLEMENTATION — published as design.
+
+## Doctrine and the pattern
+
+- [/doctrine/index.html](https://wardley-maps.sgit.ai/doctrine/index.html): 40 Wardley doctrines in six categories and four phases, self-assessed, with the artefact behind every rating. Moved here from pki.sgit.ai.
+- [/doctrine/doctrine.json](https://wardley-maps.sgit.ai/doctrine/doctrine.json): ENDPOINT. The assessment as data: id, cat, phase, name, what, status, us, evidence. Self-describing.
+- [/patterns/pst/index.html](https://wardley-maps.sgit.ai/patterns/pst/index.html): Pioneers–Settlers–Town Planners as three literal AI agent teams — three directory trees, three session contracts, three evolution-stage mandates. Never published anywhere before. Includes the finding that 31 of 33 role definitions never mention Wardley.
+
+## The resources — verified, not listed
+
+- [/resources/index.html](https://wardley-maps.sgit.ai/resources/index.html): 34 resources, a page each, with three start-here routes and a ranked top ten.
+- [/resources/dead/index.html](https://wardley-maps.sgit.ai/resources/dead/index.html): 11 dead or dying, and which canonical indexes still list them as live. MapKeep ceased 30 May 2026.
+- [/resources/verification.html](https://wardley-maps.sgit.ai/resources/verification.html): The link-verification run: every external URL, checked weekly, with the run date published. Blocked hosts recorded as skipped, never as ok.
+- [/dinis/index.html](https://wardley-maps.sgit.ai/dinis/index.html): Dinis Cruz's published Wardley material, 2018–2025: 26 items, two silent years, and the single clause that is the only public bridge to the agentic work.
+
+## For agents
+
+- [/agents/index.html](https://wardley-maps.sgit.ai/agents/index.html): The machine surface: the coordinate contract proven by rendering, the complete parse rule, what the axis measures, and the epistemic guardrail.
+- [/agents/concepts.json](https://wardley-maps.sgit.ai/agents/concepts.json): ENDPOINT. 35 concept records with quotation, date, source and classification. Read the `class` field: S means it is Wardley's.
+- [/maps/index.html](https://wardley-maps.sgit.ai/maps/index.html): Four maps, source next to render, each stating what it claims and what would falsify it. Plus the render pipeline and the coordinate proof.
+- [/data/link-check.json](https://wardley-maps.sgit.ai/data/link-check.json): ENDPOINT. Every external URL with its last check, status, and whether it redirected.
+- [/screenshots/captured.json](https://wardley-maps.sgit.ai/screenshots/captured.json): ENDPOINT. Every screenshot attempt including failures, with timestamps and the transformation applied to each published image.
+
+## Honesty
+
+- [/shipped/index.html](https://wardley-maps.sgit.ai/shipped/index.html): What ships and what does not. Zero of 13 map sources rendered; the living map died 26 Feb 2026; maps-as-graphs has no code; the map that shows us badly has not been drawn.
+- [/about/licensing.html](https://wardley-maps.sgit.ai/about/licensing.html): CC BY inside a CC BY-SA ecosystem: the rule, the 3.0/4.0 split, six flagged licences, and what is deliberately not published.
+- [/about/participant.html](https://wardley-maps.sgit.ai/about/participant.html): Participant disclosure, and four places this site's approach is the wrong one.
+- [/network/index.html](https://wardley-maps.sgit.ai/network/index.html): Seven sites, who owns what, and the four siblings that mention Wardley zero times.
+
+## Site
+
+- [/documents/index.html](https://wardley-maps.sgit.ai/documents/index.html): The research this site was built from, in full. The raw markdown in /briefs/ is the source of truth.
+- [/admin/index.html](https://wardley-maps.sgit.ai/admin/index.html): How the site is built, validated, tagged and deployed. The seven-check release gate.
+- [/admin/comms.html](https://wardley-maps.sgit.ai/admin/comms.html): Numbered asks (N1…), tasks (T1…), and eight open questions published without answers.
+- [/admin/versions.html](https://wardley-maps.sgit.ai/admin/versions.html): Release history.
+
+## Everything else
+
+Generated from the tree, so a page cannot fall out of this surface by being forgotten. Mostly the 34 resource pages and the 11 document readers.
+
+- [/documents/boundaries-and-licensing.html](https://wardley-maps.sgit.ai/documents/boundaries-and-licensing.html)
+- [/documents/brief.html](https://wardley-maps.sgit.ai/documents/brief.html)
+- [/documents/concepts-index.html](https://wardley-maps.sgit.ai/documents/concepts-index.html)
+- [/documents/gaps-and-open-questions.html](https://wardley-maps.sgit.ai/documents/gaps-and-open-questions.html)
+- [/documents/job-a-dinis-published-material.html](https://wardley-maps.sgit.ai/documents/job-a-dinis-published-material.html)
+- [/documents/job-b-industry-resources.html](https://wardley-maps.sgit.ai/documents/job-b-industry-resources.html)
+- [/documents/license.html](https://wardley-maps.sgit.ai/documents/license.html)
+- [/documents/maps-and-rendering.html](https://wardley-maps.sgit.ai/documents/maps-and-rendering.html)
+- [/documents/pioneers-settlers-town-planners.html](https://wardley-maps.sgit.ai/documents/pioneers-settlers-town-planners.html)
+- [/documents/readme.html](https://wardley-maps.sgit.ai/documents/readme.html)
+- [/documents/site-architecture.html](https://wardley-maps.sgit.ai/documents/site-architecture.html)
+- [/resources/arckit-wardley-mapping-for-ai-coding-assistants.html](https://wardley-maps.sgit.ai/resources/arckit-wardley-mapping-for-ai-coding-assistants.html)
+- [/resources/awesome-wardley-maps.html](https://wardley-maps.sgit.ai/resources/awesome-wardley-maps.html)
+- [/resources/bits-or-pieces-simon-wardley-s-blog.html](https://wardley-maps.sgit.ai/resources/bits-or-pieces-simon-wardley-s-blog.html)
+- [/resources/cli-owm.html](https://wardley-maps.sgit.ai/resources/cli-owm.html)
+- [/resources/crossing-the-river-by-feeling-the-stones-talk.html](https://wardley-maps.sgit.ai/resources/crossing-the-river-by-feeling-the-stones-talk.html)
+- [/resources/diagramming-templates-miro-mural-figma-draw-io-excalidraw.html](https://wardley-maps.sgit.ai/resources/diagramming-templates-miro-mural-figma-draw-io-excalidraw.html)
+- [/resources/evolution-informed-security-architecture-using-wardley.html](https://wardley-maps.sgit.ai/resources/evolution-informed-security-architecture-using-wardley.html)
+- [/resources/gcati-foundation-in-wardley-mapping-certification.html](https://wardley-maps.sgit.ai/resources/gcati-foundation-in-wardley-mapping-certification.html)
+- [/resources/learn-wardley-mapping-learnwardleymapping-com-ben-mosior.html](https://wardley-maps.sgit.ai/resources/learn-wardley-mapping-learnwardleymapping-com-ben-mosior.html)
+- [/resources/map-camp.html](https://wardley-maps.sgit.ai/resources/map-camp.html)
+- [/resources/map-macos-linux-tranquil-systems.html](https://wardley-maps.sgit.ai/resources/map-macos-linux-tranquil-systems.html)
+- [/resources/onlinewardleymaps-owm.html](https://wardley-maps.sgit.ai/resources/onlinewardleymaps-owm.html)
+- [/resources/practical-introduction-to-wardley-mapping-leanpub.html](https://wardley-maps.sgit.ai/resources/practical-introduction-to-wardley-mapping-leanpub.html)
+- [/resources/simon-wardley-s-map-repository.html](https://wardley-maps.sgit.ai/resources/simon-wardley-s-map-repository.html)
+- [/resources/situation-normal-everything-must-change-talk.html](https://wardley-maps.sgit.ai/resources/situation-normal-everything-must-change-talk.html)
+- [/resources/swardleymaps-com-simon-wardley-s-current-home-swardleymaps.html](https://wardley-maps.sgit.ai/resources/swardleymaps-com-simon-wardley-s-current-home-swardleymaps.html)
+- [/resources/the-map-cheat-sheet-doctrine-list-climatic-patterns-and.html](https://wardley-maps.sgit.ai/resources/the-map-cheat-sheet-doctrine-list-climatic-patterns-and.html)
+- [/resources/the-value-flywheel-effect.html](https://wardley-maps.sgit.ai/resources/the-value-flywheel-effect.html)
+- [/resources/the-wardley-mapping-canvas.html](https://wardley-maps.sgit.ai/resources/the-wardley-mapping-canvas.html)
+- [/resources/using-wardley-mapping-for-optimizing-your-threat-modeling.html](https://wardley-maps.sgit.ai/resources/using-wardley-mapping-for-optimizing-your-threat-modeling.html)
+- [/resources/wardley-mapping-discord-replaces-the-slack.html](https://wardley-maps.sgit.ai/resources/wardley-mapping-discord-replaces-the-slack.html)
+- [/resources/wardley-mapping-in-security-threat-models-and-wardley-maps.html](https://wardley-maps.sgit.ai/resources/wardley-mapping-in-security-threat-models-and-wardley-maps.html)
+- [/resources/wardley-maps-compiled-editions-leanpub-github-audiobook.html](https://wardley-maps.sgit.ai/resources/wardley-maps-compiled-editions-leanpub-github-audiobook.html)
+- [/resources/wardley-maps-for-obsidian.html](https://wardley-maps.sgit.ai/resources/wardley-maps-for-obsidian.html)
+- [/resources/wardley-maps-for-visual-studio-code.html](https://wardley-maps.sgit.ai/resources/wardley-maps-for-visual-studio-code.html)
+- [/resources/wardley-maps-in-mermaid-wardley-beta.html](https://wardley-maps.sgit.ai/resources/wardley-maps-in-mermaid-wardley-beta.html)
+- [/resources/wardley-maps-the-book-medium-serialisation.html](https://wardley-maps.sgit.ai/resources/wardley-maps-the-book-medium-serialisation.html)
+- [/resources/wardleymaps-com-chris-krzysztof-daniel.html](https://wardley-maps.sgit.ai/resources/wardleymaps-com-chris-krzysztof-daniel.html)
+- [/resources/wardleypedia.html](https://wardley-maps.sgit.ai/resources/wardleypedia.html)
+- [/resources/wardleytogo.html](https://wardley-maps.sgit.ai/resources/wardleytogo.html)
+- [/resources/what-do-wardley-maps-really-map-a-settler-writes-critique.html](https://wardley-maps.sgit.ai/resources/what-do-wardley-maps-really-map-a-settler-writes-critique.html)
+- [/resources/where-the-doctrine-ends-critique.html](https://wardley-maps.sgit.ai/resources/where-the-doctrine-ends-critique.html)
+- [/resources/where-the-map-ends-understanding-wardley-maps-limitations.html](https://wardley-maps.sgit.ai/resources/where-the-map-ends-understanding-wardley-maps-limitations.html)
+- [/resources/wikipedia-wardley-map.html](https://wardley-maps.sgit.ai/resources/wikipedia-wardley-map.html)
+
+## Raw sources
+
+The research this site was built from, served as markdown. This is the source of truth; /documents/ renders these same files rather than copying them.
+
+- [/briefs/00__BRIEF.md](https://wardley-maps.sgit.ai/briefs/00__BRIEF.md)
+- [/briefs/00__README.md](https://wardley-maps.sgit.ai/briefs/00__README.md)
+- [/briefs/01__concepts-index.md](https://wardley-maps.sgit.ai/briefs/01__concepts-index.md)
+- [/briefs/02__pioneers-settlers-town-planners.md](https://wardley-maps.sgit.ai/briefs/02__pioneers-settlers-town-planners.md)
+- [/briefs/03__job-a__dinis-published-material.md](https://wardley-maps.sgit.ai/briefs/03__job-a__dinis-published-material.md)
+- [/briefs/04__job-b__industry-resources.md](https://wardley-maps.sgit.ai/briefs/04__job-b__industry-resources.md)
+- [/briefs/05__maps-and-rendering.md](https://wardley-maps.sgit.ai/briefs/05__maps-and-rendering.md)
+- [/briefs/06__site-architecture.md](https://wardley-maps.sgit.ai/briefs/06__site-architecture.md)
+- [/briefs/07__boundaries-and-licensing.md](https://wardley-maps.sgit.ai/briefs/07__boundaries-and-licensing.md)
+- [/briefs/08__gaps-and-open-questions.md](https://wardley-maps.sgit.ai/briefs/08__gaps-and-open-questions.md)
+- [/briefs/09__source-manifest.csv](https://wardley-maps.sgit.ai/briefs/09__source-manifest.csv)
+- [/briefs/LICENSE.md](https://wardley-maps.sgit.ai/briefs/LICENSE.md)
+
+Every map's `wardley-beta` source sits next to its rendered SVG in /maps/. Full text of everything above: /llms-full.txt

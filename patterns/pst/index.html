@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Explorer / Villager / Town Planner — Pioneers–Settlers–Town Planners as three literal AI agent teams</title>
+<meta name="description" content="Not a metaphor and not an org chart: three directory trees, three CLAUDE.md session contracts, and three evolution-stage mandates. The agent is told which stage of the evolution axis it is standing on before it does anything. And 31 of the 33 role definitions inside those teams never got the memo.">
+<link rel="canonical" href="https://wardley-maps.sgit.ai/patterns/pst/index.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="wardley-maps.sgit.ai">
+<meta property="og:url" content="https://wardley-maps.sgit.ai/patterns/pst/index.html">
+<meta property="og:title" content="Pioneers–Settlers–Town Planners as three literal AI agent teams">
+<meta property="og:description" content="Not a metaphor and not an org chart: three directory trees, three CLAUDE.md session contracts, and three evolution-stage mandates. The agent is told which stage of the evolution axis it is standing on before it does anything. And 31 of the 33 role definitions inside those teams never got the memo.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../../assets/favicon.svg" color="#0f766e">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<nav class="site"><div class="row">
+  <a class="brand" href="../../index.html">wardley-maps<span>.sgit.ai</span></a>
+  <a class="parent" href="https://sgit.ai" title="sgit.ai — the parent project: the vault layer, the shipped CLI, and the Strategy Maps vault this site's map inventory draws on">↗ part of <b>sgit.ai</b></a>
+  <span class="stage-pill">research site</span>
+  <a class="ver" href="../../admin/versions.html" title="Site release history">v0.1.0</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-items">
+    <div class="ni ni-has">
+      <a class="nl" href="../../start/index.html">Learn<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../../start/index.html">Start here</a>
+      <a class="sl" href="../../maps/index.html">The map gallery</a>
+      <a class="sl" href="../../glossary/index.html">Glossary</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../../method/index.html">Method<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../../method/index.html">The four claims</a>
+      <a class="sl" href="../../method/de-commoditisation.html">De-commoditisation</a>
+      <a class="sl" href="../../method/custom-axes.html">The custom-axis verdict</a>
+      <a class="sl" href="../../method/broken-middle.html">The broken middle</a>
+      <a class="sl" href="../../method/maps-as-graphs.html">Maps are graphs with position</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl here" href="../../doctrine/index.html">Doctrine<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../../doctrine/index.html">The 40-record assessment</a>
+      <a class="sl here" href="../../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../../resources/index.html">Resources<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../../resources/index.html">All 34, verified</a>
+      <a class="sl" href="../../resources/dead/index.html">Dead or dying</a>
+      <a class="sl" href="../../resources/verification.html">Link verification</a>
+      <a class="sl" href="../../dinis/index.html">Dinis Cruz on mapping, 2018–2025</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../../agents/index.html">For agents<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../../agents/index.html">The machine surface</a>
+      <a class="sl" href="../../shipped/index.html">What ships, and what doesn't</a>
+      <a class="sl" href="../../network/index.html">The network</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../../admin/comms.html">Site<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../../admin/comms.html">Comms: tasks &amp; requests</a>
+      <a class="sl" href="../../admin/versions.html">Release history</a>
+      <a class="sl" href="../../admin/index.html">Admin &amp; engineering</a>
+      <a class="sl" href="../../documents/index.html">The documents</a>
+      <a class="sl" href="../../about/licensing.html">Licensing</a>
+      <a class="sl" href="../../about/participant.html">Where we lose</a>
+      </div>
+    </div>
+  </div>
+  <a class="gh" href="https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps">★ GitHub</a>
+  <script src="../../assets/nav.js" defer></script>
+</div></nav>
+
+<main class="doc">
+<p class="crumb"><a href="../../index.html">wardley-maps.sgit.ai</a> / <a href="../../doctrine/index.html">Doctrine</a> / Explorer / Villager / Town Planner</p>
+<h1>Explorer / Villager / Town Planner</h1>
+<p class="badges"><span class="badge b-original">Original contribution</span>
+  <span class="badge b-type">Founding brief 14 February 2026</span>
+  <span class="badge b-type">W1 · <a href="../../glossary/index.html#w1">glossary</a></span></p>
+
+<p class="lead">Simon Wardley's Pioneers–Settlers–Town Planners is well known as an
+<em>organisational</em> pattern for human teams. What follows is something else: PST used as the
+<b>architecture of an AI agent system</b> — three separate directory trees, three session
+contracts, three evolution-stage mandates, and a documented handover between them. It has never
+been written up anywhere, including in the five agentic-setup guides written by the project that
+runs it.</p>
+
+<div class="note"><b>The naming, stated once and then never drifted from.</b>
+<b>Explorer = Pioneer. Villager = Settler. Town Planner = Town Planner.</b> After Simon Wardley,
+<a href="https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html"><em>On
+Pioneers, Settlers, Town Planners and Theft</em></a> (2015) — <b>CC BY-SA 3.0</b>, which is a
+different licence from the 4.0 covering his book, and is quoted here rather than adapted. In the
+corpus this page draws on, that mapping is stated outright <em>exactly once</em>,
+parenthetically, in a brief about something else, and the word <em>Settler</em> appears once
+ever.</div>
+
+<h2 id="disk">Lead with the filesystem</h2>
+<p>The theory is available in a hundred places. This is the part that is new, and it is three
+directories:</p>
+
+<pre class="shell">.claude/CLAUDE.md              .claude/explorer/CLAUDE.md      (816 words)
+                               .claude/villager/CLAUDE.md      (1,836 words)
+                               .claude/town-planner/CLAUDE.md  (942 words)
+
+team/roles/              <span class="g">&lt;-- THE EXPLORER TEAM  (note: no "explorer/" prefix)</span>
+team/villager/roles/
+team/town-planner/roles/</pre>
+
+<p class="claim"><b>There is no <code>team/explorer/</code> directory.</b> The Explorer team is
+the unprefixed default — <code>team/roles/</code> — annotated in the root session contract as
+<code># Explorer team role-based review documents</code>. That asymmetry is not an oversight to
+apologise for. <b>The Explorer is the origin state.</b> Villager and Town Planner are named
+departures from it. Everything starts unprefixed and at Genesis, and acquiring a prefix is what
+evolution looks like in a filesystem.</p>
+
+<h2 id="table">The operative table</h2>
+<p>From the root session contract, verbatim — the most authoritative statement of the mapping
+anywhere in the corpus, preceded by <em>"As of v0.5.8, the project operates with <b>three
+teams</b> based on Wardley Maps methodology"</em>:</p>
+
+<div class="tablewrap"><table>
+  <thead><tr><th>Team</th><th>Focus</th><th class="safe">Wardley stage</th><th>Output</th></tr></thead>
+  <tbody>
+    <tr><td><b>Explorer</b></td><td>Discover, experiment, build first versions</td><td>Genesis → Custom-Built</td><td>Minor versions</td></tr>
+    <tr><td><b>Villager</b></td><td>Stabilise, harden, deploy to production</td><td>Custom-Built → Product</td><td>Major versions</td></tr>
+    <tr><td><b>Town Planner</b></td><td>Transmute technical output into investment and business value</td><td>Product → Commodity</td><td>Investor materials, business strategy</td></tr>
+  </tbody>
+</table></div>
+
+<p>Each team's own contract restates its stage in the second person — <em>"You operate at the
+<b>Genesis → Custom-Built</b> stages of the Wardley evolution axis"</em> — and that sentence is
+the mechanism that makes this more than a diagram. <b>The agent is told which stage it is
+standing on before it does anything.</b> A prompt that begins by fixing the evolution stage
+constrains everything downstream: what counts as done, what counts as good enough, whether a
+missing test is a defect or a deliberate deferral.</p>
+
+<div class="note"><b>The Town Planner's twist, which is a real deviation from Wardley.</b> Its
+contract says <em>"<b>Product → Commodity</b> stages… but with a twist"</em>. The twist is that
+its output is not more commoditised <em>code</em> — it is investor materials. <b>The Town Planner
+commoditises the story, not the software.</b> Whether that is a legitimate extension or a
+category error is genuinely arguable, and the page would rather state it than smooth it.</div>
+
+<h2 id="populations">Which roles sit in which population</h2>
+<p>From the founding brief of 14 February 2026, verbatim headings:</p>
+<ul>
+  <li><b>Primarily Explorer</b> — Architect (<em>"Designing new components, experimenting with
+    approaches"</em>), Designer, Dev, Journalist, Ambassador, Advocate, Sherpa</li>
+  <li><b>Primarily Villager</b> — DevOps (<em>"Deployment, infrastructure, performance,
+    monitoring"</em>), QA, GRC, DPO</li>
+  <li><b>Across both</b> — Conductor (<em>"Orchestrates both teams, manages the handover"</em>),
+    CISO, AppSec, Librarian, Historian, Cartographer (<em>"Maps the system at both stages"</em>)</li>
+</ul>
+
+<div class="tablewrap"><table>
+  <thead><tr><th>Team</th><th>Directory</th><th>Count</th><th>Roles</th></tr></thead>
+  <tbody>
+    <tr><td>Explorer</td><td><code>team/roles/</code></td><td><b>17</b></td><td class="small">advocate, alchemist, ambassador, appsec, architect, cartographer, conductor, designer, dev, devops, dpo, grc, historian, journalist, librarian, qa, sherpa</td></tr>
+    <tr><td>Villager</td><td><code>team/villager/roles/</code></td><td><b>17</b></td><td class="small">as above, minus alchemist, <b>plus translator</b></td></tr>
+    <tr><td>Town Planner</td><td><code>team/town-planner/roles/</code></td><td><b>4</b></td><td class="small">accountant, alchemist, designer, librarian</td></tr>
+  </tbody>
+</table></div>
+
+<h3>The Villager-exclusive <code>translator</code></h3>
+<p>Described in the Villager contract as <em>"<b>Villager-exclusive</b>… the first role that
+exists <b>only</b> in the Villager team"</em>. This is Wardley-consistent and rather elegant:
+translation is a productisation activity. <b>Nothing at Genesis needs translating, because
+nothing at Genesis has a second audience yet.</b> A role that can only exist at one stage of the
+axis is the strongest evidence in the whole setup that the stage assignment is doing real work
+rather than decorating an org chart.</p>
+
+<h3>The Town Planner team was created a week after being deferred</h3>
+<p>The founding brief is explicit: <em>"❌ <b>Town Planners Team</b> — not yet… Attempting to
+create the Town Planners team now would be premature. We don't have anything at commodity stage
+yet."</em> It was created on 20–21 February 2026, with the Alchemist as its founding role —
+<b>earlier than the brief's own stated criterion, and for a business rather than a technical
+reason.</b></p>
+<p class="claim">That is published here on purpose. A documented deviation from your own plan,
+with the date and the reason, is exactly the kind of evidence
+<a href="../../doctrine/index.html">the doctrine assessment</a> demands of every rating it makes.
+A pattern write-up that only contains the parts that went to plan is a brochure.</p>
+
+<h2 id="theft">The theft, and why the agentic version is different</h2>
+<blockquote class="challenge">The key dynamic is what Wardley calls the <b>"theft"</b> — the
+villagers take (pinch) what the explorers have built and turn it into a product.</blockquote>
+<p>That is standard doctrine and belongs to Wardley. The agentic version is not.</p>
+<p class="claim">In a human organisation the theft is a <b>political event</b>. Somebody's work
+is taken from them, ownership changes, credit is contested, and the whole thing needs managing
+by a person with standing. Between agent teams the theft is <b>a file move plus a version
+bump</b> — and it can be logged, dated, and reviewed in a diff. There is no ego to manage,
+because there is nobody to have one.</p>
+<p>That is a genuine advantage of running PST with agents rather than people, and it is
+claimed here rather than hinted at. The corresponding disadvantage is equally real: the
+political friction in a human handover is partly a quality gate. Somebody defending their work
+forces the taker to understand it. A file move does not.</p>
+
+<h2 id="skills">The strongest extension: PST applied to artefacts, not people</h2>
+<blockquote class="challenge">the lifecycle of a skill is to start as massive LLM, held together
+with string and gum, very expensive, lots of tokens, all the way to a product, all the way to
+code, and it almost becomes a commodity, eventually disappearing, because maybe it is absorbed
+by something else.</blockquote>
+<p>The mechanism is stated in the same brief — <em>"the natural progression of a skill is to
+start in English and end up in code. As you refine the skill, you reduce the scope, you reduce
+the variability"</em> — and the consequence is the most useful sentence in the entire corpus:</p>
+<blockquote class="challenge big">Anybody who spends a lot of money on tokens has an engineering
+problem. They are using explorer-type code and solutions in a commodity environment.</blockquote>
+<p class="claim">That turns a strategy framework into an <b>operational cost diagnostic</b>. Your
+token bill is a measurement of where your capabilities sit on the evolution axis: expensive
+means Genesis, and Genesis in a place where a commodity answer exists means you have an
+engineering problem rather than a pricing problem. It is the single most actionable thing this
+site can hand a working engineer, and it was unpublished until now. <em>4 June 2026.</em></p>
+
+<p>Two related pieces from the same period. <b>The same skill differs by character</b> —
+<em>"a skill, the same skill for a town planner, is very different for an explorer, for a
+villager"</em> — which is what makes the three-team structure more than three folders. And
+<b>the seniority inversion</b>: the vibe-coding brief assigns Villager work to <em>"junior and
+mid-level engineers"</em> and Town Planner work to <em>"the most experienced engineers on the
+team"</em>, inverting the usual assumption that the exciting new thing goes to the seniors. The
+same brief argues that <em>"the vibe coded MVP <b>is</b> the specification. It is more precise,
+more concrete, and more usable than any document the business stakeholder could have
+written"</em> — which is the Explorer output the theft acts on.</p>
+
+<h2 id="honest">Thirty-one of thirty-three roles never got the memo</h2>
+<div class="warnbox">
+<p><b>Of 33 <code>ROLE.md</code> files in the repository, exactly two mention Wardley.</b></p>
+<ul>
+  <li><code>team/villager/roles/cartographer/ROLE.md</code> (682 words, 6 mentions) — genuinely
+    operationalised. Core mission: <em>"Map the production topology, deployment architecture, and
+    evolution progress — track components as they move from custom-built to product stage on the
+    Wardley evolution axis."</em> It carries a quality gate reading <em>"Every component has a
+    Wardley evolution stage label"</em> and a workflow step <em>"Flag components approaching
+    commodity stage."</em></li>
+  <li><code>team/town-planner/roles/accountant/ROLE.md</code> (385 words, one passing mention).</li>
+</ul>
+<p><b>The Explorer Cartographer's own role definition — 2,057 words, the longest cartographer
+document in the repository — mentions Wardley zero times.</b> Its five core principles are about
+ASCII art, layering and dependency graphs. Its effectiveness table counts unmapped components
+and undiagrammed data flows. No evolution axis, no doctrine, no gameplay. The founding brief
+called the Cartographer <em>"central to this entire structure"</em>; its role definition is a
+document in which the structure does not appear. Architect (1,974 w), Conductor (1,803 w) and
+Librarian (1,961 w) are likewise silent.</p>
+<p><b>So: the teams know their stage; the roles inside them do not.</b> The mandate lives in the
+session contract and never reaches the role definition. That is a real, specific and fixable
+defect, and naming it is what separates a pattern write-up from a brochure.</p>
+</div>
+
+<h2 id="status">Asserted against implemented</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Claim</th><th class="safe">Status</th></tr></thead>
+  <tbody>
+    <tr><td>Three teams exist as directories</td><td><b class="yes">Implemented</b></td></tr>
+    <tr><td>Three distinct session contracts</td><td><b class="yes">Implemented</b> — 816 / 1,836 / 942 words</td></tr>
+    <tr><td>Each team bound to a Wardley stage</td><td><b>Asserted</b>, consistently, in four places</td></tr>
+    <tr><td>The seven separation rules (<em>"Villagers do NOT add features"</em>, <em>"Explorers do NOT deploy to production"</em>, distinct environments)</td><td><b>Asserted.</b> Environment separation was still an open decision as of 14 Feb 2026</td></tr>
+    <tr><td>Individual roles know their population</td><td><b class="no">Not implemented</b> — 31 of 33 silent</td></tr>
+    <tr><td>The Cartographer maintains a living evolution map</td><td><b class="no">Partially, then abandoned.</b> Three real maps, all 26 Feb 2026; the reviews tree ends 11 Mar 2026</td></tr>
+    <tr><td>Handover briefs at the path the Explorer contract names</td><td><b class="no">Not implemented</b> — the path does not exist</td></tr>
+    <tr><td>Doctrine assessments, gameplay analyses</td><td><b class="no">Not implemented</b></td></tr>
+    <tr><td>Written up as a reusable pattern</td><td><b class="no">Not until this page.</b> Five agentic-setup guides exist; none mentions Explorer, Villager or Town Planner</td></tr>
+  </tbody>
+</table></div>
+<p>The Cartographer's own reference document supplies the verdict on that sixth row:
+<em>"a map that was accurate three months ago and hasn't been updated is worse than no map."</em>
+It is now six months. Which raises <a href="../../admin/comms.html#q8">Q8</a> — if the discipline
+failed with a named role and a stated responsibility, what would make it work?</p>
+
+<h2 id="ancestor">Where it came from</h2>
+<p class="claim">On <b>16 June 2020</b>, six years before any of this, Dinis Cruz sat in an Open
+Security Summit working session called <em>Team Topologies &amp; PST &amp; Squads &amp;
+Tribes</em> — <b>with Simon Wardley in the room</b>, alongside Tony Richards and Luke Robbertse.
+<a href="../../dinis/index.html#a11">The recording is on the chronology page.</a> Nobody has ever
+put the 2020 session and the 2026 filesystem side by side. That is the most satisfying
+connection in the whole research, and it is the reason this pattern is not a rediscovery.</p>
+
+<h2 id="next">What would make this page better</h2>
+<ul>
+  <li><b>Draw the map of the pattern itself.</b> Where do the three teams sit on an evolution
+    axis? Where does <code>translator</code> sit? It does not exist yet, it is cheap, and it is
+    an obvious original artefact. Logged as <a href="../../admin/comms.html#t3">T3</a>.</li>
+  <li><b>Measure it.</b> <a href="../../admin/comms.html#q7">Q7</a>: does the PST→agent-team
+    mapping actually improve outcomes, or is it a legible metaphor? There is no measurement, and
+    one operationalised role definition out of 33 is thin evidence either way.</li>
+  <li><b>Push the stage mandate down into the roles.</b> The defect above is a
+    find-and-fix, not a redesign.</li>
+</ul>
+
+<div class="pagenav">
+  <a href="../../method/maps-as-graphs.html">← Maps are graphs with position</a>
+  <a href="../../doctrine/index.html">The doctrine assessment →</a>
+</div>
+</main>
+
+<footer class="site"><div class="cols">
+  <div>
+    <div class="brandline">wardley-maps<span>.sgit.ai</span></div>
+    <p>Wardley Mapping as a research site: the technique, an original doctrine assessment, 34 industry resources verified rather than listed, and the mapping thinking behind the <a href="https://sgit.ai" style="display:inline;padding:0"><b>sgit.ai</b></a> network. This site's own content is CC BY 4.0; the ecosystem it quotes is CC BY-SA — <a href="../../about/licensing.html" style="display:inline;padding:0">the difference matters</a>.</p>
+    <p class="netline"><a href="https://sgit.ai"><b>↗ sgit.ai</b></a> — the parent project and the Strategy Maps vault · <a href="https://graphs.sgit.ai/v1/maps/index.html">↗ graphs.sgit.ai</a> — maps as graphs · <a href="https://pki.sgit.ai">↗ pki.sgit.ai</a> — where the doctrine assessment was built · <a href="https://sgit.ai/network/index.html">↗ the network</a></p>
+    <p class="partnote">⚠ Participant disclosure: published by the sgit project, which uses the mapping practice this site documents and is assessed by the doctrine page it hosts. <a href="../../about/participant.html" style="display:inline;padding:0">Read the disclosure</a>.</p>
+    <p class="partnote">Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog, <a href="https://blog.gardeviance.org/" style="display:inline;padding:0">blog.gardeviance.org</a>, is CC BY-SA <b>3.0</b> — a different licence, quoted under a separate notice. Nothing here is an adaptation of either.</p>
+    <p class="verline">site <a href="../../admin/versions.html">v0.1.0</a> · <a href="../../admin/index.html">engineering</a> · <a href="../../about/licensing.html">CC BY 4.0</a></p>
+  </div>
+  <div>
+    <h4>Start</h4>
+    <a href="../../start/index.html">&#8594; Start here</a>
+    <a href="../../maps/index.html">The map gallery</a>
+    <a href="../../glossary/index.html">Glossary</a>
+    <a href="../../shipped/index.html">What ships, and what doesn't</a>
+  </div>
+  <div>
+    <h4>The four claims</h4>
+    <a href="../../method/de-commoditisation.html">De-commoditisation</a>
+    <a href="../../method/custom-axes.html">The custom-axis verdict</a>
+    <a href="../../method/broken-middle.html">The broken middle</a>
+    <a href="../../method/maps-as-graphs.html">Maps are graphs with position</a>
+    <a href="../../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+  </div>
+  <div>
+    <h4>The record</h4>
+    <a href="../../doctrine/index.html">The doctrine assessment</a>
+    <a href="../../resources/index.html">34 resources, verified</a>
+    <a href="../../resources/dead/index.html">Dead or dying</a>
+    <a href="../../dinis/index.html">Dinis Cruz, 2018–2025</a>
+    <a href="../../documents/index.html">The documents</a>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <a href="../../admin/comms.html">Comms: tasks &amp; requests</a>
+    <a href="../../admin/versions.html">Release history</a>
+    <a href="../../about/licensing.html">Licensing</a>
+    <a href="../../llms.txt">llms.txt</a>
+    <a href="../../llms-full.txt">llms-full.txt</a>
+  </div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You cannot map a gap — the broken middle, and the map shape it produces</title>
+<meta name="description" content="A gap has no evolution, so it cannot be positioned on the axis. What you get instead is a shape: the ends of the value chain are solved and sit right, the middle drops to the far left because it is people. An original map shape, and this site&#x27;s most interesting unresolved contradiction.">
+<link rel="canonical" href="https://wardley-maps.sgit.ai/method/broken-middle.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="wardley-maps.sgit.ai">
+<meta property="og:url" content="https://wardley-maps.sgit.ai/method/broken-middle.html">
+<meta property="og:title" content="You cannot map a gap — the ends are solved, the middle is people">
+<meta property="og:description" content="A gap has no evolution, so it cannot be positioned on the axis. What you get instead is a shape: the ends of the value chain are solved and sit right, the middle drops to the far left because it is people. An original map shape, and this site&#x27;s most interesting unresolved contradiction.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../assets/favicon.svg" color="#0f766e">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<nav class="site"><div class="row">
+  <a class="brand" href="../index.html">wardley-maps<span>.sgit.ai</span></a>
+  <a class="parent" href="https://sgit.ai" title="sgit.ai — the parent project: the vault layer, the shipped CLI, and the Strategy Maps vault this site's map inventory draws on">↗ part of <b>sgit.ai</b></a>
+  <span class="stage-pill">research site</span>
+  <a class="ver" href="../admin/versions.html" title="Site release history">v0.1.0</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-items">
+    <div class="ni ni-has">
+      <a class="nl" href="../start/index.html">Learn<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../start/index.html">Start here</a>
+      <a class="sl" href="../maps/index.html">The map gallery</a>
+      <a class="sl" href="../glossary/index.html">Glossary</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl here" href="../method/index.html">Method<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../method/index.html">The four claims</a>
+      <a class="sl" href="../method/de-commoditisation.html">De-commoditisation</a>
+      <a class="sl" href="../method/custom-axes.html">The custom-axis verdict</a>
+      <a class="sl here" href="../method/broken-middle.html">The broken middle</a>
+      <a class="sl" href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../doctrine/index.html">Doctrine<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../doctrine/index.html">The 40-record assessment</a>
+      <a class="sl" href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../resources/index.html">Resources<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../resources/index.html">All 34, verified</a>
+      <a class="sl" href="../resources/dead/index.html">Dead or dying</a>
+      <a class="sl" href="../resources/verification.html">Link verification</a>
+      <a class="sl" href="../dinis/index.html">Dinis Cruz on mapping, 2018–2025</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../agents/index.html">For agents<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../agents/index.html">The machine surface</a>
+      <a class="sl" href="../shipped/index.html">What ships, and what doesn't</a>
+      <a class="sl" href="../network/index.html">The network</a>
+      </div>
+    </div>
+    <div class="ni ni-has">
+      <a class="nl" href="../admin/comms.html">Site<span class="caret">&#9662;</span></a>
+      <div class="sub">
+      <a class="sl" href="../admin/comms.html">Comms: tasks &amp; requests</a>
+      <a class="sl" href="../admin/versions.html">Release history</a>
+      <a class="sl" href="../admin/index.html">Admin &amp; engineering</a>
+      <a class="sl" href="../documents/index.html">The documents</a>
+      <a class="sl" href="../about/licensing.html">Licensing</a>
+      <a class="sl" href="../about/participant.html">Where we lose</a>
+      </div>
+    </div>
+  </div>
+  <a class="gh" href="https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps">★ GitHub</a>
+  <script src="../assets/nav.js" defer></script>
+</div></nav>
+
+<main class="doc">
+<p class="crumb"><a href="../index.html">wardley-maps.sgit.ai</a> / <a href="../method/index.html">Method</a> / You cannot map a gap</p>
+<h1>You cannot map a gap</h1>
+<p class="badges"><span class="badge b-original">Original contribution</span>
+  <span class="badge b-type">28 July 2026</span>
+  <span class="badge b-type">W12 · <a href="../glossary/index.html#w12">glossary</a></span></p>
+
+<blockquote class="challenge">you cannot map a gap, because a gap has no evolution.</blockquote>
+
+<h2 id="claim">The claim</h2>
+<p>A Wardley map positions components on an axis that measures how far each has travelled from
+novel to ubiquitous. That measurement presupposes something being measured: a thing that exists,
+that people use, that has a history of getting more certain and more common.</p>
+
+<p>An air gap is not a thing. It is the absence of a connection — a place where two systems that
+would otherwise be joined are deliberately not joined, and where the joining is done by a person
+carrying something. There is no component to position, because there is no component. It has not
+evolved from anything and it is not on its way to anything.</p>
+
+<p class="claim">So the interesting question stops being <em>where does the gap sit</em> and
+becomes <em>what does a value chain look like when there is a gap in the middle of it</em>. And
+the answer turns out to be a distinctive and reusable map shape.</p>
+
+<h2 id="shape">The shape</h2>
+<blockquote class="challenge">this will be a very interesting shape where you can have the top
+working quite efficiently, and then the middle bit those lines all the way to the left because
+they're manual… <b>the ends are solved. the middle is people.</b></blockquote>
+
+<p>Both ends of the chain sit well to the right. The systems on either side of the gap are
+mature — often commodity — because they have had years of pressure and investment. Everything
+that crosses the gap sits at the far left, because it is a human being with a USB stick, a
+clipboard, a phone call, or a form that gets retyped. And the components hanging off that manual
+step inherit its position, because you cannot be more evolved than the least evolved thing you
+depend on.</p>
+
+<p>Drawn out, the value chain sags in the middle. That sag is the finding. It is what makes the
+map an argument rather than an inventory: it says the investment case is not at either end,
+where everything already works, but in the trough — and it says so visually, before anybody has
+written a business case.</p>
+
+<div class="note"><b>Why this shape generalises.</b> It is not about air gaps. It appears
+wherever two evolved systems are joined by a manual, judgement-heavy, or politically-owned step:
+approvals, reconciliations, handovers between teams, regulatory sign-off, anything that ends
+with somebody's name on it. Once you have seen the shape, you find it constantly — and the
+standard reflex, which is to automate the two ends further, is exactly the wrong move.</div>
+
+<h2 id="contradiction">The contradiction this site has not resolved</h2>
+<div class="warnbox"><b>"You cannot map a gap" is stated absolutely — and the air-gap map
+exists, and is described in the same corpus as the sharpest single map in the estate.</b> Both
+of those cannot be straightforwardly true. Either the claim means something narrower than it
+says, or the map is doing something other than mapping the gap.<br><br>
+The reading this page finds most defensible: <b>the map does not position the gap; it positions
+the manual work that exists <em>because</em> of the gap.</b> A person walking a drive between two
+networks is a component — it is an activity, somebody does it, it has a cost, and it is
+emphatically at the left-hand end of the axis. The gap itself never appears on the map at all.
+What appears is its shadow.<br><br>
+That is a reading, not a resolution, and the corpus does not state it.
+Published unresolved as <a href="../admin/comms.html#q3">Q3</a>.</div>
+
+<h2 id="falsify">What would falsify it</h2>
+<ul>
+  <li><b>A defensible placement of a gap itself.</b> If somebody can position an absence on the
+    evolution axis and have the climatic patterns behave — have it move right under pressure,
+    have it commoditise — the claim is wrong and the interesting question is what the axis was
+    actually measuring.</li>
+  <li><b>The shape failing to recur.</b> The generalisation above is an assertion from a handful
+    of cases. A survey of value chains containing a manual step that does <em>not</em> produce
+    the sag would kill it.</li>
+  <li><b>The trough not being where the value is.</b> The shape implies an investment
+    conclusion. If in practice the returns from removing the manual middle are consistently
+    worse than from improving the already-good ends — plausible, since the ends are where the
+    volume is — then the map is a true description with a false implication, which is worse than
+    being wrong.</li>
+</ul>
+
+<h2 id="related">Related</h2>
+<ul>
+  <li><a href="custom-axes.html">The custom-axis verdict</a> — same brief, 28 July 2026. The
+    axis <code>air gap → file → API → event-driven</code> is the one the verdict sanctions, and
+    it is the axis this map would need.</li>
+  <li><a href="../shipped/index.html">/shipped/</a> — the air-gap map, the translation map and
+    the evidence-chain map were all commissioned on 28 July 2026 and all three are still listed
+    as PROPOSED.</li>
+</ul>
+
+<div class="pagenav">
+  <a href="custom-axes.html">← The custom-axis verdict</a>
+  <a href="maps-as-graphs.html">Maps are graphs with position →</a>
+</div>
+</main>
+
+<footer class="site"><div class="cols">
+  <div>
+    <div class="brandline">wardley-maps<span>.sgit.ai</span></div>
+    <p>Wardley Mapping as a research site: the technique, an original doctrine assessment, 34 industry resources verified rather than listed, and the mapping thinking behind the <a href="https://sgit.ai" style="display:inline;padding:0"><b>sgit.ai</b></a> network. This site's own content is CC BY 4.0; the ecosystem it quotes is CC BY-SA — <a href="../about/licensing.html" style="display:inline;padding:0">the difference matters</a>.</p>
+    <p class="netline"><a href="https://sgit.ai"><b>↗ sgit.ai</b></a> — the parent project and the Strategy Maps vault · <a href="https://graphs.sgit.ai/v1/maps/index.html">↗ graphs.sgit.ai</a> — maps as graphs · <a href="https://pki.sgit.ai">↗ pki.sgit.ai</a> — where the doctrine assessment was built · <a href="https://sgit.ai/network/index.html">↗ the network</a></p>
+    <p class="partnote">⚠ Participant disclosure: published by the sgit project, which uses the mapping practice this site documents and is assessed by the doctrine page it hosts. <a href="../about/participant.html" style="display:inline;padding:0">Read the disclosure</a>.</p>
+    <p class="partnote">Wardley Mapping is provided courtesy of Simon Wardley, CC BY-SA 4.0. His blog, <a href="https://blog.gardeviance.org/" style="display:inline;padding:0">blog.gardeviance.org</a>, is CC BY-SA <b>3.0</b> — a different licence, quoted under a separate notice. Nothing here is an adaptation of either.</p>
+    <p class="verline">site <a href="../admin/versions.html">v0.1.0</a> · <a href="../admin/index.html">engineering</a> · <a href="../about/licensing.html">CC BY 4.0</a></p>
+  </div>
+  <div>
+    <h4>Start</h4>
+    <a href="../start/index.html">&#8594; Start here</a>
+    <a href="../maps/index.html">The map gallery</a>
+    <a href="../glossary/index.html">Glossary</a>
+    <a href="../shipped/index.html">What ships, and what doesn't</a>
+  </div>
+  <div>
+    <h4>The four claims</h4>
+    <a href="../method/de-commoditisation.html">De-commoditisation</a>
+    <a href="../method/custom-axes.html">The custom-axis verdict</a>
+    <a href="../method/broken-middle.html">The broken middle</a>
+    <a href="../method/maps-as-graphs.html">Maps are graphs with position</a>
+    <a href="../patterns/pst/index.html">Explorer / Villager / Town Planner</a>
+  </div>
+  <div>
+    <h4>The record</h4>
+    <a href="../doctrine/index.html">The doctrine assessment</a>
+    <a href="../resources/index.html">34 resources, verified</a>
+    <a href="../resources/dead/index.html">Dead or dying</a>
+    <a href="../dinis/index.html">Dinis Cruz, 2018–2025</a>
+    <a href="../documents/index.html">The documents</a>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <a href="../admin/comms.html">Comms: tasks &amp; requests</a>
+    <a href="../admin/versions.html">Release history</a>
+    <a href="../about/licensing.html">Licensing</a>
+    <a href="../llms.txt">llms.txt</a>
+    <a href="../llms-full.txt">llms-full.txt</a>
+  </div>
+</div></footer>
+</body>
+</html>
