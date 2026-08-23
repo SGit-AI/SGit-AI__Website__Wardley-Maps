@@ -4,7 +4,7 @@
 > evolution axis, which makes it arguable — and almost nobody publishes theirs anywhere it
 > can be argued with.
 
-Site version: v0.1.1 · CC BY 4.0 · part of the sgit.ai network
+Site version: v0.1.2 · CC BY 4.0 · part of the sgit.ai network
 
 A research site for Wardley Mapping. Three things here are not available elsewhere: a
 40-record doctrine self-assessment where every rating names the artefact it rests on; the

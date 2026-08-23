@@ -1,5 +1,5 @@
 # wardley-maps.sgit.ai — full text
-# Site version: v0.1.1 · generated 2026-08-23 · CC BY 4.0
+# Site version: v0.1.2 · generated 2026-08-23 · CC BY 4.0
 #
 # Every markdown document and every map source on this site, concatenated. The HTML pages
 # are not included: they are presentation over this material plus the JSON endpoints at
@@ -1325,7 +1325,7 @@ wardley-beta
 ==============================================================================
 # Maps are claims, not pictures
 
-*wardley-maps.sgit.ai · site v0.1.0 · CC BY 4.0 · part of the [sgit.ai](https://sgit.ai) network*
+*wardley-maps.sgit.ai · site v0.1.1 · CC BY 4.0 · part of the [sgit.ai](https://sgit.ai) network*
 
 A Wardley map asserts where every component sits on the evolution axis. That makes it
 **arguable** — and almost nobody publishes theirs anywhere it can be argued with. This site
