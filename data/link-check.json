@@ -1,6 +1,6 @@
 {
  "schema": "wardley-maps-link-check/v1",
- "run_at": "2026-08-23T21:53:48Z",
+ "run_at": "2026-08-24T07:19:55Z",
  "method": "HEAD then GET, redirects followed, 20s timeout. A 401/403/429/451/999 is recorded as blocked (the host refused a robot), not as error (the link is broken). Hosts that block outright are skipped, never ok. Our own host is skipped: validate.js checks those against the files on disk.",
  "user_agent": "wardley-maps.sgit.ai link-verification (+https://wardley-maps.sgit.ai/resources/verification.html)",
  "skip_hosts": [
@@ -17,8 +17,8 @@
  ],
  "count": 198,
  "tally": {
-  "ok": 83,
-  "blocked": 28,
+  "ok": 82,
+  "blocked": 29,
   "error": 4,
   "self": 69,
   "skipped": 14
@@ -724,9 +724,10 @@
   },
   {
    "url": "https://medium.com/learn-wardley-mapping/bringing-wardley-maps-to-mermaid-a-journey-from-idea-to-open-source-contribution-8fe5009eafd3",
-   "state": "ok",
-   "status": 200,
-   "method": "HEAD",
+   "state": "blocked",
+   "status": 403,
+   "method": "GET",
+   "reason": "the host refused an automated request — not evidence the link is dead",
    "linked_from": [
     "resources/wardley-maps-in-mermaid-wardley-beta.html"
    ]
@@ -1346,9 +1347,10 @@
   },
   {
    "url": "https://swardley.medium.com",
-   "state": "ok",
-   "status": 200,
+   "state": "blocked",
+   "status": 403,
    "method": "GET",
+   "reason": "the host refused an automated request — not evidence the link is dead",
    "final_url": "https://swardley.medium.com/",
    "linked_from": [
     "resources/wardley-maps-the-book-medium-serialisation.html"
@@ -1375,10 +1377,9 @@
   },
   {
    "url": "https://uk.linkedin.com/in/simonwardley",
-   "state": "blocked",
-   "status": 999,
+   "state": "ok",
+   "status": 200,
    "method": "GET",
-   "reason": "the host refused an automated request — not evidence the link is dead",
    "linked_from": [
     "resources/swardleymaps-com-simon-wardley-s-current-home-swardleymaps.html"
    ]
@@ -1947,8 +1948,7 @@
   {
    "url": "https://wardleypedia.org/mediawiki/index.php/Climatic_patterns",
    "state": "error",
-   "status": 503,
-   "method": "GET",
+   "error": "fetch failed",
    "linked_from": [
     "resources/wardleypedia.html"
    ]
@@ -1956,8 +1956,7 @@
   {
    "url": "https://wardleypedia.org/mediawiki/index.php/Main_Page",
    "state": "error",
-   "status": 503,
-   "method": "GET",
+   "error": "fetch failed",
    "linked_from": [
     "resources/wardleypedia.html"
    ]
