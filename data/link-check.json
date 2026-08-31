@@ -1,6 +1,6 @@
 {
  "schema": "wardley-maps-link-check/v1",
- "run_at": "2026-08-24T07:19:55Z",
+ "run_at": "2026-08-31T13:45:16Z",
  "method": "HEAD then GET, redirects followed, 20s timeout. A 401/403/429/451/999 is recorded as blocked (the host refused a robot), not as error (the link is broken). Hosts that block outright are skipped, never ok. Our own host is skipped: validate.js checks those against the files on disk.",
  "user_agent": "wardley-maps.sgit.ai link-verification (+https://wardley-maps.sgit.ai/resources/verification.html)",
  "skip_hosts": [
@@ -99,7 +99,7 @@
   {
    "url": "https://blog.gardeviance.org/",
    "state": "ok",
-   "status": 200,
+   "status": 204,
    "method": "HEAD",
    "linked_from": [
     "about/licensing.html",
@@ -176,7 +176,7 @@
   {
    "url": "https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html",
    "state": "ok",
-   "status": 200,
+   "status": 204,
    "method": "HEAD",
    "linked_from": [
     "glossary/index.html",
@@ -186,7 +186,7 @@
   {
    "url": "https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html",
    "state": "ok",
-   "status": 200,
+   "status": 204,
    "method": "HEAD",
    "linked_from": [
     "resources/bits-or-pieces-simon-wardley-s-blog.html",
@@ -252,7 +252,7 @@
   {
    "url": "https://diniscruz.blogspot.com/2018/12/3-wardley-maps-templates-im-using-to.html",
    "state": "ok",
-   "status": 200,
+   "status": 204,
    "method": "HEAD",
    "linked_from": [
     "dinis/index.html"
@@ -261,7 +261,7 @@
   {
    "url": "https://diniscruz.blogspot.com/2018/12/creating-wardley-maps-using-lambda.html",
    "state": "ok",
-   "status": 200,
+   "status": 204,
    "method": "HEAD",
    "linked_from": [
     "dinis/index.html"
