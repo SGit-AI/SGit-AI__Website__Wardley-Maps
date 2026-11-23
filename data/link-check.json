@@ -1,6 +1,6 @@
 {
  "schema": "wardley-maps-link-check/v1",
- "run_at": "2026-11-16T15:40:06Z",
+ "run_at": "2026-11-23T18:00:40Z",
  "method": "HEAD then GET, redirects followed, 20s timeout. A 401/403/429/451/999 is recorded as blocked (the host refused a robot), not as error (the link is broken). Hosts that block outright are skipped, never ok. Our own host is skipped: validate.js checks those against the files on disk.",
  "user_agent": "wardley-maps.sgit.ai link-verification (+https://wardley-maps.sgit.ai/resources/verification.html)",
  "skip_hosts": [
@@ -17,9 +17,9 @@
  ],
  "count": 198,
  "tally": {
-  "ok": 82,
-  "blocked": 29,
-  "error": 4,
+  "ok": 78,
+  "blocked": 30,
+  "error": 7,
   "self": 69,
   "skipped": 14
  },
@@ -176,7 +176,7 @@
   {
    "url": "https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html",
    "state": "ok",
-   "status": 204,
+   "status": 200,
    "method": "HEAD",
    "linked_from": [
     "glossary/index.html",
@@ -313,9 +313,9 @@
   },
   {
    "url": "https://github.com/OWASP/www-chapter-london/blob/master/tab_pastevents.md",
-   "state": "ok",
-   "status": 200,
-   "method": "HEAD",
+   "state": "error",
+   "status": 503,
+   "method": "GET",
    "linked_from": [
     "dinis/index.html"
    ]
@@ -399,18 +399,18 @@
   },
   {
    "url": "https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps/blob/dev/.github/workflows/deploy-pages.yml",
-   "state": "ok",
-   "status": 200,
-   "method": "HEAD",
+   "state": "error",
+   "status": 503,
+   "method": "GET",
    "linked_from": [
     "admin/index.html"
    ]
   },
   {
    "url": "https://github.com/SGit-AI/SGit-AI__Website__Wardley-Maps/blob/dev/.github/workflows/verify-links.yml",
-   "state": "ok",
-   "status": 200,
-   "method": "HEAD",
+   "state": "error",
+   "status": 503,
+   "method": "GET",
    "linked_from": [
     "admin/index.html"
    ]
@@ -1378,9 +1378,10 @@
   },
   {
    "url": "https://uk.linkedin.com/in/simonwardley",
-   "state": "ok",
-   "status": 200,
+   "state": "blocked",
+   "status": 429,
    "method": "GET",
+   "reason": "the host refused an automated request — not evidence the link is dead",
    "linked_from": [
     "resources/swardleymaps-com-simon-wardley-s-current-home-swardleymaps.html"
    ]
